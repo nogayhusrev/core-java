@@ -1,0 +1,61 @@
+Java Programming Day21
+
+Topics: Muti-dimensional Array
+
+package name: day21_multiDimentionalArray
+
+Warmup tasks:
+	1. Write a program that can remove all the extra space from string
+			Ex:
+				str = "  Hello world      I      love      Java    "
+       
+        	Output: 
+        		Hello world I love Java
+
+	2. Write a  function that check if a string is build out of the same letters as another string. (Anagram Task)
+
+            Ex: str1 = "heart"
+            	str2 = "earth"
+            
+            output:
+            	true
+
+        		str1 = "java"
+        		str2 = "python"
+
+    		output:
+    			false
+
+
+        listen  sildent
+    
+
+
+regular variable:
+    
+    int  age = 10;
+    int score = 75;
+    String name = "Java";
+
+
+Array: special variable, size is fixed
+
+    Single Dimensional Array:[] , used for containing multiple elements
+
+            int[] scores = {10, 20, 30, 40};
+
+
+            toString() ==> for single dimensional arrays ONLY
+
+    Multi Dimensional Array: [][] ..., used for containing multiple arrays
+
+
+        deepToString() ==> for multi-dimensional dimensional arrays ONLY
+
+
+
+
+
+
+
+

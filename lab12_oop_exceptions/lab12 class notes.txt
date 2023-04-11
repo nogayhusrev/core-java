@@ -1,0 +1,84 @@
+Java Programming Lab12
+
+Review Topics: OOP
+			   Exceptions
+
+package name: lab12_oop_exceptions
+
+Restaurant Task:
+	1. Create a subclass of RuntimeException named NoSuchJobException
+
+			add a constructor with string argument that can display the specified string as an exception message
+
+	2. Create a sub class of RuntimeException named NoSuchPersonException
+
+			add a constructor with string argument that can display the specified string as an exception message
+
+	3. Create an abstract class named Employee
+
+			variables:
+				name, age, gender(final), id, jobTitle, salary
+
+			Encapsulate all the fields:
+				Conditions:
+					1. name can not be null or empty, otherwise throw a NoSuchAPersonException
+
+					2. age can not be negative, otherwise throw a NoSuchAPersonException
+
+					3. gender can only be set to 'M' or 'F', otherwise throw a NoSuchAPersonException
+
+					4. jobTitle can not be null or empty, otherwise throw a NoSuchAJobException
+
+					5. salary can not be negative, otherwise throw a NoSuchAJobException
+
+					5. id can not be set to null or empty, otherwise throw an illigalArgumentException
+
+			Add a constructor that can set all the fields 
+
+			Abstract methods:
+				work();
+
+			Non-Abstract method:
+				toString()
+
+
+	4. Create a subclass of employee named Chef
+
+			extra methods:
+				makeOrder()
+				washDishes()
+
+	5. Create a subclass of employee named Server
+
+			extra methods:
+				takeOrder()
+				cleanTable()
+
+	6. Create a class named Restaurant
+
+			variables:
+				ownerName, location, numberOfStars
+				servers (ArrayList<Server>, make it final)
+				chefs (ArrayList<Chef>, make it final)
+
+			Encapsulate all the fields
+
+			Add a constructor that sets the ownerName, location and numberOfStarts to create restaurant object
+
+			methods:
+				hireServer(Server server): accepts a server object and adds it to the Servers ArrayList
+                hireServer(Server [] servers): accepts an array of Server objects and adds all of them to the Servers ArrayList
+
+                hireChef(Chef chef): accepts a chef object and adds it to the Chefs ArrayList
+                hireChef(Chef [] chefs): accepts an array of Chef objects and adds all of them to the Chef ArrayList
+
+                terminateChef(int employeeID): removes the chef with the matching ID from the arraylist of chef
+
+                terminateServer(int employeeID) removes the server with the matching ID from the arraylist of server
+                
+                toString(): Return (String) of all the information of a Restaurant object. No need to print the whole list of Servers or Chefs. Print the number of Servers and Chefs along side the other information
+ 
+
+
+
+

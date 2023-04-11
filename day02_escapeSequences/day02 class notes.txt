@@ -1,0 +1,60 @@
+Java Programming Day02
+
+Topics: Comments (Single & Multi line)
+		Println vs Print
+		Escape sequences
+
+		Github Account
+		Repl.it Team
+
+
+Warmup task:
+	1. Create a sub folder named "day02" under the "Java Course Materials" folder
+
+	2. Go to LMS -> Java JD -> Modules -> Java Day02
+	   		download the pdf file and save it under the sub folder "day02"
+
+	3. Open "Java_Programming" project in intelliJ, and create a package named "day02_escapeSequences"
+
+	4. Create a Java file named "EmployeeInfo" and write a program that can display the following output on the console:
+
+			output:
+				Name: $yourName
+				Gender: $gender
+				Age: $age
+				Job Title: Java Developer
+				Company: $companyName
+				Salary: $salary
+
+			Note: Put your own info for name, gender etc
+
+
+
+how to send code snippet in discord:
+		
+		```java
+
+			codes fragements
+
+		```
+
+
+How to open different projects in intellij:
+		file -> open then nevigate to "IdeaProjects" folder - > select the project you want to open
+
+
+println():
+	Today is Friday
+	Good Day to learn Java
+
+print():
+	Today is FridayGood day to learn Java
+
+
+
+1. by end of next week, please complete:
+			1. Sign up for github account
+			2. Sign up for repl.it account
+
+
+

@@ -1,0 +1,28 @@
+Java Lab5
+
+Recap: String
+	   Loops
+
+package name: lab05_String
+
+
+String methods:
+	charAt, length, indexOf (lasIndexOf),  lower/upper, replace (replaceFirst), substring, equals, contains, starts/ends
+
+
+Loops: repeated actions
+	For Loop: if the number of iteration is known
+
+				  int i =1;      i < 6;    i++
+			for(initialization;condition; Iterator){
+
+			}
+
+
+	While Loop: if the number of iteration is unknown
+
+
+			while(Condition){
+
+			}
+

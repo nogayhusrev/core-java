@@ -1,0 +1,38 @@
+Java Lab6
+
+Recap: Custom Methods
+        
+package name: lab06_Methods
+
+
+Sytax:
+	
+		Access-Modifier   Specifier    Return-Type      MethodName(Parameters){
+
+				Code Fragments that can perform the task
+
+		}
+
+
+		Access-Modifiers: public, protected, private, default
+							public: always visible
+
+		Specifier: static, final, abstract, synchronized
+
+					static: no need for object, to call the method
+
+
+		Return-type: void , DataType
+
+		Parameters: Additional info that the method must have
+
+
+Branching Statements:
+		Break
+		Continue
+		Return
+
+
+
+
+

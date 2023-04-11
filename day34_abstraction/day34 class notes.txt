@@ -1,0 +1,113 @@
+Java Programming Day34
+
+Topics: OOP Abstraction
+			- Interface
+
+package name: day34_abstraction
+
+warmup tasks:
+	1. Create an abstract class named Car
+			variables:
+				make (final), model (final), color, year (final), price
+
+			Encapsulate all the fields
+				Conditions:
+					1. year can not be less than 1886
+					2. price can not be less than negative or zero
+
+			Add a constructor that can set all the fields
+				Note: Class name can be set to the make of the car
+
+			Methods:
+				stop() (final): prints "Presse the brake"
+
+				start() (abstract)
+
+				toString(): prints the given car info when a car object is passed in the print statement
+
+	2. Create the following sub classes of Car
+			1. Honda
+			2. Audi
+					extra methods:
+						autoPark()
+			3. Tesla
+					extra methods:
+						autoPilot()
+
+
+Animal task:
+	interface Swimmable
+		swim()
+
+	interface Flyable
+			fly();
+
+	interface Wild:
+			hunt();
+
+	interface Plyable
+			play();
+
+			
+	abstractClass Animal:
+		eat();
+		drink();
+
+
+
+	Dog extend Animal implements Plyable, Swimmable
+
+	Cat extend Animal implements Plyable
+
+	Cow extend Animal implements Plyable
+
+	Horse extend Animal implements Plyable
+
+	Parrot extend Animal implements Plyable, Flyable
+
+	Eagle extend Animal implements Wild, Flyable
+
+	Tiger extend Animal implements Wild
+
+	Lion extend Animal implements Wild
+
+	Falcon extend Animal implements Wild, Flyable
+
+	Shark extend Animal implements Wild, Swimmable
+
+	Dolphin extend Animal implements Plyable, Swimmable
+
+	Duck extend Animal implements Plyable, Swimmable, Flyable
+
+	Java extend Animal implements Plyable, Swimmable, Flyable, Wild
+
+
+
+Person implement Swimmable, Playable
+
+Boat implement Swimmable
+
+Airpalne implements Flyable
+
+CydeoCar implement Swimmable, Flyable
+
+PlayStation implements Playable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

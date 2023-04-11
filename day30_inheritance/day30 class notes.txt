@@ -1,0 +1,79 @@
+Java Programming Day30
+
+Topics: OOP Inheritance
+			Constructor
+			Types of Inheritance
+
+packag name: day30_inheritance
+
+Warmup tasks:
+	1. Create a named Phone:
+				Variables:
+					brand, model, size, price, color
+
+				Encapsulate all the fields
+					Conditions:
+						1. price can not be zero or negative
+						2. color can only be set to:
+								{"Black", "White", "Silver", "Gold", "Pink"}
+
+				Add a constructor that can set all the fields 
+
+				Methods:
+					call(long phoneNumber)
+					text(long phoneNumber)
+					toString()
+
+	2. Create the following sub classes of Phone:
+
+			2.1 Iphone:
+					Extra methods:
+						faceTime(phoneNumber)
+						faceTile(email)
+
+			2.2 Samsung:
+					Extra methods:
+						freeze()
+
+			2.3 Nokia:
+					Extra methods:
+						selfDefense()
+
+
+
+OOP Inheritance: to build IS A relationship between the classes (parent/child,  super/sub)
+				
+				easiest way to get rich ===> extends
+
+				Child class (sub): can inherit all the variables & methods that are accessible/visible from the parent class
+
+				Parent class (super): can NOT inherit anything from child class. contains all the common features (variables/methods) of all child classes
+
+				Class A extends Class B
+
+				Advantages:
+					less codes
+					improves the reusability
+					clean
+					less memory usage
+					easy to maintain
+
+
+				One class can ONLY extend one class
+				One class can be extended by MULTIPLE classes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
