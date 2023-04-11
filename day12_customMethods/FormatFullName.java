@@ -10,13 +10,12 @@ public class FormatFullName {
 
         System.out.println("Enter your first name:");
         String first = input.nextLine().trim().replace(" ", "");
-                // trim(0 & replace() methods will make sure that the white spaces & additionals spaces between the characters will be removed
+        // trim(0 & replace() methods will make sure that the white spaces & additionals spaces between the characters will be removed
 
         System.out.println("Enter your last name:");
         String last = input.nextLine().trim().replace(" ", "");
 
         input.close();
-
 
 
         first = first.substring(0, 1).toUpperCase() + first.substring(1).toLowerCase();
@@ -27,7 +26,6 @@ public class FormatFullName {
         String full_name = first + " " + last;
 
         System.out.println(full_name);
-
 
 
     }

@@ -1,13 +1,14 @@
 package day06_ifStatements;
+
 public class CharacterIdentity {
     public static void main(String[] args) {
-        char ch='+';
+        char ch = '+';
 
-        if(Character.isLetter(ch)){
+        if (Character.isLetter(ch)) {
             System.out.println("Letter");
         } else if (Character.isDigit(ch)) {
             System.out.println("Digit");
-        }else{
+        } else {
             System.out.println("Special Character");
         }
 

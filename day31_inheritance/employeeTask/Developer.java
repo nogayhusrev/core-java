@@ -1,6 +1,6 @@
 package day31_inheritance.employeeTask;
 
-public class Developer extends Employee{
+public class Developer extends Employee {
 
     private String programmingLanguage;
 
@@ -24,7 +24,7 @@ public class Developer extends Employee{
 
     @Override
     public String toString() {
-        return  super.toString().replace("}",", programmingLanguage='" + programmingLanguage + '\'' +
+        return super.toString().replace("}", ", programmingLanguage='" + programmingLanguage + '\'' +
                 '}');
 
     }

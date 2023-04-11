@@ -22,14 +22,13 @@ public class AverageNumber {
             sum += numbers[i];
         }
 
-        double average = sum / (double)total;
+        double average = sum / (double) total;
 
-        DecimalFormat df =new DecimalFormat("0.00");
+        DecimalFormat df = new DecimalFormat("0.00");
 
-        System.out.println("Numbers: "+Arrays.toString(numbers));
+        System.out.println("Numbers: " + Arrays.toString(numbers));
         System.out.println("sum: " + sum);
-        System.out.println("average: " +  df.format(average ) );
-
+        System.out.println("average: " + df.format(average));
 
 
     }

@@ -16,10 +16,10 @@ public class ArrayPractice2 {
          */
 
         for (int i = 0; i < arr1.length; i++) {
-            arr1[i] = i+1;
+            arr1[i] = i + 1;
         }
 
-        System.out.println("arr1 = " + Arrays.toString(arr1) );
+        System.out.println("arr1 = " + Arrays.toString(arr1));
 
 
         System.out.println("---------------------------------------------------------");
@@ -32,14 +32,12 @@ public class ArrayPractice2 {
         }
 */
 
-        for (int i = 0 ; i < arr2.length; i++) {
+        for (int i = 0; i < arr2.length; i++) {
             arr2[i] = 100 - i;
         }
 
 
-
-        System.out.println("arr2 = " + Arrays.toString(arr2) );
-
+        System.out.println("arr2 = " + Arrays.toString(arr2));
 
 
     }

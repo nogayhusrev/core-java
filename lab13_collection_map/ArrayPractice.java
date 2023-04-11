@@ -26,10 +26,6 @@ public class ArrayPractice {
         int[][] arr2D = {};
         int[][][] ar3D = {};
 
-       
-
-
-
 
     }
 

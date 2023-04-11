@@ -16,7 +16,7 @@ public class Student {
     }
 
 
-    public String getName(){ // READ ONLY
+    public String getName() { // READ ONLY
         /*
         if(name == null){
             name = "Unknown";
@@ -26,7 +26,7 @@ public class Student {
         return name;
     }
 
-    public void setName(String name){ // WRITE ONLY
+    public void setName(String name) { // WRITE ONLY
         /*
         if(name.isEmpty()){
             System.err.println("Invalid student name");
@@ -43,13 +43,13 @@ public class Student {
 
     public void setAge(int age) {
 
-        if(age < 0){
+        if (age < 0) {
             System.err.println("Age can not be negative");
             System.exit(1);
         }
 
-        if(age < 5 || age > 90){
-            System.err.println("Invalid student age "+age);
+        if (age < 5 || age > 90) {
+            System.err.println("Invalid student age " + age);
             System.exit(1);
         }
 
@@ -63,10 +63,10 @@ public class Student {
 
     public void setGender(char gender) {
 
-        if(gender == 'M' || gender == 'F'){
+        if (gender == 'M' || gender == 'F') {
             this.gender = gender;
-        }else{
-            System.err.println("Invalid gender: "+gender);
+        } else {
+            System.err.println("Invalid gender: " + gender);
             System.exit(1);
         }
 
@@ -80,10 +80,10 @@ public class Student {
 
         boolean isValid = grade == 'A' || grade == 'B' || grade == 'C' || grade == 'D' || grade == 'F';
 
-        if(isValid) {
+        if (isValid) {
             this.grade = grade;
-        }else{
-            System.err.println("Invalid grade: "+grade);
+        } else {
+            System.err.println("Invalid grade: " + grade);
             System.exit(1);
         }
 
@@ -97,8 +97,8 @@ public class Student {
         this.schoolName = schoolName;
     }
 
-    public void study(){
-        System.out.println(name +" is studying at "+schoolName);
+    public void study() {
+        System.out.println(name + " is studying at " + schoolName);
     }
 
     public String toString() {
@@ -110,7 +110,6 @@ public class Student {
                 ", schoolName='" + schoolName + '\'' +
                 '}';
     }
-
 
 
 }

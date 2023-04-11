@@ -4,12 +4,12 @@ public class TaskUpperLowerCase {
 
     public static void main(String[] args) {
 
-        String str="JAVA java";
+        String str = "JAVA java";
 
-        int uppers=0;
-        int lowers=0;
+        int uppers = 0;
+        int lowers = 0;
 
-        char [] ch=str.toCharArray();
+        char[] ch = str.toCharArray();
 
         for (char c : ch) {
             if (Character.isUpperCase(c)) uppers++;

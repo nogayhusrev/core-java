@@ -7,8 +7,7 @@ public class TestNestedClassObjects {
         Car obj1 = new Car(); // Car object
         Car.CarEngine obj2 = obj1.new CarEngine(); // CarEngine object
 
-        Car.StaticInnerClass obj3 =  new Car.StaticInnerClass();
-
+        Car.StaticInnerClass obj3 = new Car.StaticInnerClass();
 
 
     }

@@ -9,25 +9,23 @@ public class SingleIfStatementPractice {
         boolean isEven = number % 2 == 0;
 
 
-        if(isEven){
+        if (isEven) {
             System.out.println("Even number");
         }
 
-        if(!isEven){
+        if (!isEven) {
             System.out.println("Odd number");
         }
 
         System.out.println("--------------------------------------");
 
-        if(number % 2 ==0){
+        if (number % 2 == 0) {
             System.out.println("Even number");
         }
 
-        if(number % 2 != 0){
+        if (number % 2 != 0) {
             System.out.println("Odd number");
         }
-
-
 
 
     }

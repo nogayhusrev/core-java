@@ -13,9 +13,9 @@ public class CollectionPractice {
 
         System.out.println(collection);
 
-        System.out.println( ((ArrayList) collection).get(2) );
+        System.out.println(((ArrayList) collection).get(2));
 
-       // System.out.println( ( (Stack)collection).pop() );
+        // System.out.println( ( (Stack)collection).pop() );
 
 
         System.out.println("-------------------------------------------------");
@@ -25,13 +25,11 @@ public class CollectionPractice {
 
         System.out.println(collection2);
 
-     //   System.out.println(  ( (ArrayList)collection2 ).get(4)  );
+        //   System.out.println(  ( (ArrayList)collection2 ).get(4)  );
 
-        System.out.println(  new ArrayList<>(collection2).get(4)  );
+        System.out.println(new ArrayList<>(collection2).get(4));
 
         List<Integer> l = new ArrayList<>(collection2);
-
-
 
 
     }

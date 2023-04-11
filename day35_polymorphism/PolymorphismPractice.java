@@ -12,19 +12,20 @@ public class PolymorphismPractice {
         tiger.eat();
         tiger.drink();
         tiger.sleep();
-      //  tiger.hunt();
+        //  tiger.hunt();
 
         Animal animal = new Eagle("John", "American Eagle", 'M', 3, "Small", "Black & White");
-       // animal.fly();
+        // animal.fly();
         animal.eat();
         animal.sleep();
         animal.drink();
 
 
-        Flyable obj1 = new Eagle("John", "American Eagle", 'M', 3, "Small", "Black & White");;
+        Flyable obj1 = new Eagle("John", "American Eagle", 'M', 3, "Small", "Black & White");
+        ;
         //obj1.eat();
-       // obj1.drink();
-       // obj1.sleep();
+        // obj1.drink();
+        // obj1.sleep();
         obj1.fly();
         System.out.println(obj1.canFly);
 
@@ -47,7 +48,7 @@ public class PolymorphismPractice {
 
         CydeoCar cydeoCar = null;
 
-        Flyable[] birds = { parrot, eagle, duck};
+        Flyable[] birds = {parrot, eagle, duck};
 
         Swimmable[] fishes = {dolphin, shark, duck};
 
@@ -78,12 +79,6 @@ public class PolymorphismPractice {
         System.out.println("hasAutoPilot = " + hasAutoPilot);
 
         System.out.println("------------------------------------------------");
-
-
-
-
-
-
 
 
     }

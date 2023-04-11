@@ -15,9 +15,9 @@ public class PizzaApp {
 
     }
 
-    public static void makeOrder(String email){
+    public static void makeOrder(String email) {
 
-        for(int i=0;i<1;){
+        for (int i = 0; i < 1; ) {
 
             System.out.println("Which pizza would you like to have. (Please type pizza name. To create your own pizza, please type special)");
 
@@ -25,17 +25,16 @@ public class PizzaApp {
             String pizzaChoice = scanner.next();
 
 
-            if(checkPizzaThatWeHave(pizzaChoice)){  //valid pizza
+            if (checkPizzaThatWeHave(pizzaChoice)) {  //valid pizza
 
-                if(pizzaChoice.equals("special")){ //special pizza
+                if (pizzaChoice.equals("special")) { //special pizza
 
                     //build your pizza
 
-                     buildSpecialpizza();
+                    buildSpecialpizza();
 
 
-
-                }else{
+                } else {
 
                     System.out.println("We have received your order. Price is $19.99");
 
@@ -43,7 +42,7 @@ public class PizzaApp {
                 System.out.println("Your order numnber is  " + generateOrderNumber(email));
                 break;
 
-            }else{
+            } else {
                 System.out.println("You have entered invalid pizza name. Please try again");
             }
 
@@ -53,46 +52,41 @@ public class PizzaApp {
 
     private static void buildSpecialpizza() {
 
-        Scanner scanner=new Scanner(System.in);
-        boolean extraCorn=false;
-        boolean extraOlives=false;
-        boolean thinCrust=false;
+        Scanner scanner = new Scanner(System.in);
+        boolean extraCorn = false;
+        boolean extraOlives = false;
+        boolean thinCrust = false;
         String answer;
-        double totalPrice=0;
+        double totalPrice = 0;
         System.out.println("Do you want extra corn for 2$ ? yes/no ");
-        answer= scanner.next();
+        answer = scanner.next();
         if (answer.equalsIgnoreCase("yes"))
-            extraCorn=true;
+            extraCorn = true;
 
         System.out.println("Do you want thin crust for 1$ ? yes/no ");
-        answer= scanner.next();
+        answer = scanner.next();
         if (answer.equalsIgnoreCase("yes"))
-            thinCrust=true;
+            thinCrust = true;
 
         System.out.println("Do you want extra olives for 3$ ? yes/no ");
-        answer= scanner.next();
+        answer = scanner.next();
         if (answer.equalsIgnoreCase("yes"))
-            extraOlives=true;
+            extraOlives = true;
 
 
-        if (extraCorn) totalPrice+=2;
-        if (extraOlives) totalPrice+=3;
-        if (thinCrust) totalPrice+=1;
+        if (extraCorn) totalPrice += 2;
+        if (extraOlives) totalPrice += 3;
+        if (thinCrust) totalPrice += 1;
 
-        String orderExp=" We have received your special order. Your special pizza includes:";
+        String orderExp = " We have received your special order. Your special pizza includes:";
 
-        orderExp+=(extraCorn)?"\nExtra Corn":"";
-        orderExp+=(extraOlives)?"\nExtra Olives":"";
-        orderExp+=(thinCrust)?"\nThin Crust":"";
+        orderExp += (extraCorn) ? "\nExtra Corn" : "";
+        orderExp += (extraOlives) ? "\nExtra Olives" : "";
+        orderExp += (thinCrust) ? "\nThin Crust" : "";
 
-        orderExp+="\nPrice is $" + (totalPrice+19.99);
+        orderExp += "\nPrice is $" + (totalPrice + 19.99);
 
         System.out.println(orderExp);
-
-
-
-
-
 
 
     }
@@ -101,9 +95,9 @@ public class PizzaApp {
 
         String orderNumber = "order_";
 
-        for(int i = 0;email.length()>i+1;i++){
+        for (int i = 0; email.length() > i + 1; i++) {
 
-            orderNumber += email.substring(i,i+1);
+            orderNumber += email.substring(i, i + 1);
             orderNumber += i;
 
         }
@@ -112,7 +106,7 @@ public class PizzaApp {
 
     }
 
-    public  static boolean checkPizzaThatWeHave(String pizzaChoice) {
+    public static boolean checkPizzaThatWeHave(String pizzaChoice) {
 
 
         String pizza1 = "Margarita";
@@ -122,16 +116,16 @@ public class PizzaApp {
         String pizzaSpecial = "Special";
 
         return pizzaChoice.equalsIgnoreCase(pizza1) ||
-                        pizzaChoice.equalsIgnoreCase(pizza2) ||
-                        pizzaChoice.equalsIgnoreCase(pizza3) ||
-                        pizzaChoice.equalsIgnoreCase(pizza4) ||
-                        pizzaChoice.equalsIgnoreCase(pizzaSpecial);
+                pizzaChoice.equalsIgnoreCase(pizza2) ||
+                pizzaChoice.equalsIgnoreCase(pizza3) ||
+                pizzaChoice.equalsIgnoreCase(pizza4) ||
+                pizzaChoice.equalsIgnoreCase(pizzaSpecial);
     }
 
     public static boolean isInputValid(int an) {
 
         boolean checkAccountNo = an >= 100 && an < 1000;
-        return  checkAccountNo;
+        return checkAccountNo;
     }
 
     public static boolean isInputValid(String givenEmail) {
@@ -142,7 +136,7 @@ public class PizzaApp {
 
         boolean checkEmail = secondSignOfIndex < firstSignOfIndex || firstSignOfIndex < 0 || secondSignOfIndex < 0; //invalid
 
-        if(checkEmail){
+        if (checkEmail) {
             return false;
         }
 
@@ -160,7 +154,7 @@ public class PizzaApp {
 
     }
 
-    public static String login(){
+    public static String login() {
 
         //Create 3 variables named email(string),account number(int),password and assign values, DB values
         String email = "mike@gmail.com";
@@ -267,12 +261,6 @@ public class PizzaApp {
         return email;
 
     }
-
-
-
-
-
-
 
 
 }

@@ -9,10 +9,10 @@ public class Dog {
     public int age;
     public String color;
 
-                        //"Max" ,      "Husky",         'M",      4 ,       "small",      "White"
-    public void setInfo(String name, String breed, char gender, int age, String size, String color){
+    //"Max" ,      "Husky",         'M",      4 ,       "small",      "White"
+    public void setInfo(String name, String breed, char gender, int age, String size, String color) {
         this.name = name;  // this keyword is used for calling the instance variable name
-        this.breed =  breed;
+        this.breed = breed;
         this.gender = gender;
         this.age = age;
         this.size = size;
@@ -20,12 +20,12 @@ public class Dog {
     } // this method can help us to set all the information of the dog at once
 
 
-    public void eat(){
-        System.out.println(name +" is eating");
+    public void eat() {
+        System.out.println(name + " is eating");
     }
 
-    public void drink(){
-        System.out.println(name +" is drinking water");
+    public void drink() {
+        System.out.println(name + " is drinking water");
     }
 
 
@@ -39,7 +39,6 @@ public class Dog {
                 ", color='" + color + '\'' +
                 '}';
     }
-
 
 
 }

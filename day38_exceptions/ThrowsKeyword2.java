@@ -12,7 +12,7 @@ public class ThrowsKeyword2 {
         //method1();
         Library.sleep(3.5);
 
-     //   method2();
+        //   method2();
 
 
     }
@@ -32,7 +32,6 @@ public class ThrowsKeyword2 {
     }
 
 
-
     public static void method2() throws InterruptedException, FileNotFoundException {
 
         System.out.println("First program started");
@@ -48,7 +47,6 @@ public class ThrowsKeyword2 {
 
 
     }
-
 
 
 }

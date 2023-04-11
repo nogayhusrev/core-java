@@ -2,12 +2,12 @@ package day27_accessModifiers.dog;
 
 public class Dog {
 
-    public String name,breed, size;
+    public String name, breed, size;
     public char gender;
     public int age;
     public String color;
 
-    public static int numberOfLegs , numberOfEyes, numberOfWings;
+    public static int numberOfLegs, numberOfEyes, numberOfWings;
     public static boolean isFriendly;
 
 
@@ -27,23 +27,23 @@ public class Dog {
         this.color = color;
     }
 
-    public void eat(){
+    public void eat() {
         System.out.println("Dog" + name + " is eating");
     }
 
-    public void drink(){
+    public void drink() {
         System.out.println("Dog" + name + " is drinking");
     }
 
-    public void sleep(){
+    public void sleep() {
         System.out.println("Dog" + name + " is sleepinh");
     }
 
-    public void play(){
+    public void play() {
         System.out.println("Dog" + name + " is playing");
     }
 
-    public void bark(){
+    public void bark() {
         System.out.println("Dog" + name + " is barking");
     }
 

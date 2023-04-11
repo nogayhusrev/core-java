@@ -6,20 +6,19 @@ public class UntilNegative {
 
     public static void main(String[] args) {
 
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        int sum=0;
+        int sum = 0;
         int temp;
 
         System.out.println("Enter a number:");
 
-        while((temp=scanner.nextInt())>=0) {
-            sum+=temp;
+        while ((temp = scanner.nextInt()) >= 0) {
+            sum += temp;
             System.out.println("Enter a number:");
         }
 
         System.out.println("sum = " + sum);
-
 
 
     }

@@ -4,7 +4,7 @@ public class ProtectedAccessModifier {
 
     protected static int a = 100;
 
-    protected static void methodA(){
+    protected static void methodA() {
 
     }
 

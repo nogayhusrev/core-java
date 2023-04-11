@@ -40,7 +40,6 @@ public class TestRectangleObjects {
         System.out.println(rectangle5);
 
 
-
     }
 
 

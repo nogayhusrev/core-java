@@ -56,13 +56,13 @@ public class MapPractice2 {
         List<Map<String, Object>> listOfMaps = new ArrayList<>();
         listOfMaps.add(person1);
         listOfMaps.add(person2);
-        listOfMaps.addAll(Arrays.asList(person3, person4, person5 ) );
+        listOfMaps.addAll(Arrays.asList(person3, person4, person5));
 
         System.out.println(listOfMaps);
 
         System.out.println("---------------------------------------------------");
 
-        for( Map<String, Object> eachMap  :  listOfMaps ){
+        for (Map<String, Object> eachMap : listOfMaps) {
             System.out.println(eachMap);
             for (Map.Entry<String, Object> eachEntry : eachMap.entrySet()) {
                 System.out.println(eachEntry);
@@ -76,8 +76,8 @@ public class MapPractice2 {
 
         for (Map<String, Object> eachMap : listOfMaps) {
             for (Map.Entry<String, Object> eachEntry : eachMap.entrySet()) {
-                if(eachEntry.getKey().equals("hired_date")){
-                    if(  ( (LocalDate)eachEntry.getValue() ).getYear() == 2022 ){
+                if (eachEntry.getKey().equals("hired_date")) {
+                    if (((LocalDate) eachEntry.getValue()).getYear() == 2022) {
                         System.out.println(eachMap.get("name"));
                     }
                 }
@@ -89,13 +89,11 @@ public class MapPractice2 {
 
         listOfMaps.get(0).replace("name", "Vasyl");
 
-        listOfMaps.get(listOfMaps.size()-1).replace("salary",  ( (Integer)listOfMaps.get(listOfMaps.size()-1).get("salary")) + 50000 );
+        listOfMaps.get(listOfMaps.size() - 1).replace("salary", ((Integer) listOfMaps.get(listOfMaps.size() - 1).get("salary")) + 50000);
 
-        listOfMaps.get(1).replace("age",   ( (Integer)listOfMaps.get(1).get("age")) + 4) ;
+        listOfMaps.get(1).replace("age", ((Integer) listOfMaps.get(1).get("age")) + 4);
 
         System.out.println(listOfMaps);
-
-
 
 
         System.out.println("---------------------------------------------------");
@@ -115,10 +113,7 @@ public class MapPractice2 {
 
 
         List<Map<String, Object>> cars = new ArrayList<>();
-        cars.addAll( Arrays.asList(car1, car2, car3, car4));
-
-
-
+        cars.addAll(Arrays.asList(car1, car2, car3, car4));
 
 
     }

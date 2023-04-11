@@ -32,14 +32,14 @@ public class ScannerIntro {
 
         Scanner is closed at line 27, once it's closed can not read inputs
 */
-        System.out.println("First number: "+num1);
+        System.out.println("First number: " + num1);
         System.out.println("Second number: " + num2);
-        System.out.println("Third number: "+num3);
-        System.out.println("Fourth number: "+num4);
-     //   System.out.println("Fifth number: "+num5);
+        System.out.println("Third number: " + num3);
+        System.out.println("Fourth number: " + num4);
+        //   System.out.println("Fifth number: "+num5);
 
 
-       // input.close(); // scanner is closed, can not read user inputs again
+        // input.close(); // scanner is closed, can not read user inputs again
     }
 
 

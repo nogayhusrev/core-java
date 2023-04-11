@@ -8,7 +8,7 @@ public class TestBrowser {
         c.openBrowser();
         c.closeBrowser();
 
-        Browser b = c ;
+        Browser b = c;
         b.openBrowser();
         b.closeBrowser();
 

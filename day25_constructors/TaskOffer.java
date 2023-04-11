@@ -2,20 +2,20 @@ package day25_constructors;
 
 public class TaskOffer {
 
-    public String location,companyName,jobTitle;
+    public String location, companyName, jobTitle;
     public double salary;
-    boolean hasBenefit,hasPTO,isWFH,isFullTime;
+    boolean hasBenefit, hasPTO, isWFH, isFullTime;
 
-    public TaskOffer(String location,String companyName,String jobTitle,double salary,boolean hasBenefit,boolean hasPTO,boolean isWFH,boolean isFullTime){
+    public TaskOffer(String location, String companyName, String jobTitle, double salary, boolean hasBenefit, boolean hasPTO, boolean isWFH, boolean isFullTime) {
 
-        this.location=location;
-        this.companyName=companyName;
-        this.jobTitle=jobTitle;
-        this.salary=salary;
-        this.hasBenefit=hasBenefit;
-        this.hasPTO=hasPTO;
-        this.isWFH=isWFH;
-        this.isFullTime=isFullTime;
+        this.location = location;
+        this.companyName = companyName;
+        this.jobTitle = jobTitle;
+        this.salary = salary;
+        this.hasBenefit = hasBenefit;
+        this.hasPTO = hasPTO;
+        this.isWFH = isWFH;
+        this.isFullTime = isFullTime;
     }
 
     @Override

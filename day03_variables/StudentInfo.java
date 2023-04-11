@@ -3,12 +3,12 @@ package day03_variables;
 public class StudentInfo {
 
     public static void main(String[] args) {
-        String studentName="Ally";
-        int age=14;
-        char gender='F';
-        String schoolName="New Jersey";
-        int studentId=234;
-        int gradeLevel=8;
+        String studentName = "Ally";
+        int age = 14;
+        char gender = 'F';
+        String schoolName = "New Jersey";
+        int studentId = 234;
+        int gradeLevel = 8;
 
         System.out.println("---------------------");
         System.out.println("studentName = " + studentName);
@@ -18,8 +18,6 @@ public class StudentInfo {
         System.out.println("studentId = " + studentId);
         System.out.println("gradeLevel = " + gradeLevel);
         System.out.println("---------------------");
-
-
 
 
     }

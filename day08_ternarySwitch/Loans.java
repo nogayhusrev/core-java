@@ -2,11 +2,11 @@ package day08_ternarySwitch;
 
 public class Loans {
     public static void main(String[] args) {
-        int salary=61_000;
-        double creditScore=700;
+        int salary = 61_000;
+        double creditScore = 700;
 
 
-        String loan=(salary>60000)?((creditScore>650)?"Loan Approved":"Loan Not Approved"):"Loan Not Approved";
+        String loan = (salary > 60000) ? ((creditScore > 650) ? "Loan Approved" : "Loan Not Approved") : "Loan Not Approved";
 
         System.out.println(loan);
     }

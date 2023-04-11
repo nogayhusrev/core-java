@@ -18,7 +18,7 @@ public class ScrumTeam { // ScrumTeam HAS A Tester
     }
 
     public void setPO(String PO) {
-        terminate(PO, "Invalid PO name: "+PO);
+        terminate(PO, "Invalid PO name: " + PO);
         this.PO = PO;
     }
 
@@ -27,7 +27,7 @@ public class ScrumTeam { // ScrumTeam HAS A Tester
     }
 
     public void setBA(String BA) {
-        terminate(BA, "Invalid BA name: "+BA);
+        terminate(BA, "Invalid BA name: " + BA);
         this.BA = BA;
     }
 
@@ -36,7 +36,7 @@ public class ScrumTeam { // ScrumTeam HAS A Tester
     }
 
     public void setSM(String SM) {
-        terminate(SM, "Invalid SM name: "+SM );
+        terminate(SM, "Invalid SM name: " + SM);
         this.SM = SM;
     }
 
@@ -45,8 +45,8 @@ public class ScrumTeam { // ScrumTeam HAS A Tester
     }
 
     public void setDaysOfSprint(int daysOfSprint) {
-        if(daysOfSprint <= 0 ){
-            System.err.println("Invalid days of sprint: "+daysOfSprint);
+        if (daysOfSprint <= 0) {
+            System.err.println("Invalid days of sprint: " + daysOfSprint);
             System.exit(1);
         }
         this.daysOfSprint = daysOfSprint;
@@ -62,8 +62,8 @@ public class ScrumTeam { // ScrumTeam HAS A Tester
     }
 
 
-    private static void terminate(String arg, String err){
-        if(arg == null || arg.trim().isEmpty()){
+    private static void terminate(String arg, String err) {
+        if (arg == null || arg.trim().isEmpty()) {
             System.err.println(err);
             System.exit(1);
         }
@@ -78,30 +78,30 @@ public class ScrumTeam { // ScrumTeam HAS A Tester
     }
 
 
-    public void addTester(Tester tester){
+    public void addTester(Tester tester) {
         testers.add(tester);
     }
 
-    public void addTester(Tester[] testers){
-        this.testers.addAll( Arrays.asList(testers) );
+    public void addTester(Tester[] testers) {
+        this.testers.addAll(Arrays.asList(testers));
     }
 
 
-    public void addDeveloper(Developer developer){
+    public void addDeveloper(Developer developer) {
         developers.add(developer);
     }
 
-    public void addDeveloper(Developer[] developers){
-        this.developers.addAll( Arrays.asList(developers));
+    public void addDeveloper(Developer[] developers) {
+        this.developers.addAll(Arrays.asList(developers));
     }
 
 
-    public void removeTester(String id){
-        testers.removeIf( p -> p.getId().equals(id) );
+    public void removeTester(String id) {
+        testers.removeIf(p -> p.getId().equals(id));
     }
 
-    public void removeDeveloper(String id){
-        developers.removeIf( p -> p.getId().equals(id));
+    public void removeDeveloper(String id) {
+        developers.removeIf(p -> p.getId().equals(id));
     }
 
 

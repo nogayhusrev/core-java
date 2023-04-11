@@ -19,8 +19,7 @@ public class TestCircleObjects {
         */
 
         System.out.println(Circle.pi);
-       // System.out.println(Circle.radius);
-
+        // System.out.println(Circle.radius);
 
 
     }

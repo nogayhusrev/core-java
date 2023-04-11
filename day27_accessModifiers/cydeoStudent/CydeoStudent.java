@@ -12,8 +12,8 @@ public class CydeoStudent {
     public static String programmingLanguage;
 
     static {
-        schoolName="Cydeo";
-        programmingLanguage="Java";
+        schoolName = "Cydeo";
+        programmingLanguage = "Java";
     }
 
     public CydeoStudent(String name, char gender, int age, int batchNumber, int groupNumber, int secretCode) {
@@ -25,19 +25,19 @@ public class CydeoStudent {
         this.secretCode = secretCode;
     }
 
-    public void printSchoolName(){
+    public void printSchoolName() {
         System.out.println("schoolName = " + schoolName);
     }
 
-    public void printSecretCode(){
+    public void printSecretCode() {
         System.out.println("name = " + secretCode);
     }
 
-    public void attendClass(){
+    public void attendClass() {
         System.out.println(name + " is attending class");
     }
 
-    public void study(){
+    public void study() {
         System.out.println(name + " is studying");
     }
 

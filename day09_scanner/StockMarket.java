@@ -9,13 +9,13 @@ public class StockMarket {
         double value;
         String mostShareCompanyName;
 
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter your number of the total shares:");
 
-        if((shares=scanner.nextInt())>0){
+        if ((shares = scanner.nextInt()) > 0) {
             System.out.println();
             System.out.print("Enter your value:");
-            value=scanner.nextDouble();
+            value = scanner.nextDouble();
             System.out.println();
 
             System.out.print("Enter your favorite company:");
@@ -23,9 +23,8 @@ public class StockMarket {
             System.out.println();
 
 
-
-            System.out.println("Your total stock market holding is $"+(shares*value)+" which is made up to shares." +
-                    mostShareCompanyName+" is your company holdins");
+            System.out.println("Your total stock market holding is $" + (shares * value) + " which is made up to shares." +
+                    mostShareCompanyName + " is your company holdins");
 
         }
 

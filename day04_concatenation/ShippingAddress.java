@@ -2,18 +2,16 @@ package day04_concatenation;
 
 public class ShippingAddress {
     public static void main(String[] args) {
-        String name="Aron Kissinger",
-                buildingNumber="13621A",
-                streetName="Legacy Circle",
-                city="Fairfax",
-                zipcode="VA 22030";
+        String name = "Aron Kissinger",
+                buildingNumber = "13621A",
+                streetName = "Legacy Circle",
+                city = "Fairfax",
+                zipcode = "VA 22030";
 
         System.out.println("Your shipping address is: " +
-                "\n\t\t\t\t\t\t"+name+" "+
-                "\n\t\t\t\t\t\t"+buildingNumber+" "+streetName+"" +
-                "\n\t\t\t\t\t\t"+city+" "+zipcode);
-
-
+                "\n\t\t\t\t\t\t" + name + " " +
+                "\n\t\t\t\t\t\t" + buildingNumber + " " + streetName + "" +
+                "\n\t\t\t\t\t\t" + city + " " + zipcode);
 
 
     }

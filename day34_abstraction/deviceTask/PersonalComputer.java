@@ -1,6 +1,6 @@
 package day34_abstraction.deviceTask;
 
-public class PersonalComputer extends Computer{
+public class PersonalComputer extends Computer {
 
 
     public PersonalComputer(String brand, String model, String size, String color, double price, boolean hasBattery, boolean hasPowerButton) {

@@ -28,16 +28,15 @@ public class MyScrumTeam {
         System.out.println("--------------------------------------------------------");
         System.out.println("Testers: ");
         for (Tester eachTester : scrumTeam.getTesters()) {
-            System.out.println("\t"+eachTester.getName() +" : $"+eachTester.getSalary());
+            System.out.println("\t" + eachTester.getName() + " : $" + eachTester.getSalary());
         }
 
         System.out.println("--------------------------------------------------------");
 
         System.out.println("Developers: ");
         for (Developer eachDeveloper : scrumTeam.getDevelopers()) {
-            System.out.println("\t" + eachDeveloper.getName() +" : "+ eachDeveloper.getSalary());
+            System.out.println("\t" + eachDeveloper.getName() + " : " + eachDeveloper.getSalary());
         }
-
 
 
     }

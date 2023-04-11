@@ -6,13 +6,13 @@ import java.util.Arrays;
 public class TaskMoveZeros {
     public static void main(String[] args) {
 
-        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(1,0,2,0,3,0,4,0));
+        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(1, 0, 2, 0, 3, 0, 4, 0));
 
         System.out.println("---------------------");
         System.out.println(list);
-        int temp=0;
+        int temp = 0;
         for (int i = 0; i < list.size(); i++) {
-            if (list.get(i)==0) {
+            if (list.get(i) == 0) {
                 temp = list.get(i);
                 list.remove(i);
                 list.add(temp);

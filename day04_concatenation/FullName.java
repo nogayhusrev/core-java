@@ -3,8 +3,8 @@ package day04_concatenation;
 public class FullName {
 
     public static void main(String[] args) {
-        String firstName="Adam",lastName="Husrew";
-        System.out.println("Your fullname is "+firstName+" "+lastName);
+        String firstName = "Adam", lastName = "Husrew";
+        System.out.println("Your fullname is " + firstName + " " + lastName);
     }
 }
 /*

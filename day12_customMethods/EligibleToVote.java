@@ -9,22 +9,21 @@ public class EligibleToVote {
         boolean isAmerican;
         String isAme;
 
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter your age:");
-        age=scanner.nextInt();
+        age = scanner.nextInt();
         System.out.println("Enter is you American:(yes/no)");
 
         scanner.nextLine();
-        isAmerican=(scanner.nextLine().trim().replace(" ","").toLowerCase().equals("yes"))?true:false;
+        isAmerican = (scanner.nextLine().trim().replace(" ", "").toLowerCase().equals("yes")) ? true : false;
 
-        eligibleToVote(age,isAmerican);
-
+        eligibleToVote(age, isAmerican);
 
 
     }
 
-    public static void eligibleToVote(int age,boolean isAmerican){
+    public static void eligibleToVote(int age, boolean isAmerican) {
 
         if (age >= 18 && isAmerican)
             System.out.println("You are eligible to vote.");

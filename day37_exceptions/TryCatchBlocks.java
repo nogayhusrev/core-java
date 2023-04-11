@@ -12,7 +12,7 @@ public class TryCatchBlocks {
 
             System.out.println("Try block");
 
-        }catch(ArithmeticException e){
+        } catch (ArithmeticException e) {
 
             System.out.println("Catch Block");
 
@@ -31,7 +31,7 @@ public class TryCatchBlocks {
             System.out.println(str.toLowerCase());
             System.out.println("Try Block");
 
-        }catch (RuntimeException e){
+        } catch (RuntimeException e) {
             System.out.println("Catch Block");
         }
 
@@ -47,16 +47,13 @@ public class TryCatchBlocks {
             Thread.sleep(5000);
             System.out.println("Try Block");
 
-        }catch (InterruptedException e){
+        } catch (InterruptedException e) {
 
             System.out.println("Catch Block");
 
         }
 
         System.out.println("Program3 ended");
-
-
-
 
 
     }

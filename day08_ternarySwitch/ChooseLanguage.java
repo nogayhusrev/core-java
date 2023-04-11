@@ -3,30 +3,40 @@ package day08_ternarySwitch;
 public class ChooseLanguage {
 
     public static void main(String[] args) {
-        int num=3;
-        String for1="Hello, thank for your call",
-                for2="Hola, gracias para llamar",
-                for3=" Merhaba, aradiginiz icin tesekkurler",
-                for4="Privet, spasibo za vash zvonok",
-                for5="Merci ,pour votre appel";
+        int num = 3;
+        String for1 = "Hello, thank for your call",
+                for2 = "Hola, gracias para llamar",
+                for3 = " Merhaba, aradiginiz icin tesekkurler",
+                for4 = "Privet, spasibo za vash zvonok",
+                for5 = "Merci ,pour votre appel";
 
-        System.out.println(((num==1)?for1:
-                                ((num==2)?for2:
-                                        ((num==3)?for3:
-                                                ((num==4)?for4:
-                                                        ((num==5)?for5:"Invalid Info"))))));
+        System.out.println(((num == 1) ? for1 :
+                ((num == 2) ? for2 :
+                        ((num == 3) ? for3 :
+                                ((num == 4) ? for4 :
+                                        ((num == 5) ? for5 : "Invalid Info"))))));
         System.out.println("-------------------------------");
-        String result="Invalid Info";
+        String result = "Invalid Info";
 
 
-
-        switch (num){
-            case 1: result=for1;break;
-            case 2: result=for2;break;
-            case 3: result=for3;break;
-            case 4: result=for5;break;
-            case 5: result=for5;break;
-            default: System.out.println(result);
+        switch (num) {
+            case 1:
+                result = for1;
+                break;
+            case 2:
+                result = for2;
+                break;
+            case 3:
+                result = for3;
+                break;
+            case 4:
+                result = for5;
+                break;
+            case 5:
+                result = for5;
+                break;
+            default:
+                System.out.println(result);
         }
 
     }

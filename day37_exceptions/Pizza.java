@@ -6,9 +6,9 @@ public class Pizza {
     private int numberOfCheeseTopping, numberOfPepperoniTopping;
 
     public Pizza(char size, int numberOfCheeseTopping, int numberOfPepperoniTopping) {
-       setSize(size);
-       setNumberOfCheeseTopping(numberOfCheeseTopping);
-       setNumberOfPepperoniTopping(numberOfPepperoniTopping);
+        setSize(size);
+        setNumberOfCheeseTopping(numberOfCheeseTopping);
+        setNumberOfPepperoniTopping(numberOfPepperoniTopping);
     }
 
     public char getSize() {
@@ -35,10 +35,10 @@ public class Pizza {
         this.numberOfPepperoniTopping = numberOfPepperoniTopping;
     }
 
-    public double calcCost(){
+    public double calcCost() {
         double totalPrice = 0;
 
-        switch (size){
+        switch (size) {
             case 'S':
             case 's':
                 totalPrice = 10 + 2 * (numberOfCheeseTopping + numberOfPepperoniTopping);
@@ -55,7 +55,7 @@ public class Pizza {
                 break;
 
             default:
-                System.err.println("Invalid size: "+size);
+                System.err.println("Invalid size: " + size);
 
         }
 
@@ -75,24 +75,21 @@ public class Pizza {
     @Override
     public boolean equals(Object obj) {
 
-        if( !(obj instanceof Pizza )){ // if the specified object is not pizza
-            System.err.println("Invalid object: "+obj);
+        if (!(obj instanceof Pizza)) { // if the specified object is not pizza
+            System.err.println("Invalid object: " + obj);
             System.exit(1);
         }
 
-        Pizza pizza = (Pizza)obj;
+        Pizza pizza = (Pizza) obj;
 
-        if(size ==   pizza.getSize()   ){
-            if( numberOfPepperoniTopping == pizza.getNumberOfPepperoniTopping()){
+        if (size == pizza.getSize()) {
+            if (numberOfPepperoniTopping == pizza.getNumberOfPepperoniTopping()) {
                 return true;
             }
         }
 
         return false;
     }
-
-
-
 
 
 }

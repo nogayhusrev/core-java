@@ -1,11 +1,11 @@
 package day29_inheritance.phoneTask;
 
-public class Iphone extends Phone{
-    public void faceTime(long phoneNumber){
+public class Iphone extends Phone {
+    public void faceTime(long phoneNumber) {
         System.out.println(getClass().getSimpleName() + " is face timing with " + phoneNumber);
     }
 
-    public void faceTime(String email){
+    public void faceTime(String email) {
         System.out.println(getClass().getSimpleName() + " is face timing with email" + email);
     }
 

@@ -7,7 +7,7 @@ public class PrimitiveDataTypesIntro2 {
 
         char a = '@';
         char b = '!';
-       // char ab = 'ab';
+        // char ab = 'ab';
 
         System.out.println(a);
         System.out.println(b);
@@ -35,11 +35,11 @@ public class PrimitiveDataTypesIntro2 {
 
         System.out.println("--------------------------------------------");
 
-       // char ch4 = -100;
+        // char ch4 = -100;
 
         //boolean r1 = 123;
-       // boolean r2 = 2.5;
-       // boolean r3 = "Java";
+        // boolean r2 = 2.5;
+        // boolean r3 = "Java";
         boolean r4 = true;
         boolean r5 = false;
 
@@ -48,11 +48,6 @@ public class PrimitiveDataTypesIntro2 {
 
         System.out.println(r6);
         System.out.println(r7);
-
-
-
-
-
 
 
     }

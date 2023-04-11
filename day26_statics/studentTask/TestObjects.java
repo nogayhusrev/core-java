@@ -14,7 +14,7 @@ public class TestObjects {
         Student[] students = {student2, student3, student4, student5};
 
 
-        StudentsGroup group1 = new StudentsGroup("Java Turtles",  1);
+        StudentsGroup group1 = new StudentsGroup("Java Turtles", 1);
 
         group1.addStudent(student1);
 
@@ -31,20 +31,18 @@ public class TestObjects {
 
 
         for (Student each : group1.students) {
-            System.out.println(each.name +" : " + each.id);
+            System.out.println(each.name + " : " + each.id);
         }
 
         System.out.println("------------------------------------------");
 
-        StudentsGroup group2 = new StudentsGroup("Java Turtles",  1);
+        StudentsGroup group2 = new StudentsGroup("Java Turtles", 1);
 
-        StudentsGroup group3 = new StudentsGroup("Java Turtles",  1);
+        StudentsGroup group3 = new StudentsGroup("Java Turtles", 1);
 
-        StudentsGroup group4 = new StudentsGroup("Java Turtles",  1);
+        StudentsGroup group4 = new StudentsGroup("Java Turtles", 1);
 
         StudentsGroup[] groups = {group1, group2, group3, group4};
-
-
 
 
     }

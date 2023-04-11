@@ -13,12 +13,11 @@ public class FrequencyOfCharacters {
         Map<String, Integer> map = new LinkedHashMap<>();
 
         for (String each : str.split("")) {
-            int frequency = Collections.frequency( Arrays.asList( str.split(""))  , each );
-            map. put(each, frequency);
+            int frequency = Collections.frequency(Arrays.asList(str.split("")), each);
+            map.put(each, frequency);
         }
 
         System.out.println(map);
-
 
 
     }

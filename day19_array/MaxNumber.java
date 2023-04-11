@@ -11,7 +11,7 @@ public class MaxNumber {
 
         for (int i = 1; i < numbers.length; i++) { // i: 1, 2, 3, 4...
 
-            if(numbers[i] > max){ // compares the element of the array with current maximum number
+            if (numbers[i] > max) { // compares the element of the array with current maximum number
                 max = numbers[i]; // replace the current maximum number
             }
 
@@ -19,7 +19,6 @@ public class MaxNumber {
 
 
         System.out.println("max = " + max);
-
 
 
     }

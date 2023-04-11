@@ -1,7 +1,8 @@
 package day34_abstraction.ownCarTask;
 
-public interface AutoPilot extends AutoPark{
+public interface AutoPilot extends AutoPark {
     boolean hasAutoPilot = true;
+
     void selfDrive();
 }
 /*

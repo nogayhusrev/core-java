@@ -6,16 +6,16 @@ public class DayName {
 
     public static void main(String[] args) {
         int num;
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter the number of the day:");
-        num=scanner.nextInt();
+        num = scanner.nextInt();
         dayName(num);
 
     }
 
-    public static void dayName(int num){
-        if (num==1){
+    public static void dayName(int num) {
+        if (num == 1) {
             System.out.println("Monday");
         } else if (num == 2) {
             System.out.println("Tuesday");
@@ -29,7 +29,7 @@ public class DayName {
             System.out.println("Saturday");
         } else if (num == 7) {
             System.out.println("Sunday");
-        }else
+        } else
             System.out.println("Invalid argument");
 
 

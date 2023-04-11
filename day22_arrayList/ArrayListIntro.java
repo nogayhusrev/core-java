@@ -15,20 +15,16 @@ public class ArrayListIntro {
         array[3] = 40;
         array[4] = 50;
 
-     //   array[5] = 60;
+        //   array[5] = 60;
 
         System.out.println(Arrays.toString(array));
 
         System.out.println("--------------------------------------------------");
 
-        ArrayList<Integer>  list =  new ArrayList<>();
+        ArrayList<Integer> list = new ArrayList<>();
 
         System.out.println(list);
         System.out.println(list.size());
-
-
-
-
 
 
     }

@@ -10,7 +10,7 @@ public class CollectionPractice {
     public static void main(String[] args) {
 
         List<Integer> list1 = new ArrayList<>();
-        list1.addAll(Arrays.asList(1, 2, 3, 4, 5,6));
+        list1.addAll(Arrays.asList(1, 2, 3, 4, 5, 6));
 
         List<Integer> list2 = new ArrayList<>();
         list2.addAll(Arrays.asList(7, 8, 9, 10, 11));
@@ -26,7 +26,7 @@ public class CollectionPractice {
         //10
         System.out.println(lists.get(1).get(3));
 
-        for(List<Integer> eachList  : lists){
+        for (List<Integer> eachList : lists) {
             for (Integer eachElement : eachList) {
                 System.out.println(eachElement);
             }
@@ -61,18 +61,17 @@ public class CollectionPractice {
         listOfArrays.add(arr1);
         listOfArrays.add(arr2);
 
-    //    System.out.println(listOfArrays);
+        //    System.out.println(listOfArrays);
 
         listOfArrays.get(0)[2] = 35;
-        System.out.println(  Arrays.toString( listOfArrays.get(0) ) );
+        System.out.println(Arrays.toString(listOfArrays.get(0)));
 
         System.out.println("--------------------------------------------");
 
-      //  List<List<Employee>>  teams = new ArrayList<>();
+        //  List<List<Employee>>  teams = new ArrayList<>();
 
 
-       // List<int[][]>  l = new ArrayList<>();
-
+        // List<int[][]>  l = new ArrayList<>();
 
 
     }

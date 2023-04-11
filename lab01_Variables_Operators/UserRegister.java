@@ -20,19 +20,8 @@ public class UserRegister {
         String zipCode = "22102";
 
 
-
-
-
         //Mike who born in May wants health insurance from United with policy number 12343567766L
         System.out.println(firstName + " who born in " + monthOfBirth + " wants health insurance from United with policy number " + policyNumber);
-
-
-
-
-
-
-
-
 
 
     }

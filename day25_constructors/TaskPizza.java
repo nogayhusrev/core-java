@@ -2,24 +2,24 @@ package day25_constructors;
 
 public class TaskPizza {
     public String size;
-    public int numberOfCheeseTopping,numberOfPepperoniTopping;
+    public int numberOfCheeseTopping, numberOfPepperoniTopping;
 
-    public TaskPizza(String size,int numberOfCheeseTopping,int numberOfPepperoniTopping){
+    public TaskPizza(String size, int numberOfCheeseTopping, int numberOfPepperoniTopping) {
 
-        this.size=size;
-        this.numberOfCheeseTopping=numberOfCheeseTopping;
-        this.numberOfPepperoniTopping=numberOfPepperoniTopping;
+        this.size = size;
+        this.numberOfCheeseTopping = numberOfCheeseTopping;
+        this.numberOfPepperoniTopping = numberOfPepperoniTopping;
 
     }
 
-    public double calcCost(){
+    public double calcCost() {
 
-        double price=0;
+        double price = 0;
 
-        price=((size.equalsIgnoreCase("small"))? 10 :
+        price = ((size.equalsIgnoreCase("small")) ? 10 :
                 (size.equalsIgnoreCase("medium")) ? 12 : 14);
 
-        price+=(2*numberOfPepperoniTopping)+(2*numberOfCheeseTopping);
+        price += (2 * numberOfPepperoniTopping) + (2 * numberOfCheeseTopping);
 
         return price;
 

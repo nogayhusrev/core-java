@@ -7,21 +7,21 @@ public class FinraMethod {
 
     }
 
-    public static void finra(){
+    public static void finra() {
 
         boolean fin;
         boolean ra;
 
-        for (int i=1;i<101;i++){
-            fin=false;
-            ra=false;
-            if(i%3 == 0 && i%5== 0){
+        for (int i = 1; i < 101; i++) {
+            fin = false;
+            ra = false;
+            if (i % 3 == 0 && i % 5 == 0) {
                 System.out.print("FINRA ");
             } else if (i % 3 == 0) {
                 System.out.print("FIN ");
             } else if (i % 5 == 0) {
                 System.out.print("RA ");
-            }else{
+            } else {
                 System.out.print(i + " ");
             }
 

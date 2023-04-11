@@ -11,7 +11,7 @@ public class Zoo {
         cat.setInfo("Felicia", "stray", 'F', 3, "Medium", "Black and White");
 
         Tiger tiger = new Tiger();
-        tiger.setInfo("Sher Khan", "Bengal",  'M', 5, "Large", "Orange");
+        tiger.setInfo("Sher Khan", "Bengal", 'M', 5, "Large", "Orange");
 
         System.out.println(dog);
         System.out.println(cat);
@@ -34,17 +34,17 @@ public class Zoo {
         System.out.println("---------------------------------------------------");
 
         dog.bark();
-      //  cat.bark();
-    //    tiger.bark();
+        //  cat.bark();
+        //    tiger.bark();
 
 
         cat.meow();
-     //   dog.meow();
-    //    tiger.meow();
+        //   dog.meow();
+        //    tiger.meow();
 
         tiger.hunt();
-      //  dog.hunt();
-     //   cat.hunt();
+        //  dog.hunt();
+        //   cat.hunt();
 
         System.out.println("---------------------------------------------------");
 /*
@@ -63,11 +63,6 @@ public class Zoo {
         dog.setAge(8);
 
         System.out.println(dog);
-
-
-
-
-
 
 
     }

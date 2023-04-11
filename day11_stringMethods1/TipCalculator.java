@@ -8,41 +8,41 @@ public class TipCalculator {
 
         boolean split;
         int numberOfPeople;
-        double amount,tip;
+        double amount, tip;
         String serviceQuality;
 
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
 
         System.out.println("Split or no split:");
-        split=(scanner.next().equalsIgnoreCase("yes"))?true:false;
+        split = (scanner.next().equalsIgnoreCase("yes")) ? true : false;
         System.out.println("Enter the number of people:");
-        numberOfPeople= scanner.nextInt();
+        numberOfPeople = scanner.nextInt();
         System.out.println("Enter the check amount:");
-        amount= scanner.nextDouble();
+        amount = scanner.nextDouble();
         System.out.println("Enter the service quality:(poor/fair/good/great/excellent)");
         scanner.nextLine();
-        serviceQuality= scanner.next();
+        serviceQuality = scanner.next();
 
-        tip=
-                (serviceQuality.equalsIgnoreCase("poor")?amount*0.05:
-                        ((serviceQuality.equalsIgnoreCase("fair")?amount*0.1:
-                                ((serviceQuality.equalsIgnoreCase("good")?amount*0.15:
-                                        ((serviceQuality.equalsIgnoreCase("great")?amount*0.2:
-                                                amount*0.25)))))));
+        tip =
+                (serviceQuality.equalsIgnoreCase("poor") ? amount * 0.05 :
+                        ((serviceQuality.equalsIgnoreCase("fair") ? amount * 0.1 :
+                                ((serviceQuality.equalsIgnoreCase("good") ? amount * 0.15 :
+                                        ((serviceQuality.equalsIgnoreCase("great") ? amount * 0.2 :
+                                                amount * 0.25)))))));
 
-        if (split){
-            System.out.println("Number of people: "+numberOfPeople);
-            System.out.println("Total to pay:" +amount);
-            System.out.println("Total tip:"+ tip);
-            System.out.println("Total per person:"+amount/(double) numberOfPeople);
-            System.out.println("Total tip for person:"+ tip/(double) numberOfPeople);
-        }else{
-            System.out.println("Number of people: "+numberOfPeople);
-            System.out.println("Total to pay:" +amount);
-            System.out.println("Total tip:"+ tip);
-            System.out.println("Total per person:"+amount);
-            System.out.println("Total tip for person:"+ tip);
+        if (split) {
+            System.out.println("Number of people: " + numberOfPeople);
+            System.out.println("Total to pay:" + amount);
+            System.out.println("Total tip:" + tip);
+            System.out.println("Total per person:" + amount / (double) numberOfPeople);
+            System.out.println("Total tip for person:" + tip / (double) numberOfPeople);
+        } else {
+            System.out.println("Number of people: " + numberOfPeople);
+            System.out.println("Total to pay:" + amount);
+            System.out.println("Total tip:" + tip);
+            System.out.println("Total per person:" + amount);
+            System.out.println("Total tip for person:" + tip);
 
         }
 

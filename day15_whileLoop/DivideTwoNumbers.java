@@ -7,20 +7,20 @@ public class DivideTwoNumbers {
     public static void main(String[] args) {
 
 
-        int dividend= 0;
+        int dividend = 0;
         int divisor = 0;
         int quotient = 0;
         int division = 0;
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter the dividend:");
-        dividend=scanner.nextInt();
+        dividend = scanner.nextInt();
         System.out.println("Enter the divisor:");
-        divisor= scanner.nextInt();
+        divisor = scanner.nextInt();
 
-        for(int i = divisor; i<=dividend ; i+= divisor) {
+        for (int i = divisor; i <= dividend; i += divisor) {
             division++;
-            quotient=dividend-i;
+            quotient = dividend - i;
         }
 
         System.out.println("dividend = " + dividend);

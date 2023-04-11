@@ -24,7 +24,6 @@ public class TestStringObjects {
         System.out.println(str1.equals(str2));
 
 
-
     }
 
 }

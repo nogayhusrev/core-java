@@ -5,14 +5,14 @@ public class Item {
     public double unitPrice;
     public int quantity;
 
-    public void setInfo(String name,double unitPrice,int quantity){
-        this.name=name;
-        this.unitPrice=unitPrice;
-        this.quantity=quantity;
+    public void setInfo(String name, double unitPrice, int quantity) {
+        this.name = name;
+        this.unitPrice = unitPrice;
+        this.quantity = quantity;
     }
 
-    public double calcCost(){
-        return unitPrice*quantity;
+    public double calcCost() {
+        return unitPrice * quantity;
     }
 
     @Override

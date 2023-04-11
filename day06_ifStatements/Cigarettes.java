@@ -1,14 +1,14 @@
 package day06_ifStatements;
+
 public class Cigarettes {
 
     public static void main(String[] args) {
 
-        int age=20;
+        int age = 20;
 
-        if(age>=20||age<=100){
+        if (age >= 20 || age <= 100) {
             System.out.println("You are eligible to buy cigarettes.");
-        }
-        else if(age<21||age>100)
+        } else if (age < 21 || age > 100)
             System.err.println("You are not eligible to buy cigarettes.");
 
     }

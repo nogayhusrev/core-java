@@ -5,7 +5,7 @@ public class Square extends Shape {
     private double side;
 
     public Square(double side) {
-       setSide(side);
+        setSide(side);
     }
 
     public double getSide() {
@@ -39,7 +39,7 @@ public class Square extends Shape {
 
 
     public String toString() {
-        return getClass().getSimpleName()+"{" +
+        return getClass().getSimpleName() + "{" +
                 "name='" + getName() + '\'' +
                 ", side='" + side + '\'' +
                 ", area='" + area() + '\'' +

@@ -7,24 +7,25 @@ public class SalaryCalculatorMethod {
     public static void main(String[] args) {
 
         double hourlyRate;
-        int  weeklyHours;
-        Scanner scanner=new Scanner(System.in);
+        int weeklyHours;
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter your hourly rate:");
-        hourlyRate=scanner.nextDouble();
+        hourlyRate = scanner.nextDouble();
         System.out.println("Enter your weekly hours:");
-        weeklyHours=scanner.nextInt();
+        weeklyHours = scanner.nextInt();
 
-        salary(hourlyRate,weeklyHours);
+        salary(hourlyRate, weeklyHours);
 
     }
-    public static void salary(double hourlyRate, int weeklyHours){
 
-        double grossIncome=hourlyRate*weeklyHours*52;
+    public static void salary(double hourlyRate, int weeklyHours) {
 
-        System.out.println("You make $"+hourlyRate+" per hour");
-        System.out.println("You work "+weeklyHours+" hours in a week");
-        System.out.println("Your gross income is $"+grossIncome);
+        double grossIncome = hourlyRate * weeklyHours * 52;
+
+        System.out.println("You make $" + hourlyRate + " per hour");
+        System.out.println("You work " + weeklyHours + " hours in a week");
+        System.out.println("Your gross income is $" + grossIncome);
 
     }
 }

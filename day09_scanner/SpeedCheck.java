@@ -6,14 +6,14 @@ public class SpeedCheck {
 
     public static void main(String[] args) {
 
-        int speedLimit=55,currentSpeed;
-        Scanner scan=new Scanner(System.in);
+        int speedLimit = 55, currentSpeed;
+        Scanner scan = new Scanner(System.in);
 
         System.out.print("Please give your speed:");
-        currentSpeed= scan.nextInt();
+        currentSpeed = scan.nextInt();
 
-        if (currentSpeed>speedLimit)
-            System.out.println("You are driving "+(currentSpeed-speedLimit) +" mph over. Slow down! ");
+        if (currentSpeed > speedLimit)
+            System.out.println("You are driving " + (currentSpeed - speedLimit) + " mph over. Slow down! ");
 
         scan.close();
     }

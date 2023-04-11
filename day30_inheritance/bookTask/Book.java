@@ -28,7 +28,7 @@ public class Book {
 
     public void setPrice(double price) {
         //	1. price can not be set to negative
-        if (price < 0 ){
+        if (price < 0) {
             System.err.println("Price can not be set to negative");
             System.exit(1);
         }
@@ -53,7 +53,7 @@ public class Book {
 
     @Override
     public String toString() {
-        return  getClass().getSimpleName()+"{" +
+        return getClass().getSimpleName() + "{" +
                 "title='" + title + '\'' +
                 ", type='" + type + '\'' +
                 ", author='" + author + '\'' +

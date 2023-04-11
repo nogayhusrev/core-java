@@ -20,24 +20,19 @@ public class CustomMethodsWithParameter {
         oddOrEven(num4);
 
 
-
     }
-
-
-
 
 
     // the method takes an argument number, and verifies if the number is odd number or even number
-    public static void oddOrEven(int number){
+    public static void oddOrEven(int number) {
 
-        if(number % 2 ==0){
+        if (number % 2 == 0) {
             System.out.println(number + " is even number");
-        }else{
-            System.out.println(number+" is odd number");
+        } else {
+            System.out.println(number + " is odd number");
         }
 
     }
-
 
 
     // create a method that can check if a person is eligible to buy alcohol  (age)
@@ -61,8 +56,6 @@ public class CustomMethodsWithParameter {
 
         initial ==> C.S
          */
-
-
 
 
 }

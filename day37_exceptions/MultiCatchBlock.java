@@ -13,19 +13,19 @@ public class MultiCatchBlock {
         try {
             car.drive(); // NullPointerException
 
-        }catch (ArithmeticException e){
+        } catch (ArithmeticException e) {
             System.out.println("First Catch Block");
             e.printStackTrace();
-        }catch(ClassCastException e){
+        } catch (ClassCastException e) {
             System.out.println("Second Catch Block");
             e.printStackTrace();
-        }catch (NullPointerException e){
+        } catch (NullPointerException e) {
             System.out.println("Third Catch Block");
             e.printStackTrace();
-        }catch (IndexOutOfBoundsException e){
+        } catch (IndexOutOfBoundsException e) {
             System.out.println("Fourth Catch Block");
             e.printStackTrace();
-        }catch (RuntimeException e){
+        } catch (RuntimeException e) {
             System.out.println("Fifth Catch Block");
             e.printStackTrace();
         }

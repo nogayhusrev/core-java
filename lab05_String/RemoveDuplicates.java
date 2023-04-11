@@ -12,7 +12,7 @@ public class RemoveDuplicates {
             char each = str.charAt(i);
 
             //result.indexOf(each) < 0
-            if(!result.contains(""+each)) { // before adding the character to new string, we check if the character is not included in the new string
+            if (!result.contains("" + each)) { // before adding the character to new string, we check if the character is not included in the new string
                 result += each;
             }
 
@@ -20,7 +20,6 @@ public class RemoveDuplicates {
 
 
         System.out.println(result);
-
 
 
     }

@@ -4,8 +4,8 @@ public class Shape {
 
     private String name;
 
-    public Shape(){
-       setName(getClass().getSimpleName());
+    public Shape() {
+        setName(getClass().getSimpleName());
     }
 
     public String getName() {
@@ -17,21 +17,21 @@ public class Shape {
     }
 
 
-    public double area(){
+    public double area() {
         return 0;
     }
 
-    public double perimeter(){
+    public double perimeter() {
         return 0;
     }
 
-    public void draw(){
-        System.out.println("Drawing a "+getClass().getSimpleName()+": ");
+    public void draw() {
+        System.out.println("Drawing a " + getClass().getSimpleName() + ": ");
     }
 
     @Override
     public String toString() {
-        return getClass().getSimpleName()+"{" +
+        return getClass().getSimpleName() + "{" +
                 "name='" + name + '\'' +
                 ", area='" + area() + '\'' +
                 ", perimeter='" + perimeter() + '\'' +

@@ -1,6 +1,6 @@
 package day29_inheritance.carTask;
 
-public class Mercedes extends Car{
+public class Mercedes extends Car {
 }
 /*
 4. Create a class named Mercedes

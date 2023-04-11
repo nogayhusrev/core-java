@@ -12,13 +12,13 @@ public class AddElements {
         int element = 90;
 
         int[] new_array = Arrays.copyOf(array, array.length + 1);
-        new_array[new_array.length-1] = element;
+        new_array[new_array.length - 1] = element;
 
         System.out.println(Arrays.toString(new_array));
 
         System.out.println("------------------------------------------");
 
-        int[] numbers = { 100, 90, 80, 70, 60};
+        int[] numbers = {100, 90, 80, 70, 60};
 
         System.out.println(Arrays.toString(numbers));
 
@@ -51,8 +51,6 @@ public class AddElements {
         students = ArrayUtilities.addElement(students, "Muhtar");
 
         System.out.println(Arrays.toString(students));
-
-
 
 
     }

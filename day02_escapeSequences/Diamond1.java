@@ -13,7 +13,7 @@ public class Diamond1 {
         System.out.println("  \\     /");
         System.out.println("   \\   /");
         System.out.println("    \\ /");
-        System.out.println("     v " );
+        System.out.println("     v ");
 
 
     }

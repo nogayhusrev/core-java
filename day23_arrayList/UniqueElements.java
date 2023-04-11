@@ -19,12 +19,11 @@ public class UniqueElements {
 
 
         for (String each : names) {
-            if(names.indexOf(each) == names.lastIndexOf(each)){
+            if (names.indexOf(each) == names.lastIndexOf(each)) {
                 System.out.println(each);
                 // break;
             }
         }
-
 
 
     }

@@ -11,16 +11,16 @@ public class WhileLoopPractice {
         System.out.println("Enter your age:");
         int age = input.nextInt();
 
-        while(  ! (age >=1 && age <= 150)  ){ // while the age is invalid
+        while (!(age >= 1 && age <= 150)) { // while the age is invalid
             System.out.println("Invalid entry! Please re-enter your age:");
             age = input.nextInt();
 
         }
 
 
-        if(age >= 21){
+        if (age >= 21) {
             System.out.println("Eligible");
-        }else{
+        } else {
             System.out.println("Not eligible");
         }
 

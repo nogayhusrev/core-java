@@ -15,10 +15,10 @@ public class Person {
         // 1. name should not be set to null
         // 2. name should not be empty
         // 3. name should not contain any special character other than space
-        if (name != null || !name.isEmpty() ){
+        if (name != null || !name.isEmpty()) {
 
-            for (char c: name.toCharArray()){
-                if (!Character.isLetterOrDigit(c) && c!=' '){
+            for (char c : name.toCharArray()) {
+                if (!Character.isLetterOrDigit(c) && c != ' ') {
                     System.err.println(" 1. name should not be set to null\n" +
                             " 2. name should not be empty\n" +
                             " 3. name should not contain any special character other than space");
@@ -27,7 +27,7 @@ public class Person {
                 }
             }
             this.name = name;
-        }else{
+        } else {
             System.err.println(" 1. name should not be set to null\n" +
                     " 2. name should not be empty\n" +
                     " 3. name should not contain any special character other than space");
@@ -35,15 +35,13 @@ public class Person {
         }
 
 
-
-
     }
 
     public void setGender(String gender) {
         //5. gender must be valid
-        if (gender.equalsIgnoreCase("m") || gender.equalsIgnoreCase("f") || gender.equalsIgnoreCase("male") || gender.equalsIgnoreCase("female")){
+        if (gender.equalsIgnoreCase("m") || gender.equalsIgnoreCase("f") || gender.equalsIgnoreCase("male") || gender.equalsIgnoreCase("female")) {
             this.gender = gender;
-        }else {
+        } else {
             System.err.println("Gender cannot be other than \"M,m,F,f,Male,male,Female,female\"");
             System.exit(1);
         }
@@ -53,7 +51,7 @@ public class Person {
     public void setAge(int age) {
         //4. age should not be set to negative
 
-        if (age < 0){
+        if (age < 0) {
             System.err.println("Age should not be set to negative");
             System.exit(1);
         }
@@ -72,15 +70,15 @@ public class Person {
         return age;
     }
 
-    public void eat(){
+    public void eat() {
         System.out.println(name + " is eating");
     }
 
-    public void drink(){
+    public void drink() {
         System.out.println(name + " is drinking");
     }
 
-    public void sleep(){
+    public void sleep() {
         System.out.println(name + " is sleeping");
     }
 

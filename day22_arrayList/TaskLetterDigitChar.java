@@ -16,21 +16,19 @@ public class TaskLetterDigitChar {
      */
 
     public static void main(String[] args) {
-        String input="Wooden Spoon!";
-        String letters="";
-        String specialChars="";
-        String digits="";
+        String input = "Wooden Spoon!";
+        String letters = "";
+        String specialChars = "";
+        String digits = "";
 
-        for (int i=0;i<input.length();i++){
-            if (Character.isLetter(input.charAt(i))){
-                letters+=input.charAt(i);
-            }
-            else if (Character.isDigit(input.charAt(i))){
-                digits+=input.charAt(i);
+        for (int i = 0; i < input.length(); i++) {
+            if (Character.isLetter(input.charAt(i))) {
+                letters += input.charAt(i);
+            } else if (Character.isDigit(input.charAt(i))) {
+                digits += input.charAt(i);
 
-            }
-            else {
-                specialChars+=input.charAt(i);
+            } else {
+                specialChars += input.charAt(i);
 
             }
 
@@ -40,7 +38,6 @@ public class TaskLetterDigitChar {
         System.out.println("letters = " + letters);
         System.out.println("digits = " + digits);
         System.out.println("specialChars = " + specialChars);
-
 
 
     }

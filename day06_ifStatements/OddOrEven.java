@@ -5,12 +5,11 @@ public class OddOrEven {
 
     public static void main(String[] args) {
 
-        int  number=45;
+        int number = 45;
 
-        boolean check=number%2==0;
+        boolean check = number % 2 == 0;
 
-        System.out.println(number+" is "+(check==true?"even":"odd."));
-
+        System.out.println(number + " is " + (check == true ? "even" : "odd."));
 
 
     }

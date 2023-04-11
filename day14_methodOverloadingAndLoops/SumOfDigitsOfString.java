@@ -7,16 +7,16 @@ public class SumOfDigitsOfString {
     public static void main(String[] args) {
 
         String data;
-        int sum=0;
+        int sum = 0;
 
-        String letters="",digits="",specials="";
-        Scanner scanner=new Scanner(System.in);
+        String letters = "", digits = "", specials = "";
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter the data:");
-        data=scanner.nextLine();
+        data = scanner.nextLine();
 
-        for(int i=0;i<data.length();i++)
-            sum+=(Character.isDigit(data.charAt(i)))?Integer.parseInt(String.valueOf(data.charAt(i))):0;
+        for (int i = 0; i < data.length(); i++)
+            sum += (Character.isDigit(data.charAt(i))) ? Integer.parseInt(String.valueOf(data.charAt(i))) : 0;
 
         System.out.println("sum = " + sum);
     }

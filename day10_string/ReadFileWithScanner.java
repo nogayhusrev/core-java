@@ -8,7 +8,7 @@ public class ReadFileWithScanner {
 
     public static void main(String[] args) throws IOException {
 
-        Scanner scanner=new Scanner(Path.of("src/day10_string/test.txt"));
+        Scanner scanner = new Scanner(Path.of("src/day10_string/test.txt"));
 
 
         /*

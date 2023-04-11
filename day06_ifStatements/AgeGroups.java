@@ -4,8 +4,8 @@ public class AgeGroups {
 
     public static void main(String[] args) {
 
-        int gr=3;
-        String gr1[]= {"infant (1 - 2)",
+        int gr = 3;
+        String gr1[] = {"infant (1 - 2)",
                 "Toddler (3 - 5)",
                 "Kid (6 - 9)",
                 "Teenager (13 - 17)",
@@ -20,9 +20,6 @@ public class AgeGroups {
 
 
         System.out.println(gr1[gr]);
-
-
-
 
 
     }

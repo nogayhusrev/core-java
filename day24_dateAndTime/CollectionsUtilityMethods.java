@@ -52,16 +52,13 @@ public class CollectionsUtilityMethods {
         numbers.addAll(Arrays.asList(10, 20, 20, 30, 40, 40, 50, 50, 50, 50, 50, 60, 60, 50, 50, 50));
 
         for (Integer each : numbers) {
-            if( Collections.frequency(numbers, each)  == 1 ){
+            if (Collections.frequency(numbers, each) == 1) {
                 System.out.println(each);
             }
         }
 
 
         System.out.println("Ahmet nasılsın ne yapıyorsun?");
-
-
-
 
 
     }

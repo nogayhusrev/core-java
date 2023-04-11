@@ -24,8 +24,8 @@ public class CydeoStudent {
     }
 
 
-    public void study(){
-        System.out.println(name+" is studying "+programmingLanguage);
+    public void study() {
+        System.out.println(name + " is studying " + programmingLanguage);
     }
 
     // displays the student info when the object is passed in print statement

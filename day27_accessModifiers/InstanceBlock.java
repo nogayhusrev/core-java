@@ -6,7 +6,7 @@ public class InstanceBlock {
         System.out.println("Instance block");
     }
 
-    public InstanceBlock(){
+    public InstanceBlock() {
         System.out.println("Constructor");
     }
 

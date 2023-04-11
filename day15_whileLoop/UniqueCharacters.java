@@ -5,18 +5,18 @@ import java.util.Scanner;
 public class UniqueCharacters {
     public static void main(String[] args) {
 
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         String
                 input,
-                result="";
+                result = "";
 
         System.out.println("Enter a string:");
-        input= scanner.nextLine();
+        input = scanner.nextLine();
 
-        for (int i=0;i<input.length();i++){
+        for (int i = 0; i < input.length(); i++) {
 
-            if(input.indexOf(input.charAt(i))==input.lastIndexOf(input.charAt(i)))
-                result+=input.charAt(i);
+            if (input.indexOf(input.charAt(i)) == input.lastIndexOf(input.charAt(i)))
+                result += input.charAt(i);
 
 
         }

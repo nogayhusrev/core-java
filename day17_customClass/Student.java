@@ -9,8 +9,8 @@ public class Student {
     String isFullTime;
 
     public static void main(String[] args) {
-        Student std=new Student();
-        std.setInfo("Ahmet",'M',23,4219,'S');
+        Student std = new Student();
+        std.setInfo("Ahmet", 'M', 23, 4219, 'S');
         System.out.println(std);
         std.study();
 
@@ -25,7 +25,7 @@ public class Student {
         this.grade = grade;
     }
 
-    public String toString(){
+    public String toString() {
         return "------------------------\n" +
                 "Student{" +
                 "name='" + name + '\'' +
@@ -36,7 +36,7 @@ public class Student {
                 '}';
     }
 
-    public void study(){
+    public void study() {
         System.out.println("------------------------");
         System.out.println(name + " is studying.");
     }

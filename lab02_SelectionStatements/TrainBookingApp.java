@@ -7,7 +7,7 @@ public class TrainBookingApp {
     public static void main(String[] args) {
 
 
-        Scanner scanner  = new Scanner(System.in);  //if u want to use any property belongs to class, need to create object
+        Scanner scanner = new Scanner(System.in);  //if u want to use any property belongs to class, need to create object
 
         System.out.println("Do yo have a bag? (Yes:true,No:false");
         boolean hasBag = scanner.nextBoolean();
@@ -36,65 +36,46 @@ public class TrainBookingApp {
         String flight3 = "FL003";
 
 
-
-        if(!(from.equalsIgnoreCase("Berlin") && destination.equalsIgnoreCase("Amsterdam"))){
+        if (!(from.equalsIgnoreCase("Berlin") && destination.equalsIgnoreCase("Amsterdam"))) {
             System.out.println("For now, we can only serve you Berlin-Amsterdam transportation. Please change your destinations");
             return; //stop JVM
         }
 
-        switch(transportType){
+        switch (transportType) {
             case 1: //train
-                if(nonStop && hasBag){
+                if (nonStop && hasBag) {
                     System.out.println("You can take " + train3);
                     return;  //stop code
-                }else if(!nonStop && hasBag){
+                } else if (!nonStop && hasBag) {
                     System.out.println("You can take " + train4);
                     return;
-                }else if(nonStop && !hasBag){  //verbose code
+                } else if (nonStop && !hasBag) {  //verbose code
                     System.out.println("You can take " + train1);
                     return;
-                }else{
+                } else {
                     System.out.println("You can take " + train1 + train2 + train3 + train4);
                 }
                 break;
-            case 2 :  //bus
+            case 2:  //bus
                 System.out.println("You can take " + bus1 + bus2 + bus3);
                 break;
             case 3:  //flight
-                if(nonStop && hasBag){
+                if (nonStop && hasBag) {
                     System.out.println("Could not find any flight for you - please check your filters and retry it");
                     return;
-                }else if(!nonStop && hasBag){
+                } else if (!nonStop && hasBag) {
                     System.out.println("You can take " + flight1);
                     return;
-                }else if (nonStop && !hasBag){
+                } else if (nonStop && !hasBag) {
                     System.out.println("You can take " + flight2);
                     return;
-                }else{
+                } else {
                     System.out.println("You can take " + flight1 + flight2 + flight3);
                 }
                 break;
             default:
                 System.out.println("Invalid Type");
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     }

@@ -8,8 +8,8 @@ public class Car extends Vehicle {
         super(brand, model, color, year, price);
     }
 
-    public void drive(){
-        System.out.println("Driving " + getBrand() +" "+getModel());
+    public void drive() {
+        System.out.println("Driving " + getBrand() + " " + getModel());
     }
 
 

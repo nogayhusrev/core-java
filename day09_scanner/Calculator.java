@@ -9,24 +9,25 @@ public class Calculator {
     public static void main(String[] args) {
 
         char op;
-        double n1,n2;
-        double out=0;
-        Scanner scanner=new Scanner(System.in);
+        double n1, n2;
+        double out = 0;
+        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter the number 1:");
-        n1= scanner.nextDouble();;
+        n1 = scanner.nextDouble();
+        ;
         System.out.println();
 
         System.out.print("Enter operator:");
-        op= scanner.next().charAt(0);
+        op = scanner.next().charAt(0);
         System.out.println();
 
         System.out.print("Enter the number 2:");
-        n2=scanner.nextDouble();
+        n2 = scanner.nextDouble();
         System.out.println();
 
 
-        String output=
+        String output =
                 ((op == '+') ? valueOf(n1 + n2) :
                         ((op == '*') ? valueOf(n1 * n2) :
                                 ((op == '/') ? valueOf(n1 / n2) :
@@ -36,19 +37,23 @@ public class Calculator {
         System.out.println("-------------");
 
 
-
-        switch (op){
-            case '+':out=n1+n2;break;
-            case '*':out=n1*n2;break;
-            case '/':out=n1/n2;break;
-            case '-':out=n1-n2;break;
+        switch (op) {
+            case '+':
+                out = n1 + n2;
+                break;
+            case '*':
+                out = n1 * n2;
+                break;
+            case '/':
+                out = n1 / n2;
+                break;
+            case '-':
+                out = n1 - n2;
+                break;
         }
 
         System.out.println(out);
         scanner.close();
-
-
-
 
 
     }

@@ -53,22 +53,21 @@ public abstract class Car { // meat to be inherited, can not be instantiated
     }
 
 
-    protected final void stop(){ // to make sure that non-sub classes outside the package can not access it
-        System.out.println("Press the brake to stop " + make +" "+model);
+    protected final void stop() { // to make sure that non-sub classes outside the package can not access it
+        System.out.println("Press the brake to stop " + make + " " + model);
     }
 
     protected abstract void start(); // meant to be overridden
 
     @Override
     public String toString() {
-        return make +"{" +
+        return make + "{" +
                 "model='" + model + '\'' +
                 ", color='" + color + '\'' +
                 ", year=" + year +
                 ", price= $" + price +
                 '}';
     }
-
 
 
 }

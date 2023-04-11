@@ -12,7 +12,7 @@ public class Test {
         System.out.println(name1);
 
 
-        System.out.println( name2.toUpperCase() );
+        System.out.println(name2.toUpperCase());
 
 
     }

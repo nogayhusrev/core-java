@@ -11,8 +11,7 @@ public class DecimalFormatPractice {
 
         double n1 = 10.58765476474374754454564658465836342343865479656;
 
-        System.out.println(  df.format(n1)  );
-
+        System.out.println(df.format(n1));
 
 
     }

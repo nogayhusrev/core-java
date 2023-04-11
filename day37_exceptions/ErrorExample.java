@@ -8,10 +8,10 @@ public class ErrorExample {
 
         ArrayList<Pizza> pizzas = new ArrayList<>();
         //int i = 0;
-        while(true){
-            pizzas.add(  new Pizza('S', 2, 3) );
-        //    i++;
-        //    System.out.println(i);
+        while (true) {
+            pizzas.add(new Pizza('S', 2, 3));
+            //    i++;
+            //    System.out.println(i);
         }
 
 

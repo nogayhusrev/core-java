@@ -13,62 +13,62 @@ public class TaskSwap {
     2.2 Create the same function for double array, char array and string array
      */
 
-    public static int[] swap(int [] arr, int i,int j ){
+    public static int[] swap(int[] arr, int i, int j) {
 
-        if (i < 0 || i > arr.length-1 || j < 0 || j > arr.length-1  ){
+        if (i < 0 || i > arr.length - 1 || j < 0 || j > arr.length - 1) {
             System.out.println("Given indexes is invalid");
             System.exit(0);
 
         }
 
-        int temp=arr[i];
-        arr[i]=arr[j];
-        arr[j]=temp;
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
 
         return arr;
     }
 
-    public static double[] swap(double [] arr, int i,int j ){
+    public static double[] swap(double[] arr, int i, int j) {
 
-        if (i < 0 || i > arr.length-1 || j < 0 || j > arr.length-1  ){
+        if (i < 0 || i > arr.length - 1 || j < 0 || j > arr.length - 1) {
             System.out.println("Given indexes is invalid");
             System.exit(0);
 
         }
 
-        double temp=arr[i];
-        arr[i]=arr[j];
-        arr[j]=temp;
+        double temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
 
         return arr;
     }
 
-    public static char[] swap(char [] arr, int i,int j ){
+    public static char[] swap(char[] arr, int i, int j) {
 
-        if (i < 0 || i > arr.length-1 || j < 0 || j > arr.length-1  ){
+        if (i < 0 || i > arr.length - 1 || j < 0 || j > arr.length - 1) {
             System.out.println("Given indexes is invalid");
             System.exit(0);
 
         }
 
-        char temp=arr[i];
-        arr[i]=arr[j];
-        arr[j]=temp;
+        char temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
 
         return arr;
     }
 
-    public static String[] swap(String [] arr, int i,int j ){
+    public static String[] swap(String[] arr, int i, int j) {
 
-        if (i < 0 || i > arr.length-1 || j < 0 || j > arr.length-1  ){
+        if (i < 0 || i > arr.length - 1 || j < 0 || j > arr.length - 1) {
             System.out.println("Given indexes is invalid");
             System.exit(0);
 
         }
 
-        String  temp=arr[i];
-        arr[i]=arr[j];
-        arr[j]=temp;
+        String temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
 
         return arr;
     }

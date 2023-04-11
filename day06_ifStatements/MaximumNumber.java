@@ -4,21 +4,20 @@ public class MaximumNumber {
 
     public static void main(String[] args) {
 
-        int num1=10;
-        int num2=20;
+        int num1 = 10;
+        int num2 = 20;
 
-        boolean isNum1Bigger=num1>num2;
-        boolean isEqual=num1==num2;
+        boolean isNum1Bigger = num1 > num2;
+        boolean isEqual = num1 == num2;
 
-        if(isNum1Bigger){
-            System.out.println(num1+" is the maximum number.");
+        if (isNum1Bigger) {
+            System.out.println(num1 + " is the maximum number.");
 
         } else if (isEqual) {
             System.out.println("Equal.");
 
-        }
-        else{
-            System.out.println(num2+" is the maximum number.");
+        } else {
+            System.out.println(num2 + " is the maximum number.");
         }
 
     }

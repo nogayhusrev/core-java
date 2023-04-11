@@ -5,7 +5,7 @@ public class TestIphone {
 
     public static void main(String[] args) {
 
-        IPhone iPhone = new IPhone("iphone 12","5.6 inches","red",1000,"China");
+        IPhone iPhone = new IPhone("iphone 12", "5.6 inches", "red", 1000, "China");
 
         System.out.println(iPhone);
 

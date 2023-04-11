@@ -7,8 +7,8 @@ public class Honda extends Car {
     }
 
     @Override
-    public void start(){
-        System.out.println("Twist the key to ignition to start " + getMake()+" "+getModel());
+    public void start() {
+        System.out.println("Twist the key to ignition to start " + getMake() + " " + getModel());
     }
 
 }

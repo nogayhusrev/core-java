@@ -9,19 +9,19 @@ public class Address {
 
     public static void main(String[] args) {
 
-        Address adrss=new Address();
+        Address adrss = new Address();
 
-        adrss.setInfo(7925,"Jones Branch Dr","McLean Va","22012");
+        adrss.setInfo(7925, "Jones Branch Dr", "McLean Va", "22012");
         System.out.println(adrss);
 
     }
 
-    public void setInfo(int buildingNumber,String street,String state,String zipCode){
-        this.buildingNumber=buildingNumber;
-        this.street=street;
-        this.city=city;
-        this.state=state;
-        this.zipCode=zipCode;
+    public void setInfo(int buildingNumber, String street, String state, String zipCode) {
+        this.buildingNumber = buildingNumber;
+        this.street = street;
+        this.city = city;
+        this.state = state;
+        this.zipCode = zipCode;
     }
 
     @Override

@@ -12,16 +12,15 @@ public class TysonProblem1 {
 
         String result = "";
 
-        for (int i = 0; i < str.length();i++) {
+        for (int i = 0; i < str.length(); i++) {
 
-            result+=str.charAt(i);
-            while(i<str.length()-1 && str.charAt(i) == str.charAt(i+1))  i++;
+            result += str.charAt(i);
+            while (i < str.length() - 1 && str.charAt(i) == str.charAt(i + 1)) i++;
 
         }
 
-        System.out.println("String : " +str);
+        System.out.println("String : " + str);
         System.out.println("result = " + result);
-
 
 
     }

@@ -10,14 +10,14 @@ public class Car {
     public static boolean hasBattery;
 
     public Car(String model, String color, int year, double price) {
-       setMake( getClass().getSimpleName() ); // setting the class name to the make of the car
-       setModel(model);
-       setColor(color);
-       setYear(year);
-       setPrice(price);
+        setMake(getClass().getSimpleName()); // setting the class name to the make of the car
+        setModel(model);
+        setColor(color);
+        setYear(year);
+        setPrice(price);
     }
 
-    static{
+    static {
         numberOfWheels = 4;
         hasBattery = true;
     }
@@ -52,8 +52,8 @@ public class Car {
     }
 
     public void setYear(int year) {
-        if(year <= 0 ){ // if specified year is negative or zero
-            System.err.println("Invalid year: "+year);
+        if (year <= 0) { // if specified year is negative or zero
+            System.err.println("Invalid year: " + year);
             System.exit(1); // terminates the program
         }
         this.year = year;
@@ -64,21 +64,21 @@ public class Car {
     }
 
     public void setPrice(double price) {
-        if(price <= 0){ // if specified price is negative or zero
-            System.err.println("Invalid price: "+price);
+        if (price <= 0) { // if specified price is negative or zero
+            System.err.println("Invalid price: " + price);
             System.exit(1); // terminates the program
         }
         this.price = price;
     }
 
 
-    public void start(){
-        System.out.println("Press the brake and twist the key to ignition to start "+make+" "+model);
+    public void start() {
+        System.out.println("Press the brake and twist the key to ignition to start " + make + " " + model);
     }
 
     @Override
     public String toString() {
-        return make+"{" +
+        return make + "{" +
                 "model='" + model + '\'' +
                 ", color='" + color + '\'' +
                 ", year=" + year +

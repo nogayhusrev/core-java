@@ -6,23 +6,23 @@ public class DaysOfMonths {
 
     public static void main(String[] args) {
         String monthName;
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter the name og month:");
-        monthName= scanner.next();
+        monthName = scanner.next();
 
         monthDays(monthName);
 
     }
 
-    public static void monthDays(String monthName){
+    public static void monthDays(String monthName) {
 
         int num;
 
-        monthName=monthName.trim().replace(" ","");
-        monthName=monthName.substring(0,1).toUpperCase()+monthName.substring(1).toLowerCase();
+        monthName = monthName.trim().replace(" ", "");
+        monthName = monthName.substring(0, 1).toUpperCase() + monthName.substring(1).toLowerCase();
 
-        switch (monthName){
+        switch (monthName) {
             case "January":
             case "March":
             case "May":
@@ -30,27 +30,25 @@ public class DaysOfMonths {
             case "August":
             case "October":
             case "December":
-                num=31;
+                num = 31;
                 break;
             case "February":
-                num=28;
+                num = 28;
                 break;
             case "April":
             case "June":
             case "September":
             case "November":
-                num=30;
+                num = 30;
                 break;
             default:
-                num=-1;
+                num = -1;
                 System.err.println("Error");
                 break;
 
         }
 
-        System.out.println(monthName+ " has "+num+" days.");
-
-
+        System.out.println(monthName + " has " + num + " days.");
 
 
     }

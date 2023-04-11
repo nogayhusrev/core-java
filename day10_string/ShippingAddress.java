@@ -32,8 +32,8 @@ public class ShippingAddress {
 
         System.out.println("Your shipping address is:");
         System.out.println("\t" + full_name);
-        System.out.println("\t" + buildingNumber+" "+streetName);
-        System.out.println("\t" + cityName + ", " + stateName + " " +zip);
+        System.out.println("\t" + buildingNumber + " " + streetName);
+        System.out.println("\t" + cityName + ", " + stateName + " " + zip);
 
         input.close();
 

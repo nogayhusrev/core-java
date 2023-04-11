@@ -9,15 +9,14 @@ public class LoanApplication {
 
         String result = "";
 
-        if( salary >= 45000 && creditScore >= 700 ){
+        if (salary >= 45000 && creditScore >= 700) {
             result = "You are eligible for the loan";
-        }else{
+        } else {
             result = "You are not eligible for the loan";
         }
 
 
         System.out.println(result);
-
 
 
     }

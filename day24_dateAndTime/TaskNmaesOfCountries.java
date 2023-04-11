@@ -16,7 +16,7 @@ public class TaskNmaesOfCountries {
         System.out.println(list);
 
 
-        list.removeIf(p->p.length()>=10);
+        list.removeIf(p -> p.length() >= 10);
 
         System.out.println("-------------------------");
         System.out.println(list);

@@ -49,13 +49,12 @@ public abstract class Transportation {
     public abstract void start();
 
 
-
-    public void stop(){
+    public void stop() {
         System.out.println("Shut off the engine");
     }
 
     public String toString() {
-        return getClass().getSimpleName()+"{" +
+        return getClass().getSimpleName() + "{" +
                 "make='" + make + '\'' +
                 ", model='" + model + '\'' +
                 ", color='" + color + '\'' +

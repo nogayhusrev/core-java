@@ -10,7 +10,7 @@ public class MinNumber {
 
         for (int i = 1; i < numbers.length; i++) { // i: 1, 2, 3, 4...
 
-            if(numbers[i] < min){ // compares the element of the array with current minimum number
+            if (numbers[i] < min) { // compares the element of the array with current minimum number
                 min = numbers[i]; // replace the current minimum number
             }
 
@@ -18,7 +18,6 @@ public class MinNumber {
 
 
         System.out.println("min = " + min);
-
 
 
     }

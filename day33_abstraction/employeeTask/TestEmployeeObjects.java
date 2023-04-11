@@ -4,10 +4,10 @@ public class TestEmployeeObjects {
 
     public static void main(String[] args) {
 
-      //  Employee employee = new Employee("Daniel", 54, 'M', "A1", "SDET", 85000);
-            // We can not create objects from an abstract class, Object MUST be created from  a concrete class
+        //  Employee employee = new Employee("Daniel", 54, 'M', "A1", "SDET", 85000);
+        // We can not create objects from an abstract class, Object MUST be created from  a concrete class
 
-        Teacher  teacher = new Teacher("James", 45,  'M', "B1", "Math Teacher", 75000);
+        Teacher teacher = new Teacher("James", 45, 'M', "B1", "Math Teacher", 75000);
 
         Developer developer = new Developer("Lucy", 30, 'F', "C1", "Java Developer", 95000, "Java");
 
@@ -26,7 +26,6 @@ public class TestEmployeeObjects {
         developer.work();
         tester.work();
         driver.work();
-
 
 
     }

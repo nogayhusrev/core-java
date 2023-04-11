@@ -9,7 +9,7 @@ public class ArrayArrayListConversion {
 
         String[] arr = {"A", "B", "C", "D"};
 
-        ArrayList<String> list = new ArrayList<>( Arrays.asList(arr) );
+        ArrayList<String> list = new ArrayList<>(Arrays.asList(arr));
 
         System.out.println(list);
 
@@ -17,7 +17,7 @@ public class ArrayArrayListConversion {
         System.out.println("------------------------------------------------------");
 
 
-        ArrayList<String> list2 = new ArrayList<>( Arrays.asList("Java", "Python", "C#") );
+        ArrayList<String> list2 = new ArrayList<>(Arrays.asList("Java", "Python", "C#"));
 
         String[] languages = list2.toArray(new String[0]);
 
@@ -27,11 +27,10 @@ public class ArrayArrayListConversion {
 
         ArrayList<Integer> nums = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7));
 
-       Integer[] n = nums.toArray(new Integer[0]);
-     //   int[] n = nums.toArray(new Integer[0]);
+        Integer[] n = nums.toArray(new Integer[0]);
+        //   int[] n = nums.toArray(new Integer[0]);
 
         System.out.println(Arrays.toString(n));
-
 
 
     }

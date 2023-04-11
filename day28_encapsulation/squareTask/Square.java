@@ -9,9 +9,9 @@ public class Square {
     }
 
     public void setSide(double side) {
-        if (side >0){
+        if (side > 0) {
             this.side = side;
-        }else{
+        } else {
             System.err.println("Invalid Argument");
             System.exit(0);
         }
@@ -21,12 +21,12 @@ public class Square {
         return side;
     }
 
-    public double calcArea(){
-        return side*side;
+    public double calcArea() {
+        return side * side;
     }
 
-    public double calcPerimeter(){
-        return 4*side;
+    public double calcPerimeter() {
+        return 4 * side;
     }
 
     @Override

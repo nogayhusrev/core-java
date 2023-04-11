@@ -9,12 +9,10 @@ public class TaskSetLastElement {
 
         ArrayList<Integer> list = new ArrayList<>();
 
-        list.addAll(Arrays.asList(1,2,3,4,5));
+        list.addAll(Arrays.asList(1, 2, 3, 4, 5));
 
-        list.set(list.size()-1,0);
+        list.set(list.size() - 1, 0);
         System.out.println(list);
-
-
 
 
     }

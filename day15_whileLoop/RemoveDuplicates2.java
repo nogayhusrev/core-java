@@ -12,7 +12,7 @@ public class RemoveDuplicates2 {
 
         for (int i = 0; i < str.length(); i++) {
 
-            if( result.contains( ""+str.charAt(i) )){ // if the character is already contained in new string
+            if (result.contains("" + str.charAt(i))) { // if the character is already contained in new string
                 continue; // skip it
             }
 
@@ -22,7 +22,6 @@ public class RemoveDuplicates2 {
 
 
         System.out.println(result);
-
 
 
     }

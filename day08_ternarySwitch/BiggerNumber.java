@@ -4,11 +4,11 @@ public class BiggerNumber {
 
     public static void main(String[] args) {
         int
-                n1=0,
-                n2=345,
-                n3=33;
+                n1 = 0,
+                n2 = 345,
+                n3 = 33;
 
-        int bigger=((n1>n2&&n1>n3)?n1:((n2>n1&&n2>n3)?n2:n3));
+        int bigger = ((n1 > n2 && n1 > n3) ? n1 : ((n2 > n1 && n2 > n3) ? n2 : n3));
         System.out.println(bigger);
 
     }

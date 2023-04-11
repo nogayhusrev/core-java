@@ -28,7 +28,6 @@ public class Dog extends Animal { // Dog Is An animal
     }
 
 
-
 }
 
 /*

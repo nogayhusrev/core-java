@@ -15,12 +15,12 @@ public class UniqueCharacters2 {
             char ch = str.charAt(j); // a
             int frequency = 0;
             for (int i = 0; i < str.length(); i++) { // checks how many times the ch has appeared in str
-                if(str.charAt(i) == ch ){ //if the ch has appeared in the string
+                if (str.charAt(i) == ch) { //if the ch has appeared in the string
                     frequency++; // increase the frequency by 1
                 }
             }
 
-            if(frequency == 1){ // if the frequency is one, then it's unique
+            if (frequency == 1) { // if the frequency is one, then it's unique
                 unique += ch;
             }
 
@@ -28,8 +28,6 @@ public class UniqueCharacters2 {
 
 
         System.out.println(unique);
-
-
 
 
     }

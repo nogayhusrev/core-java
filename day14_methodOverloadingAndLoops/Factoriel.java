@@ -6,23 +6,23 @@ public class Factoriel {
 
     public static void main(String[] args) {
         int input;
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter the number to to calculate factoriel:");
-        input= scanner.nextInt();
+        input = scanner.nextInt();
 
         fac(input);
 
     }
 
-    public static void fac(int input){
+    public static void fac(int input) {
 
-        if(input < 0)
+        if (input < 0)
             return;
 
-        long output=1;
+        long output = 1;
         System.out.println("input = " + input);
-        while(input > 0) {
+        while (input > 0) {
             output *= input;
             input--;
 

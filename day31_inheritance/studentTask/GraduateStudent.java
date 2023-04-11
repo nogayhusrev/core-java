@@ -1,6 +1,6 @@
 package day31_inheritance.studentTask;
 
-public class GraduateStudent extends Student{
+public class GraduateStudent extends Student {
 
 
     public GraduateStudent(String name, String gender, int age, int studentId, String fieldOfStudy, String schoolName, char grade) {
@@ -9,7 +9,7 @@ public class GraduateStudent extends Student{
 
     @Override
     public void study() {
-        System.out.println(getClass().getSimpleName() + " " + getName() + " is studying in a company" );
+        System.out.println(getClass().getSimpleName() + " " + getName() + " is studying in a company");
     }
 }
 /*

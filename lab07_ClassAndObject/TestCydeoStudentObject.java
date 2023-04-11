@@ -37,9 +37,6 @@ public class TestCydeoStudentObject {
         System.out.println(student3);
 
 
-
-
-
     }
 
 }

@@ -8,7 +8,7 @@ public class TestAnimalObjects {
 
         Dog dog = new Dog("Max", "Husky", 'M', 3, "Large", "White");
 
-        Lion lion = new Lion("Simba", "African Lion", 'M', 6, "Large","Yellow", true);
+        Lion lion = new Lion("Simba", "African Lion", 'M', 6, "Large", "Yellow", true);
 
         Eagle eagle = new Eagle("Bella", "American Eagle", 'F', 4, "Medium", "Black & WHite");
 
@@ -32,9 +32,6 @@ public class TestAnimalObjects {
         dog.sleep();
         eagle.sleep();
         lion.sleep();
-
-
-
 
 
     }

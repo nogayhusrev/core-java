@@ -12,25 +12,23 @@ public class OverloadingTheMainMethod {
     }
 
 
-    public static void main(int args){
+    public static void main(int args) {
 
         System.out.println("B");
 
     }
 
-    public static void main(double args){
+    public static void main(double args) {
 
         System.out.println("C");
 
     }
 
-    public static void main(boolean args){
+    public static void main(boolean args) {
 
         System.out.println("D");
 
     }
-
-
 
 
 }

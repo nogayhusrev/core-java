@@ -1,6 +1,6 @@
 package day31_inheritance.studentTask;
 
-public class CydeoStudent extends Student{
+public class CydeoStudent extends Student {
     private int batchNumber;
     private int groupNumber;
     private String programmingLanguage;
@@ -15,7 +15,7 @@ public class CydeoStudent extends Student{
 
     public void setBatchNumber(int batchNumber) {
         //1. batchNumber and groupNumber should not be set to zero or negative
-        if (batchNumber < 1){
+        if (batchNumber < 1) {
             System.err.println("BatchNumber and groupNumber should not be set to zero or negative");
             System.exit(1);
         }
@@ -24,7 +24,7 @@ public class CydeoStudent extends Student{
 
     public void setGroupNumber(int groupNumber) {
         //1. batchNumber and groupNumber should not be set to zero or negative
-        if (groupNumber < 1){
+        if (groupNumber < 1) {
             System.err.println("BatchNumber and groupNumber should not be set to zero or negative");
             System.exit(1);
         }
@@ -34,7 +34,7 @@ public class CydeoStudent extends Student{
     public void setProgrammingLanguage(String programmingLanguage) {
         //2. programmingLanguage should not be set to null
         //3. programmingLanguage should not empty
-        if (programmingLanguage.isEmpty() || programmingLanguage==null){
+        if (programmingLanguage.isEmpty() || programmingLanguage == null) {
             System.err.println("2. programmingLanguage should not be set to null\n" +
                     "3. programmingLanguage should not empty");
             System.exit(1);
@@ -56,7 +56,7 @@ public class CydeoStudent extends Student{
 
     @Override
     public String toString() {
-        return super.toString().replace("}",", batchNumber=" + batchNumber +
+        return super.toString().replace("}", ", batchNumber=" + batchNumber +
                 ", groupNumber=" + groupNumber +
                 ", programmingLanguage='" + programmingLanguage + '\'' +
                 '}');

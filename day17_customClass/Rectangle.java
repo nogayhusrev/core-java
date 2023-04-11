@@ -1,24 +1,24 @@
 package day17_customClass;
 
 public class Rectangle {
-    double length=0;
-    double width=0;
+    double length = 0;
+    double width = 0;
 
     public static void main(String[] args) {
 
-        Rectangle rect=new Rectangle();
-        rect.setInfo(234,23);
+        Rectangle rect = new Rectangle();
+        rect.setInfo(234, 23);
         System.out.println(rect);
     }
 
 
-    public void setInfo(double length,double width){
-        this.length=length;
-        this.width=width;
+    public void setInfo(double length, double width) {
+        this.length = length;
+        this.width = width;
 
     }
 
-    public String toString(){
+    public String toString() {
         return "------------------------\n" +
                 "Rectangle{ " +
                 "lenth = " + length +
@@ -31,14 +31,12 @@ public class Rectangle {
 
     private double calculatePerimeter() {
 
-        return width*length;
+        return width * length;
     }
 
     private double calculateArea() {
-        return 2*length+2*width;
+        return 2 * length + 2 * width;
     }
-
-
 
 
 }

@@ -1,10 +1,10 @@
 package day38_exceptions;
 
-class CustomCheckedException extends Exception{
+class CustomCheckedException extends Exception {
 
 }
 
-class CustomUncheckedException extends RuntimeException{
+class CustomUncheckedException extends RuntimeException {
 
 }
 

@@ -14,10 +14,10 @@ public class DaysInWeek {
 
         String day = "Invalid";
 
-        if(num >= 1 && num <= 7){
+        if (num >= 1 && num <= 7) {
 
-            day = (num==1)? "Monday" :(num==2)? "Tuesday" :(num==3)? "Wednesday" :(num==4)?"Thursday"
-                    :(num==5)?"Friday" :(num==6)? "Saturday" : "Sunday";
+            day = (num == 1) ? "Monday" : (num == 2) ? "Tuesday" : (num == 3) ? "Wednesday" : (num == 4) ? "Thursday"
+                    : (num == 5) ? "Friday" : (num == 6) ? "Saturday" : "Sunday";
 
         }
 

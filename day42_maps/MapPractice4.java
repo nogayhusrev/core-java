@@ -59,7 +59,6 @@ public class MapPractice4 {
         person5.put("married", true);
 
 
-
         Map<Integer, Map<String, Object>> mapOfMaps = new LinkedHashMap<>();
         mapOfMaps.put(0, person1);
         mapOfMaps.put(1, person2);
@@ -67,20 +66,20 @@ public class MapPractice4 {
         mapOfMaps.put(3, person4);
         mapOfMaps.put(4, person5);
 
-       // mapOfMaps.putAll();
+        // mapOfMaps.putAll();
 
         System.out.println(mapOfMaps);
 
         mapOfMaps.get(1).replace("salary", 120000);
 
-        System.out.println( mapOfMaps.get(1) );
+        System.out.println(mapOfMaps.get(1));
 
         System.out.println("-----------------------------------------------------------");
 
         for (Map<String, Object> eachValue : mapOfMaps.values()) {
             for (Map.Entry<String, Object> eachEntry : eachValue.entrySet()) {
-                if(eachEntry.getKey().equals("salary")){
-                    eachEntry.setValue( (Integer)eachEntry.getValue() + 10000);
+                if (eachEntry.getKey().equals("salary")) {
+                    eachEntry.setValue((Integer) eachEntry.getValue() + 10000);
                 }
             }
         }
@@ -89,14 +88,11 @@ public class MapPractice4 {
 
         System.out.println("-----------------------------------------------------------");
 
-        Map< Map<String, Integer> , Map<String, Integer>> mapOfMaps2 = new LinkedHashMap<>();
+        Map<Map<String, Integer>, Map<String, Integer>> mapOfMaps2 = new LinkedHashMap<>();
 
         Map<int[], List<Integer>> map2 = new LinkedHashMap<>();
 
         Map<Developer, Car> map3 = new LinkedHashMap<>();
-
-
-
 
 
     }

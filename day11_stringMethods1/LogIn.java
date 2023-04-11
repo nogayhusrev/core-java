@@ -21,13 +21,11 @@ public class LogIn {
         input.close();
 
 
-        if( username.equals(correctUsername) && password.equals(correctPassword)  ){
+        if (username.equals(correctUsername) && password.equals(correctPassword)) {
             System.out.println("You are now logged in");
-        }else{
+        } else {
             System.err.println("Incorrect username or password. Please try again");
         }
-
-
 
 
     }

@@ -5,17 +5,17 @@ import java.util.Arrays;
 public class MoveZeros {
     public static void main(String[] args) {
 
-        int [] array = {10, 0, 5, 0, 1, 0};
+        int[] array = {10, 0, 5, 0, 1, 0};
         int temp;
-        int j=array.length-1;
+        int j = array.length - 1;
 
-        for (int i=0;i<array.length;i++){
+        for (int i = 0; i < array.length; i++) {
 
-            if(array[i]==0){
-                while(array[j]==0 && j>i) j--;
-                temp=array[j];
-                array[j]=array[i];
-                array[i]=temp;
+            if (array[i] == 0) {
+                while (array[j] == 0 && j > i) j--;
+                temp = array[j];
+                array[j] = array[i];
+                array[i] = temp;
             }
             //System.out.println(Arrays.toString(array));
         }

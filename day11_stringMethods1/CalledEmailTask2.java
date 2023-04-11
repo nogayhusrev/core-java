@@ -4,35 +4,31 @@ import java.util.Scanner;
 
 public class CalledEmailTask2 {
     public static void main(String[] args) {
-        String email,firstName,lastName,domain,temp;
-        Scanner scanner=new Scanner(System.in);
+        String email, firstName, lastName, domain, temp;
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter your email:");
-        email=scanner.next();
+        email = scanner.next();
 
 
+        firstName = email.substring(0, email.indexOf("_"));
+        lastName = email.substring(email.indexOf("_") + 1, email.indexOf("@"));
+        domain = email.substring(email.indexOf("@") + 1, email.indexOf("."));
 
-        firstName=email.substring(0,email.indexOf("_"));
-        lastName = email.substring(email.indexOf("_")+1,email.indexOf("@"));
-        domain=email.substring(email.indexOf("@")+1,email.indexOf("."));
 
+        temp = String.valueOf(firstName.toUpperCase().charAt(0));
+        firstName = firstName.toLowerCase();
+        firstName = firstName.replaceFirst(String.valueOf(firstName.charAt(0)), temp);
 
-        temp= String.valueOf(firstName.toUpperCase().charAt(0));
-        firstName=firstName.toLowerCase();
-        firstName=firstName.replaceFirst(String.valueOf(firstName.charAt(0)),temp);
-
-        temp= String.valueOf(lastName.toUpperCase().charAt(0));
-        lastName=lastName.toLowerCase();
-        lastName=lastName.replaceFirst(String.valueOf(lastName.charAt(0)),temp);
+        temp = String.valueOf(lastName.toUpperCase().charAt(0));
+        lastName = lastName.toLowerCase();
+        lastName = lastName.replaceFirst(String.valueOf(lastName.charAt(0)), temp);
 
 
         System.out.println("email = " + email);
         System.out.println("firstName = " + firstName);
         System.out.println("lastName = " + lastName);
         System.out.println("domain = " + domain);
-
-
-
 
 
     }

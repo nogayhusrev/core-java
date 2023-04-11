@@ -12,11 +12,11 @@ public abstract class Employee {
     public Employee(String name, int age, char gender, String id, String jobTitle, double salary) {
         setName(name);
         setAge(age);
-        if( !(gender == 'M' || gender == 'F') ){
+        if (!(gender == 'M' || gender == 'F')) {
             throw new NoSuchPersonException("Gender has to ben either 'M' or 'F'");
         }
         this.gender = gender;
-        if(id == null || id.isEmpty()){
+        if (id == null || id.isEmpty()) {
             throw new IllegalArgumentException("ID of the employee can not be null or empty");
         }
         this.id = id;
@@ -29,7 +29,7 @@ public abstract class Employee {
     }
 
     public void setName(String name) {
-        if(name == null || name.isEmpty()){
+        if (name == null || name.isEmpty()) {
             throw new NoSuchPersonException("Name can not be null or empty");
         }
         this.name = name;
@@ -40,8 +40,8 @@ public abstract class Employee {
     }
 
     public void setAge(int age) {
-        if(age < 0){
-            throw new NoSuchPersonException("Age can not be negative: "+age);
+        if (age < 0) {
+            throw new NoSuchPersonException("Age can not be negative: " + age);
         }
         this.age = age;
     }
@@ -59,7 +59,7 @@ public abstract class Employee {
     }
 
     public void setJobTitle(String jobTitle) {
-        if(jobTitle ==null || jobTitle.isEmpty()){
+        if (jobTitle == null || jobTitle.isEmpty()) {
             throw new NoSuchJobException("Job title can not be null or empty");
         }
         this.jobTitle = jobTitle;
@@ -70,8 +70,8 @@ public abstract class Employee {
     }
 
     public void setSalary(double salary) {
-        if(salary < 0){
-            throw new NoSuchJobException("Salary can not be negative: "+salary);
+        if (salary < 0) {
+            throw new NoSuchJobException("Salary can not be negative: " + salary);
         }
         this.salary = salary;
     }
@@ -80,7 +80,7 @@ public abstract class Employee {
     public abstract void work();
 
     public String toString() {
-        return getClass().getSimpleName()+"{" +
+        return getClass().getSimpleName() + "{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", gender=" + gender +

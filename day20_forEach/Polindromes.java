@@ -5,15 +5,15 @@ public class Polindromes {
     public static void main(String[] args) {
 
 
-        String [] arr={"anna", "level", "Java"};
-        int k=0;
+        String[] arr = {"anna", "level", "Java"};
+        int k = 0;
 
-        for (String input:arr) {
-            boolean isPolindrome=true;
-            for (int i=0,j=input.length()-1;i<=j;i++,j--){
+        for (String input : arr) {
+            boolean isPolindrome = true;
+            for (int i = 0, j = input.length() - 1; i <= j; i++, j--) {
 
-                if(input.charAt(i) != input.charAt(j)){
-                    isPolindrome=false;
+                if (input.charAt(i) != input.charAt(j)) {
+                    isPolindrome = false;
                     break;
                 }
 
@@ -25,7 +25,6 @@ public class Polindromes {
 
         }
         System.out.println("Output :" + k);
-
 
 
     }

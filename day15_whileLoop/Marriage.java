@@ -6,19 +6,19 @@ public class Marriage {
 
     public static void main(String[] args) {
 
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         String answer;
 
         System.out.println("Will you marry me ?");
-        answer=scanner.next();
+        answer = scanner.next();
 
-        while(!(answer.equalsIgnoreCase("yes") || answer.equalsIgnoreCase("no"))){
+        while (!(answer.equalsIgnoreCase("yes") || answer.equalsIgnoreCase("no"))) {
             System.out.println("Invalid answer, please re-enter");
-            answer=scanner.next();
+            answer = scanner.next();
         }
 
 
-        if(answer.equalsIgnoreCase("yes"))
+        if (answer.equalsIgnoreCase("yes"))
             System.out.println("Congrats");
         else
             System.out.println("Goodbye");

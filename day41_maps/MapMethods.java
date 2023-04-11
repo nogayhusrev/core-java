@@ -18,10 +18,10 @@ public class MapMethods {
         map.put("A06", "Tatiana");
         map.put("A07", "Tatiana");
 
-        System.out.println( map.size());
+        System.out.println(map.size());
         System.out.println(map);
 
-        System.out.println( map.get("A04"));
+        System.out.println(map.get("A04"));
 
         map.put("A04", "Lucy");
         map.put("A06", "Madiyar");
@@ -40,7 +40,7 @@ public class MapMethods {
 
 
         System.out.println(map.containsKey("B03"));
-        System.out.println( map.containsKey("H98"));
+        System.out.println(map.containsKey("H98"));
 
         System.out.println(map.containsValue("Lucy"));
         System.out.println(map.containsValue("Muhtar"));
@@ -51,7 +51,6 @@ public class MapMethods {
         map.clear();
 
         System.out.println(map);
-
 
 
     }

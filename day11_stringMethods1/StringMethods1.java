@@ -16,7 +16,7 @@ public class StringMethods1 {
 
         String str2 = "java programming";
 
-       String str3 = str2.toUpperCase(); //"JAVA PROGRAMMING"
+        String str3 = str2.toUpperCase(); //"JAVA PROGRAMMING"
 
         System.out.println(str2);
 
@@ -34,7 +34,7 @@ public class StringMethods1 {
 
         String str4 = "          Cydeo School";
 
-       str4 =  str4.trim(); //"Cydeo SchooL"
+        str4 = str4.trim(); //"Cydeo SchooL"
 
         System.out.println(str4);
 
@@ -90,9 +90,6 @@ public class StringMethods1 {
         System.out.println(w2.lastIndexOf('a'));
 
         System.out.println(w2.lastIndexOf('P'));
-
-
-
 
 
     }

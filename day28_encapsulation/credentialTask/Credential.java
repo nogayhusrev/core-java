@@ -5,8 +5,8 @@ public class Credential {
     private String password;
 
     public Credential(String username, String password) {
-       setUsername(username);
-       setPassword(password);
+        setUsername(username);
+        setPassword(password);
     }
 
     public void setUsername(String username) {
@@ -15,9 +15,9 @@ public class Credential {
 
     public void setPassword(String password) {
 
-        if (isStrongPassword(password)){
+        if (isStrongPassword(password)) {
             this.password = password;
-        }else{
+        } else {
             System.err.println("Password is not strong. Please enter a strong password.");
             System.out.println("Characteristics of strong passwords are:\n" +
                     "                                    1. Password MUST be at least have 8 characters long, and should not contain space\n" +
@@ -38,26 +38,25 @@ public class Credential {
         if (password.contains(" "))
             return false;
 
-        if (password.length()<8)
+        if (password.length() < 8)
             return false;
 
-        boolean hasDigit=false;
-        boolean hasLetter=false;
-        boolean hasSpecial=false;
+        boolean hasDigit = false;
+        boolean hasLetter = false;
+        boolean hasSpecial = false;
 
-        for (char ch:password.toCharArray()) {
-            if (Character.isLetter(ch)){
-                hasLetter=true;
-            }else if (Character.isDigit(ch)){
-                hasDigit=true;
-            }else {
-                hasSpecial=true;
+        for (char ch : password.toCharArray()) {
+            if (Character.isLetter(ch)) {
+                hasLetter = true;
+            } else if (Character.isDigit(ch)) {
+                hasDigit = true;
+            } else {
+                hasSpecial = true;
             }
         }
 
 
-
-        return hasLetter&&hasDigit&&hasSpecial;
+        return hasLetter && hasDigit && hasSpecial;
 
     }
 

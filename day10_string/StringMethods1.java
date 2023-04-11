@@ -15,7 +15,7 @@ public class StringMethods1 {
         char fourthChar = str.charAt(3);
         char fifthChar = str.charAt(4);
 
-       // char nthChar = str.charAt(25);
+        // char nthChar = str.charAt(25);
 
         System.out.println("firstChar = " + firstChar);
         System.out.println("secondChar = " + secondChar);
@@ -23,7 +23,7 @@ public class StringMethods1 {
         System.out.println("fourthChar = " + fourthChar);
         System.out.println("fifthChar = " + fifthChar);
 
-     //   System.out.println(nthChar);
+        //   System.out.println(nthChar);
 
 
         System.out.println("--------------------------------------------------");
@@ -45,11 +45,11 @@ public class StringMethods1 {
 
         char f = s1.charAt(0);
 
-        int lastIndexNum = s1.length() -1;
+        int lastIndexNum = s1.length() - 1;
 
         char l = s1.charAt(lastIndexNum);
 
-        System.out.println(f +" : "+l);
+        System.out.println(f + " : " + l);
 
         System.out.println("--------------------------------------------------");
 
@@ -57,7 +57,7 @@ public class StringMethods1 {
         String name2 = new String("Umran");
 
         System.out.println(name1 == name2);
-        System.out.println( name1.equals(name2) );
+        System.out.println(name1.equals(name2));
 
         System.out.println("---------------------------------------------------");
 
@@ -71,8 +71,8 @@ public class StringMethods1 {
         System.out.println(r1 == r3); // false
         System.out.println(r2 == r3);  // false
 
-        System.out.println( r1.equals(r3) ); //true
-        System.out.println( r2.equals(r3) ); // true
+        System.out.println(r1.equals(r3)); //true
+        System.out.println(r2.equals(r3)); // true
 
         System.out.println("------------------------------------------------------");
 
@@ -84,18 +84,14 @@ public class StringMethods1 {
         System.out.println("Are you a US citizen? yes/no");
         String answer = input.next();
 
-        if(age >= 21 &&  answer.equals("yes") ){
+        if (age >= 21 && answer.equals("yes")) {
             System.out.println("Eligible to vote");
-        }else{
+        } else {
             System.out.println("Not eligible to vote");
         }
 
 
-
         input.close();
-
-
-
 
 
     }

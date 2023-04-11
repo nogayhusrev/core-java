@@ -7,11 +7,11 @@ public class ReallyNeverMind {
     public static void main(String[] args) {
         String input;
 
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter a word:");
 
-        input= scanner.next();
+        input = scanner.next();
 
         if (input.endsWith("ly"))
             System.out.println("really??");

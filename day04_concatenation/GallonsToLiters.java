@@ -6,12 +6,12 @@ public class GallonsToLiters {
 
     public static void main(String[] args) {
 
-        double gallons,liters;
-        Scanner sc=new Scanner(System.in);
+        double gallons, liters;
+        Scanner sc = new Scanner(System.in);
         System.out.print("Give any number of Gallons:");
-        gallons=sc.nextDouble();
-        liters=gallons*3.79;
-        System.out.println(gallons+" gallons equals to "+liters+" liters.");
+        gallons = sc.nextDouble();
+        liters = gallons * 3.79;
+        System.out.println(gallons + " gallons equals to " + liters + " liters.");
 
     }
 

@@ -10,7 +10,7 @@ public class MapClasses {
         hashMap.put("Daniel", 95000);
         hashMap.put("Emily", 100000);
         hashMap.put("Bella", 85000);
-       // map1.put("Daniel", 80000);
+        // map1.put("Daniel", 80000);
         hashMap.put("Arron", 78000);
         hashMap.put("Chris", null);
         hashMap.put("Breanna", null);
@@ -46,9 +46,9 @@ public class MapClasses {
         treeMap.put("Arron", 78000);
         treeMap.put("Chris", null);
         treeMap.put("Breanna", null); // value can be null in treeMap
-       // treeMap.put(null, 120000); key can not be null in treeMap
-     //   treeMap.put(null, 110000);
-     //   treeMap.put(null, 100000);
+        // treeMap.put(null, 120000); key can not be null in treeMap
+        //   treeMap.put(null, 110000);
+        //   treeMap.put(null, 100000);
 
         System.out.println("treeMap = " + treeMap);
 
@@ -61,22 +61,19 @@ public class MapClasses {
         hashtable.put("Bella", 85000);
         // map1.put("Daniel", 80000);
         hashtable.put("Arron", 78000);
-       // hashtable.put("Chris", null); Value in Hashtable can not be null
-       // hashtable.put("Breanna", null); Value in Hashtable can not be null
-       // hashtable.put(null, 120000); Key in Hashtable can not be null
-       // hashtable.put(null, 110000); Key in Hashtable can not be null
+        // hashtable.put("Chris", null); Value in Hashtable can not be null
+        // hashtable.put("Breanna", null); Value in Hashtable can not be null
+        // hashtable.put(null, 120000); Key in Hashtable can not be null
+        // hashtable.put(null, 110000); Key in Hashtable can not be null
 
         try {
             hashtable.put("Diana", 100000);
-        }catch (RuntimeException e){
+        } catch (RuntimeException e) {
             e.printStackTrace();
         }
 
 
         System.out.println("hashtable = " + hashtable);
-
-
-
 
 
     }

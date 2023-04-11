@@ -7,10 +7,10 @@ public class Person {
     private final char gender;
 
     public Person(String name, int age, char gender) {
-       setName(name);
+        setName(name);
         setAge(age);
-        if(!(gender =='M' || gender == 'F')) {
-            System.err.println("Invalid gender: "+gender);
+        if (!(gender == 'M' || gender == 'F')) {
+            System.err.println("Invalid gender: " + gender);
             System.exit(1);
         }
         this.gender = gender;
@@ -21,7 +21,7 @@ public class Person {
     }
 
     public void setName(String name) {
-        if(name == null){
+        if (name == null) {
             System.err.println("Name of the person can not be null");
             System.exit(1);
         }
@@ -33,8 +33,8 @@ public class Person {
     }
 
     public void setAge(int age) {
-        if(age <= 0){
-            System.err.println("Invalid age: "+age);
+        if (age <= 0) {
+            System.err.println("Invalid age: " + age);
             System.exit(1);
         }
         this.age = age;
@@ -44,20 +44,20 @@ public class Person {
         return gender;
     }
 
-    public void eat(String food){
-        System.out.println(name +" is eating "+food);
+    public void eat(String food) {
+        System.out.println(name + " is eating " + food);
     }
 
-    public void drink(String drink){
-        System.out.println(name +" is drinking "+drink);
+    public void drink(String drink) {
+        System.out.println(name + " is drinking " + drink);
     }
 
-    public void sleep(){
-        System.out.println(name +" is sleeping");
+    public void sleep() {
+        System.out.println(name + " is sleeping");
     }
 
     public String toString() {
-        return getClass().getSimpleName()+"{" +
+        return getClass().getSimpleName() + "{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", gender=" + gender +

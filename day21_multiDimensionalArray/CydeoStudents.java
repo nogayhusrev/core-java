@@ -9,7 +9,7 @@ public class CydeoStudents {
         String[] batch1Group2 = {"Entisar", "Ermek", "Esmira", "Gadir", "Hrvoje", "Igor", "Muhtar"};
         String[] batch1Group3 = {"Kramer", "Lorraine", "Lucy", "Madina", "Yasin", "Muhtar"};
 
-        String [][] batch1Groups={batch1Group1,batch1Group2,batch1Group3};
+        String[][] batch1Groups = {batch1Group1, batch1Group2, batch1Group3};
 
 
         String[] batch2Group1 = {"Fuat", "Kenann", "Aliya", "Anna", "Murodil"};
@@ -17,22 +17,21 @@ public class CydeoStudents {
         String[] batch2Group3 = {"Chris", "Yurii", "Mubarek", "Erika", "Subi", "Nadiia", "Murodil"};
 
 
-        String [][] batch2Groups={batch2Group1,batch2Group2,batch2Group3};
+        String[][] batch2Groups = {batch2Group1, batch2Group2, batch2Group3};
 
-        String [][][] CydeoStudents={batch1Groups,batch2Groups};
+        String[][][] CydeoStudents = {batch1Groups, batch2Groups};
 
-        for (String [][] cydeo:CydeoStudents ) {
+        for (String[][] cydeo : CydeoStudents) {
             System.out.println();
-            for (String [] batch:cydeo) {
+            for (String[] batch : cydeo) {
                 //System.out.print(Arrays.toString(batch) + " ");
-                for (String name:batch) {
+                for (String name : batch) {
                     System.out.print(name + " ");
                 }
                 System.out.print(" | ");
 
             }
         }
-
 
 
     }

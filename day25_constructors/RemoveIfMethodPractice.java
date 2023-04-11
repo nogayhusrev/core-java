@@ -18,9 +18,9 @@ public class RemoveIfMethodPractice {
         dogs[5].setInfo("Loki", "Chow Chow", 'M', 7, "Medium", "Gold");
 
 
-        ArrayList<Dog> smallDogs = new ArrayList<>( Arrays.asList(dogs) );
+        ArrayList<Dog> smallDogs = new ArrayList<>(Arrays.asList(dogs));
 
-        smallDogs.removeIf( p -> !p.size.equalsIgnoreCase("Small"));
+        smallDogs.removeIf(p -> !p.size.equalsIgnoreCase("Small"));
 
 
         /*
@@ -34,9 +34,9 @@ public class RemoveIfMethodPractice {
         System.out.println(smallDogs);
 
 
-        ArrayList<Dog> youngDogs = new ArrayList<>( Arrays.asList(dogs) );
+        ArrayList<Dog> youngDogs = new ArrayList<>(Arrays.asList(dogs));
 
-        youngDogs.removeIf( p -> p.age > 4);
+        youngDogs.removeIf(p -> p.age > 4);
 
         /*
         for (Dog dog : dogs) {
@@ -49,14 +49,14 @@ public class RemoveIfMethodPractice {
 
         System.out.println(youngDogs);
 
-       // youngDogs.forEach( p -> System.out.println(p.name) );
+        // youngDogs.forEach( p -> System.out.println(p.name) );
 
 
         ArrayList<Dog> femaleDogs = new ArrayList<>(Arrays.asList(dogs));
         femaleDogs.removeIf(p -> p.gender == 'M');
 
         ArrayList<Dog> maleDogs = new ArrayList<>(Arrays.asList(dogs));
-        maleDogs.removeIf( p -> p.gender == 'F');
+        maleDogs.removeIf(p -> p.gender == 'F');
 
 
         System.out.println("----------------------------------------------------------------------");
@@ -70,18 +70,12 @@ public class RemoveIfMethodPractice {
         dogs2[5].setInfo("Loki", "Chow Chow", 'M', 7, "Medium", "Gold");
 
 
-        ArrayList<Dog> list = new ArrayList<>( Arrays.asList(dogs2) );
+        ArrayList<Dog> list = new ArrayList<>(Arrays.asList(dogs2));
         list.removeIf(p -> p.size.equalsIgnoreCase("small"));
 
         dogs2 = list.toArray(new Dog[list.size()]);
 
         System.out.println(Arrays.toString(dogs2));
-
-
-
-
-
-
 
 
     }

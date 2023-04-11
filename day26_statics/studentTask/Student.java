@@ -14,8 +14,8 @@ public class Student {
         this.id = id;
     }
 
-    public void study(){
-        System.out.println( name + " is studying");
+    public void study() {
+        System.out.println(name + " is studying");
     }
 
     public String toString() {

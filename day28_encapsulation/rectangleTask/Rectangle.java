@@ -2,9 +2,9 @@ package day28_encapsulation.rectangleTask;
 
 public class Rectangle {
 
-    private double wide,length;
+    private double wide, length;
 
-    public Rectangle(double wide,double length) {
+    public Rectangle(double wide, double length) {
         setSide(wide);
         setLength(length);
     }
@@ -18,29 +18,29 @@ public class Rectangle {
     }
 
     public void setLength(double length) {
-        if (length >0){
+        if (length > 0) {
             this.length = length;
-        }else{
+        } else {
             System.err.println("Invalid Argument");
             System.exit(0);
         }
     }
 
     public void setSide(double wide) {
-        if (wide >0){
+        if (wide > 0) {
             this.wide = wide;
-        }else{
+        } else {
             System.err.println("Invalid Argument");
             System.exit(0);
         }
     }
 
-    public double calcArea(){
-        return wide*length;
+    public double calcArea() {
+        return wide * length;
     }
 
-    public double calcPerimeter(){
-        return (2*wide)+(2*length);
+    public double calcPerimeter() {
+        return (2 * wide) + (2 * length);
     }
 
     @Override

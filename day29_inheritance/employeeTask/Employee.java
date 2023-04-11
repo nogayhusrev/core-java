@@ -31,10 +31,10 @@ public class Employee {
     }
 
     public void setGender(char gender) {
-        if(gender=='M'||gender=='F') {
+        if (gender == 'M' || gender == 'F') {
             this.gender = gender;
-        }else{
-            System.err.println("Invalid gender: "+gender);
+        } else {
+            System.err.println("Invalid gender: " + gender);
             System.exit(1);
         }
     }
@@ -44,13 +44,13 @@ public class Employee {
     }
 
     public void setAge(int age) {
-        if(age < 0){
+        if (age < 0) {
             System.err.println("Age can not be negative");
             System.exit(1);
         }
 
-        if(age < 18 || age > 65){
-            System.err.println("Invalid age: "+age);
+        if (age < 18 || age > 65) {
+            System.err.println("Invalid age: " + age);
             System.exit(1);
         }
         this.age = age;
@@ -77,20 +77,20 @@ public class Employee {
     }
 
     public void setSalary(double salary) {
-        if(salary < 0){
-            System.err.println("Invalid salary: "+salary);
+        if (salary < 0) {
+            System.err.println("Invalid salary: " + salary);
             System.exit(1);
         }
         this.salary = salary;
     }
 
-    public void work(){
-        System.out.println(jobTitle +" "+name+" is working");
+    public void work() {
+        System.out.println(jobTitle + " " + name + " is working");
 
     }
 
     public String toString() {
-        return getClass().getSimpleName()+"{" +  // this gets the class name automatically
+        return getClass().getSimpleName() + "{" +  // this gets the class name automatically
                 "name='" + name + '\'' +
                 ", gender=" + gender +
                 ", age=" + age +

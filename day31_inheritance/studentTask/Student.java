@@ -1,6 +1,6 @@
 package day31_inheritance.studentTask;
 
-public class Student extends Person{
+public class Student extends Person {
     private int studentId;
     private String fieldOfStudy;
     private String schoolName;
@@ -21,7 +21,7 @@ public class Student extends Person{
     public void setFieldOfStudy(String fieldOfStudy) {
         // 1. filedOfStudy and schoolName should not be set to null
         // 2. filedOfStudy and schoolName should not be empty
-        if (fieldOfStudy.isEmpty() || fieldOfStudy==null) {
+        if (fieldOfStudy.isEmpty() || fieldOfStudy == null) {
             System.err.println("1. filedOfStudy and schoolName should not be set to null\n" +
                     "2. filedOfStudy and schoolName should not be empty");
             System.exit(1);
@@ -32,7 +32,7 @@ public class Student extends Person{
     public void setSchoolName(String schoolName) {
         // 1. filedOfStudy and schoolName should not be set to null
         // 2. filedOfStudy and schoolName should not be empty
-        if (schoolName.isEmpty() || schoolName==null) {
+        if (schoolName.isEmpty() || schoolName == null) {
             System.err.println("1. filedOfStudy and schoolName should not be set to null\n" +
                     "2. filedOfStudy and schoolName should not be empty");
             System.exit(1);
@@ -42,7 +42,7 @@ public class Student extends Person{
 
     public void setGrade(char grade) {
         //3. grade must be valid (A, B, C, D, F)
-        if (grade != 'A' || grade != 'B' || grade != 'C' || grade != 'D' || grade != 'F' ) {
+        if (grade != 'A' || grade != 'B' || grade != 'C' || grade != 'D' || grade != 'F') {
             System.err.println("Grade cannot be other than (A, B, C, D, F)");
             System.exit(1);
         }
@@ -66,13 +66,13 @@ public class Student extends Person{
         return grade;
     }
 
-    public void study(){
+    public void study() {
         System.out.println(getName() + " is studying");
     }
 
     @Override
     public String toString() {
-        return super.toString().replace("}",", studentId=" + studentId +
+        return super.toString().replace("}", ", studentId=" + studentId +
                 ", fieldOfStudy='" + fieldOfStudy + '\'' +
                 ", schoolName='" + schoolName + '\'' +
                 ", grade=" + grade +

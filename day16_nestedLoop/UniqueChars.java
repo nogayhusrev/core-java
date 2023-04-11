@@ -6,30 +6,30 @@ public class UniqueChars {
 
     public static void main(String[] args) {
 
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         String
                 input,
-                result="";
+                result = "";
 
 
         System.out.println("Enter a string:");
-        input= scanner.next();
+        input = scanner.next();
 
-        for (int i=0;i<input.length();i++){
-            int count=0;
-            char chi=input.charAt(i);
-            for (int j=0;j<input.length();j++){
-                char chj=input.charAt(j);
-                if(chi==chj){
-                   count++;
+        for (int i = 0; i < input.length(); i++) {
+            int count = 0;
+            char chi = input.charAt(i);
+            for (int j = 0; j < input.length(); j++) {
+                char chj = input.charAt(j);
+                if (chi == chj) {
+                    count++;
 
                 }
             }
 
-            if (count!=1)
-               continue;
+            if (count != 1)
+                continue;
 
-            result+=chi;
+            result += chi;
 
 
         }

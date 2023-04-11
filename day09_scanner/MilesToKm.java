@@ -6,10 +6,10 @@ public class MilesToKm {
 
     public static void main(String[] args) {
         int miles;
-        Scanner keyboard=new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
 
         System.out.print("Enter Miles:");
-        miles= keyboard.nextInt();
+        miles = keyboard.nextInt();
 
         double km = (double) miles * 1.69;
         System.out.println(km);

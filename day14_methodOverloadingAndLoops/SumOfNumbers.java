@@ -5,27 +5,23 @@ import java.util.Scanner;
 public class SumOfNumbers {
     public static void main(String[] args) {
         int number;
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter the input:");
 
-        number= scanner.nextInt();
+        number = scanner.nextInt();
         sumOfNumbers(number);
 
     }
 
-    public static void sumOfNumbers(int input){
+    public static void sumOfNumbers(int input) {
 
         System.out.println("input = " + input);
-        int sum=0;
-        for (int i=1;i<input;i++)
-            sum+=i;
+        int sum = 0;
+        for (int i = 1; i < input; i++)
+            sum += i;
 
         System.out.println("output = " + sum);
-
-
-
-
 
 
     }

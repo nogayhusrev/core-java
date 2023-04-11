@@ -13,7 +13,7 @@ public class ExceptionPractice {
             String result = str.repeat(3);
             System.out.println(result);
             System.out.println("Try Block");
-        }catch (NullPointerException e){
+        } catch (NullPointerException e) {
             e.printStackTrace();
             System.out.println("catch Block");
             str = "Java";
@@ -24,8 +24,7 @@ public class ExceptionPractice {
         System.out.println("----------------------------------------------");
 
 
-            new FileInputStream("src/lab12_oop_exceptions/lab12 class notes.txt");
-
+        new FileInputStream("src/lab12_oop_exceptions/lab12 class notes.txt");
 
 
     }
@@ -35,11 +34,11 @@ public class ExceptionPractice {
         new FileInputStream("src/lab12_oop_exceptions/lab12 class notes.txt");
     }
 
-    public void method2(){
+    public void method2() {
         //method1();
     }
 
-    public void method3(){
+    public void method3() {
         try {
             new FileInputStream("src/lab12_oop_exceptions/lab12 class notes.txt");
         } catch (FileNotFoundException e) {
@@ -47,7 +46,7 @@ public class ExceptionPractice {
         }
     }
 
-    public void method4(){
+    public void method4() {
         method3();
     }
 

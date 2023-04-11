@@ -4,7 +4,7 @@ public class LocalRestaurant {
 
     public static void main(String[] args) {
 
-        Restaurant r=new Restaurant("Adam","Europe",3);
+        Restaurant r = new Restaurant("Adam", "Europe", 3);
 
         Server[] servers = {
                 new Server("Yasin", 29, 15, false),

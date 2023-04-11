@@ -30,8 +30,8 @@ public class TestCarObject {
 
         System.out.println("------------------------------------------------------");
 
-       // tesla.setPrice(30000);
-       // tesla.setModel("Model H");
+        // tesla.setPrice(30000);
+        // tesla.setModel("Model H");
 
         System.out.println(tesla);
 

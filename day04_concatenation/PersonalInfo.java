@@ -18,7 +18,7 @@ public class PersonalInfo {
                 isEmployed = false;
 
 
-       // String from = "USA";
+        // String from = "USA";
         System.out.println("firstName = " + firstName);
         System.out.println("lastName = " + lastName);
         System.out.println("gender = " + gender);
@@ -30,9 +30,6 @@ public class PersonalInfo {
         System.out.println("favoriteColor = " + favoriteColor);
         System.out.println("isMarried = " + isMarried);
         System.out.println("isEmployed = " + isEmployed);
-
-
-
 
 
     }

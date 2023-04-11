@@ -17,7 +17,7 @@ public class ListDemo {
         arrayList.add(300);
 
         arrayList.remove(0);
-        
+
         arrayList.get(0);
 
         LinkedList<Integer> linkedList = new LinkedList<>(); // Node based class (Doubly linked List) ===> add(), addAll(), remove(), removeAll(), removeIf(), retainAll() are faster
@@ -27,7 +27,7 @@ public class ListDemo {
         linkedList.add(300);
 
         linkedList.remove(0);
-        
+
         linkedList.get(0);
 
 
@@ -59,8 +59,6 @@ public class ListDemo {
         int secondLastElement = stack.pop();
 
         System.out.println(secondLastElement);
-
-
 
 
     }

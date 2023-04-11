@@ -1,10 +1,10 @@
 package day30_inheritance.bookTask;
 
-public class AudioBook extends Book{
+public class AudioBook extends Book {
     private String narrator;
     private int length;
 
-    public AudioBook(String title, String type, String author, double price, int length, String narrator){
+    public AudioBook(String title, String type, String author, double price, int length, String narrator) {
         super(title, type, author, price);
         setLength(length);
         setNarrator(narrator);
@@ -15,8 +15,8 @@ public class AudioBook extends Book{
     }
 
     public void setLength(int length) {
-        if (length <= 0 ){
-            System.err.println("Invalid length: "+length);
+        if (length <= 0) {
+            System.err.println("Invalid length: " + length);
             System.exit(1);
         }
         this.length = length;
@@ -31,13 +31,13 @@ public class AudioBook extends Book{
     }
 
 
-    public void listen(){
-        System.out.println("Listening to "+getTitle());
+    public void listen() {
+        System.out.println("Listening to " + getTitle());
     }
 
     @Override
     public String toString() {
-        return super.toString().substring(0,super.toString().length()-1)  +
+        return super.toString().substring(0, super.toString().length() - 1) +
                 ", narrator='" + narrator + '\'' +
                 ", length=" + length +
                 '}';

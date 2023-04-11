@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class Developer extends Employee {
     private String programingLanguage;
 
-    public void setInfo(String name, char gender, int age, int id, String jobTitle, double salary,String programingLanguage) {
+    public void setInfo(String name, char gender, int age, int id, String jobTitle, double salary, String programingLanguage) {
         setName(name);
         setGender(gender);
         setAge(age);
@@ -19,11 +19,11 @@ public class Developer extends Employee {
 
     public void setProgramingLanguage(String programingLanguage) {
 
-        ArrayList<String> list=new ArrayList<>(Arrays.asList("Java", "JavaScript", "Python", "Ruby", "C#", "C++", "Swift"));
+        ArrayList<String> list = new ArrayList<>(Arrays.asList("Java", "JavaScript", "Python", "Ruby", "C#", "C++", "Swift"));
 
         if (list.contains(programingLanguage)) {
             this.programingLanguage = programingLanguage;
-        }else {
+        } else {
             System.err.println("Invalid programing language");
             System.exit(1);
         }
@@ -34,13 +34,13 @@ public class Developer extends Employee {
         return programingLanguage;
     }
 
-    public void coding(){
+    public void coding() {
         System.out.println(getName() + " is coding with " + getProgramingLanguage());
     }
 
     @Override
     public String toString() {
-        String result=super.toString().substring(0,super.toString().length()-1);
+        String result = super.toString().substring(0, super.toString().length() - 1);
 
         return result +
                 ", programingLanguage='" + programingLanguage + '\'' +

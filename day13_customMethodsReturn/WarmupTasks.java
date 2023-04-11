@@ -56,7 +56,7 @@ public class WarmupTasks {
                 break;
 
             default:
-                System.err.println("Invalid operator: "+mathOperator);
+                System.err.println("Invalid operator: " + mathOperator);
 
         }
 
@@ -64,15 +64,15 @@ public class WarmupTasks {
     }
 
 
-    public static void ageGroup(int age){
+    public static void ageGroup(int age) {
 
-        if(age >=0  && age <= 150){
+        if (age >= 0 && age <= 150) {
 
-            System.out.println(  (age < 21)? "Teenager"  :(age < 55)? "Adult" : "Senior" );
+            System.out.println((age < 21) ? "Teenager" : (age < 55) ? "Adult" : "Senior");
 
-        }else{
+        } else {
 
-            System.err.println("Invalid age: "+age);
+            System.err.println("Invalid age: " + age);
 
         }
 
@@ -80,17 +80,15 @@ public class WarmupTasks {
     }
 
 
-    public static void eligibleToVote(int age, boolean isAmerican){
+    public static void eligibleToVote(int age, boolean isAmerican) {
 
-        if(age >= 18 && isAmerican){
+        if (age >= 18 && isAmerican) {
             System.out.println("You are eligible to vote");
-        }else{
+        } else {
             System.err.println("You are not eligible to vote");
         }
 
     }
-
-
 
 
 }

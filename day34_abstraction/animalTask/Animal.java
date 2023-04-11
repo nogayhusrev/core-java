@@ -63,19 +63,19 @@ public abstract class Animal {
         this.color = color;
     }
 
-    public void drink(){
-        System.out.println(name+" is drinking water");
+    public void drink() {
+        System.out.println(name + " is drinking water");
     }
 
     public abstract void eat();
 
-    public void sleep(){
-        System.out.println(name +" sleeps 8 hours");
+    public void sleep() {
+        System.out.println(name + " sleeps 8 hours");
     }
 
 
     public String toString() {
-        return getClass().getSimpleName() +"{" +
+        return getClass().getSimpleName() + "{" +
                 "name='" + name + '\'' +
                 ", breed='" + breed + '\'' +
                 ", gender=" + gender +

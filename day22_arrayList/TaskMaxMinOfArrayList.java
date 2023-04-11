@@ -7,14 +7,14 @@ public class TaskMaxMinOfArrayList {
 
     public static void main(String[] args) {
 
-        ArrayList<Integer> list=new ArrayList<>(Arrays.asList(1,2,3,4,5));
+        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
 
-        int max = list.get(0) ;
-        int min =list.get(0);
+        int max = list.get(0);
+        int min = list.get(0);
 
         for (int i : list) {
-            if(min > i) min=i;
-            if(max < i) max=i;
+            if (min > i) min = i;
+            if (max < i) max = i;
         }
 
         System.out.println("list = " + list);

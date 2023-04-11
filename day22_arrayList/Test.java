@@ -11,7 +11,7 @@ public class Test {
         int[] numbers = {10, 20, 30, 40, 50, 60, 70, 90};
 
 
-        System.out.println(Arrays.toString(TaskSwap.swap(numbers,3,4)));
+        System.out.println(Arrays.toString(TaskSwap.swap(numbers, 3, 4)));
 
         boolean has25 = ArraysUtility.contains(numbers, 25);
 
@@ -21,8 +21,7 @@ public class Test {
 
         String[] students = {"Sumeye", "Hamza", "Marika"};
 
-        System.out.println( ArraysUtility.contains(students, "Khashayar")  );
-
+        System.out.println(ArraysUtility.contains(students, "Khashayar"));
 
 
     }

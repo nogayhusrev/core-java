@@ -2,7 +2,7 @@ package day27_accessModifiers;
 
 public class StaticBlock_vs_InstanceBlock_vs_Constructor {
 
-    public StaticBlock_vs_InstanceBlock_vs_Constructor(){
+    public StaticBlock_vs_InstanceBlock_vs_Constructor() {
         System.out.println("Constructor");
     }
 
@@ -10,7 +10,7 @@ public class StaticBlock_vs_InstanceBlock_vs_Constructor {
         System.out.println("Instance Block");
     }
 
-    static{
+    static {
         System.out.println("Static Block");
     }
 

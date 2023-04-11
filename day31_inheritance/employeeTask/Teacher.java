@@ -1,6 +1,6 @@
 package day31_inheritance.employeeTask;
 
-public class Teacher extends Employee{
+public class Teacher extends Employee {
 
 
     public Teacher(String name, char gender, String jobTitle, String companyName, int age, double salary) {

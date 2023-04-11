@@ -6,8 +6,8 @@ public class Bike extends Vehicle {
         super(brand, model, color, year, price);
     }
 
-    public void ride(){
-        System.out.println("Riding "+getBrand()+" "+getModel());
+    public void ride() {
+        System.out.println("Riding " + getBrand() + " " + getModel());
     }
 
 }

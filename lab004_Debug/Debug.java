@@ -9,16 +9,16 @@ public class Debug {
         String name = "Mike";
         int age = 20;
 
-        if(name.equals("Mike") && age ==20){
+        if (name.equals("Mike") && age == 20) {
             System.out.println("Correct info");
-        }else{
+        } else {
             System.out.println("Wrong  info");
         }
 
-        for(int i=0;i<3;i++){
-            if(i==2){
+        for (int i = 0; i < 3; i++) {
+            if (i == 2) {
                 method1();
-            }else{
+            } else {
                 method2();
                 System.out.println("Hello everyone");
             }

@@ -11,7 +11,7 @@ public class TaskRemoveSpecials {
         System.out.println("-------------------------");
         System.out.println(list);
 
-        list.removeIf(p->Character.isDigit(p) || Character.isLetter(p));
+        list.removeIf(p -> Character.isDigit(p) || Character.isLetter(p));
 
         System.out.println("-------------------------");
         System.out.println(list);

@@ -1,6 +1,6 @@
 package day29_inheritance.carTask;
 
-public class BMW extends Car{
+public class BMW extends Car {
 }
 /*
 

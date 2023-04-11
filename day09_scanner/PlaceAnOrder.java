@@ -10,26 +10,26 @@ public class PlaceAnOrder {
         int quantity;
         String firstName;
 
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Give product name:");
-        productName= scanner.nextLine();
+        productName = scanner.nextLine();
         System.out.println();
 
         System.out.print("Enter price:");
-        price= scanner.nextDouble();
+        price = scanner.nextDouble();
         System.out.println();
 
         System.out.print("Enter quantity:");
-        quantity= scanner.nextInt();
+        quantity = scanner.nextInt();
         System.out.println();
 
         System.out.print("Enter your first name:");
-        firstName= scanner.next();
+        firstName = scanner.next();
         System.out.println();
 
 
-        System.out.println(firstName+", your order for "+quantity+" "+productName+" has been places. your total is "+(price*quantity)+"$");
+        System.out.println(firstName + ", your order for " + quantity + " " + productName + " has been places. your total is " + (price * quantity) + "$");
 
         scanner.close();
 

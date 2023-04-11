@@ -4,7 +4,7 @@ public class TestCarObjects {
 
     public static void main(String[] args) {
 
-      //  Car car1 = new Car("X6", "Red", 2020, 45000);
+        //  Car car1 = new Car("X6", "Red", 2020, 45000);
 
         Honda honda = new Honda("Pilot", "Black", 2019, 35000);
 
@@ -31,7 +31,6 @@ public class TestCarObjects {
         System.out.println("--------------------------------------------");
         audi.autoPark();
         tesla.autoPilot();
-
 
 
     }

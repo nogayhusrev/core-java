@@ -17,61 +17,61 @@ public class TaskInsert {
         1.2 Create the same function for double array, char array and string array
      */
 
-    public static int[] insert(int [] arr, int index,int newElement ){
+    public static int[] insert(int[] arr, int index, int newElement) {
 
-        if (index < 0 || index > arr.length-1){
+        if (index < 0 || index > arr.length - 1) {
             System.out.println("Given index is invalid");
             System.exit(0);
 
         }
 
-        int[] result= Arrays.copyOf(arr,arr.length);
-        result[index]=newElement;
+        int[] result = Arrays.copyOf(arr, arr.length);
+        result[index] = newElement;
 
         return result;
 
     }
 
-    public static double[] insert(double [] arr, int index,double newElement ){
+    public static double[] insert(double[] arr, int index, double newElement) {
 
-        if (index < 0 || index > arr.length-1){
+        if (index < 0 || index > arr.length - 1) {
             System.out.println("Given index is invalid");
             System.exit(0);
 
         }
 
-        double[] result= Arrays.copyOf(arr,arr.length);
-        result[index]=newElement;
+        double[] result = Arrays.copyOf(arr, arr.length);
+        result[index] = newElement;
 
         return result;
 
     }
 
-    public static char[] insert(char [] arr, int index,char newElement ){
+    public static char[] insert(char[] arr, int index, char newElement) {
 
-        if (index < 0 || index > arr.length-1){
+        if (index < 0 || index > arr.length - 1) {
             System.out.println("Given index is invalid");
             System.exit(0);
 
         }
 
-        char[] result= Arrays.copyOf(arr,arr.length);
-        result[index]=newElement;
+        char[] result = Arrays.copyOf(arr, arr.length);
+        result[index] = newElement;
 
         return result;
 
     }
 
-    public static String[] insert(String [] arr, int index,String newElement ){
+    public static String[] insert(String[] arr, int index, String newElement) {
 
-        if (index < 0 || index > arr.length-1){
+        if (index < 0 || index > arr.length - 1) {
             System.out.println("Given index is invalid");
             System.exit(0);
 
         }
 
-        String[] result= Arrays.copyOf(arr,arr.length);
-        result[index]=newElement;
+        String[] result = Arrays.copyOf(arr, arr.length);
+        result[index] = newElement;
 
         return result;
 

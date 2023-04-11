@@ -1,19 +1,20 @@
 package day06_ifStatements;
+
 public class EqualNumbers {
 
     public static void main(String[] args) {
-        int nm1=12,
-                nm2=23,
-                nm3=23;
-        if(nm1==nm2 && nm1==nm3 && nm2==nm3){
+        int nm1 = 12,
+                nm2 = 23,
+                nm3 = 23;
+        if (nm1 == nm2 && nm1 == nm3 && nm2 == nm3) {
             System.out.println("all equal");
-        } else if (nm1==nm2 ) {
-            System.out.println(nm1 +"&"+nm2+" are equal");
-        } else if (nm1==nm3) {
-            System.out.println(nm1 +"&"+nm3+" are equal");
-        }else if (nm2==nm3) {
-            System.out.println(nm2 +"&"+nm3+" are equal");
-        }else{
+        } else if (nm1 == nm2) {
+            System.out.println(nm1 + "&" + nm2 + " are equal");
+        } else if (nm1 == nm3) {
+            System.out.println(nm1 + "&" + nm3 + " are equal");
+        } else if (nm2 == nm3) {
+            System.out.println(nm2 + "&" + nm3 + " are equal");
+        } else {
             System.out.println("none equal");
         }
 

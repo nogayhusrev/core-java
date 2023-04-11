@@ -9,7 +9,7 @@ public class EmployeeInfo {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Enter your full name:");
-        String fullName =input.nextLine();
+        String fullName = input.nextLine();
 
         System.out.println("Enter your age:");
         byte age = input.nextByte();

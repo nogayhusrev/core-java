@@ -29,11 +29,11 @@ public class StringMethods3 {
 
         System.out.println(str1 == str2);
 
-        System.out.println( str1.equals(str2) );
+        System.out.println(str1.equals(str2));
 
         String str3 = new String("cydeo");
 
-        System.out.println( str2.equals(str3));
+        System.out.println(str2.equals(str3));
 
         //------------------------------------
 
@@ -56,7 +56,7 @@ public class StringMethods3 {
         String sentence = "My favorite programming language is JAVA";
 
         boolean hasJava = sentence.toLowerCase().contains("java");
-     //   boolean hasJava = sentence.equalsIgnoreCase("java");
+        //   boolean hasJava = sentence.equalsIgnoreCase("java");
 
         System.out.println("hasJava = " + hasJava);
 
@@ -64,7 +64,7 @@ public class StringMethods3 {
 
         String name = "Micheal";
 
-       boolean l =  name.startsWith("Da");
+        boolean l = name.startsWith("Da");
 
         System.out.println(l);
 
@@ -92,9 +92,6 @@ public class StringMethods3 {
         System.out.println("isGmail = " + isGmail);
         System.out.println("isYahoo = " + isYahoo);
         System.out.println("isHotMail = " + isHotMail);
-
-
-
 
 
     }

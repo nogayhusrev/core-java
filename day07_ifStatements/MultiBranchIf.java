@@ -8,15 +8,15 @@ public class MultiBranchIf {
 
         String result = "";
 
-        if(num > 0){ // true
+        if (num > 0) { // true
             result = "Positive";
         }
 
-        if(num < 0){
+        if (num < 0) {
             result = "Negative";
         }
 
-        if(num == 0){
+        if (num == 0) {
             result = "Zero";
         }
 
@@ -26,18 +26,15 @@ public class MultiBranchIf {
 
         String result2 = "";
 
-        if(num > 0){
-           result2 = "Positive" ;
-        }else if(num < 0){
+        if (num > 0) {
+            result2 = "Positive";
+        } else if (num < 0) {
             result2 = "Negative";
-        }else{
+        } else {
             result2 = "Zero";
         }
 
         System.out.println(result2);
-
-
-
 
 
     }

@@ -17,21 +17,21 @@ public class Calculator {
         System.out.println("Enter a math operator: ");
         char operator = input.next().charAt(0);
 
-         while (  ! (operator == '+' || operator == '-' || operator == '*' || operator == '/') ){  //while the operator is invalid
+        while (!(operator == '+' || operator == '-' || operator == '*' || operator == '/')) {  //while the operator is invalid
 
-             System.err.println("Invalid Operator! Please re-enter the math operator");
-             operator = input.next().charAt(0);
+            System.err.println("Invalid Operator! Please re-enter the math operator");
+            operator = input.next().charAt(0);
 
-         }
+        }
 
 
-        if(operator == '+'){
+        if (operator == '+') {
             System.out.println(num1 + num2);
-        }else if(operator == '-'){
-            System.out.println(num1  - num2);
-        }else if(operator == '*'){
+        } else if (operator == '-') {
+            System.out.println(num1 - num2);
+        } else if (operator == '*') {
             System.out.println(num1 * num2);
-        }else{ // /
+        } else { // /
             System.out.println(num1 / num2);
         }
 

@@ -64,7 +64,7 @@ public class MapPractice3 {
         arrayOfMap[4] = person5;
         // arrayOfMap[5] = new LinkedHashMap<>();
 
-        arrayOfMap[1].replace("salary", ( (Integer)arrayOfMap[1].get("salary") ) + 10000);
+        arrayOfMap[1].replace("salary", ((Integer) arrayOfMap[1].get("salary")) + 10000);
         arrayOfMap[0].replace("name", "Hasan");
 
         System.out.println(Arrays.toString(arrayOfMap));
@@ -73,9 +73,9 @@ public class MapPractice3 {
         int count = 0;
         for (Map<String, Object> eachMap : arrayOfMap) {
             for (Map.Entry<String, Object> eachEntry : eachMap.entrySet()) {
-                if(eachEntry.getKey().equals("salary")){
-                    double salary = (Integer)eachEntry.getValue();
-                    if(salary < 100000){
+                if (eachEntry.getKey().equals("salary")) {
+                    double salary = (Integer) eachEntry.getValue();
+                    if (salary < 100000) {
                         count++;
                     }
                 }

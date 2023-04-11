@@ -7,13 +7,13 @@ public class StartsWithX {
     public static void main(String[] args) {
         String input;
 
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter a word:");
 
-        input= scanner.next();
+        input = scanner.next();
 
-        input=(input.toLowerCase().startsWith("x"))?input.replaceFirst("x","a"):input;
+        input = (input.toLowerCase().startsWith("x")) ? input.replaceFirst("x", "a") : input;
 
         System.out.println(input);
 

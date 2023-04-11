@@ -3,7 +3,7 @@ package day34_abstraction.ownCarTask;
 public abstract class Car {
     private final String make, model;
     private String color;
-    private double  price;
+    private double price;
     private final int year;
 
     public Car(String make, String model, int year, String color, double price) {
@@ -11,17 +11,17 @@ public abstract class Car {
         //2. make, model, color can not be empty
         //2. year can not be less than 1886
         //2. price can not be negative
-        if(make == null || make.isEmpty()){
+        if (make == null || make.isEmpty()) {
             System.err.println("Make cannot be null or empty!");
             System.exit(1);
         }
 
-        if(model == null || model.isEmpty()){
+        if (model == null || model.isEmpty()) {
             System.err.println("Model cannot be null or empty!");
             System.exit(1);
         }
 
-        if(year < 1886){
+        if (year < 1886) {
             System.err.println("Year cannot be less than 1986!");
             System.exit(1);
         }
@@ -38,7 +38,7 @@ public abstract class Car {
 
     public void setColor(String color) {
         //2. make, model, color can not be empty
-        if(color == null || color.isEmpty()){
+        if (color == null || color.isEmpty()) {
             System.err.println("Color cannot be null or empty!");
             System.exit(1);
         }
@@ -47,7 +47,7 @@ public abstract class Car {
 
     public void setPrice(double price) {
         //2. price can not be negative
-        if (price < 0){
+        if (price < 0) {
             System.err.println("Price cannot be negative!");
             System.exit(1);
         }
@@ -78,13 +78,13 @@ public abstract class Car {
 
     public abstract void drive();
 
-    public void stop(){
+    public void stop() {
         System.out.println(getMake() + " " + getModel() + " is stopping.");
     }
 
     @Override
     public String toString() {
-        return  getClass().getSimpleName()+ "{" +
+        return getClass().getSimpleName() + "{" +
                 "make='" + make + '\'' +
                 ", model='" + model + '\'' +
                 ", color='" + color + '\'' +

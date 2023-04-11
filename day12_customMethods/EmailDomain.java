@@ -7,20 +7,20 @@ public class EmailDomain {
     public static void main(String[] args) {
 
         String email;
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Please enter your email:");
-        email=scanner.nextLine();
+        email = scanner.nextLine();
 
         emailDomain(email);
 
 
-
     }
-    public static void emailDomain(String email){
+
+    public static void emailDomain(String email) {
         String domain;
-        email=email.trim().replace(" ","");
-        domain=email.substring(email.indexOf("@")+1,email.indexOf("."));
+        email = email.trim().replace(" ", "");
+        domain = email.substring(email.indexOf("@") + 1, email.indexOf("."));
         System.out.println("domain = " + domain);
 
     }

@@ -8,16 +8,16 @@ public class RetrieveFromStringLettersNumbersSpecials {
     public static void main(String[] args) {
 
         String data;
-        String letters="",digits="",specials="";
-        Scanner scanner=new Scanner(System.in);
+        String letters = "", digits = "", specials = "";
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter the data:");
-        data=scanner.nextLine();
+        data = scanner.nextLine();
 
-        for(int i=0;i<data.length();i++){
+        for (int i = 0; i < data.length(); i++) {
 
-            letters=letters+((Character.isLetter(data.charAt(i)))?data.charAt(i):"");
-            digits=digits+((Character.isDigit(data.charAt(i)))?data.charAt(i):"");
+            letters = letters + ((Character.isLetter(data.charAt(i))) ? data.charAt(i) : "");
+            digits = digits + ((Character.isDigit(data.charAt(i))) ? data.charAt(i) : "");
             specials += (Character.isLetter(data.charAt(i)) || (Character.isDigit(data.charAt(i)))) ? "" : data.charAt(i);
 
 

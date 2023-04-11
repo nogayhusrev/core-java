@@ -23,7 +23,6 @@ public class TestIphoneObjects {
         IPhone.printOperatingSystem();
 
 
-
     }
 
 

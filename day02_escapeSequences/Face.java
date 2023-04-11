@@ -11,6 +11,5 @@ public class Face {
         System.out.println(" +-----+");
 
 
-
     }
 }

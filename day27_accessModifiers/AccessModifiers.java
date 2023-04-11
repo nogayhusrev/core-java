@@ -4,30 +4,30 @@ public class AccessModifiers {
 
     public static int publicData = 200;
 
-    protected static int protectedData =300;
+    protected static int protectedData = 300;
 
     static int defaultData = 400;
 
     private static int privateData = 500;
 
 
-    public  AccessModifiers(){
+    public AccessModifiers() {
 
     }
 
-    public static void publicMethod(){
+    public static void publicMethod() {
         System.out.println("Public");
     }
 
-    protected static void protectedMethod(){
+    protected static void protectedMethod() {
         System.out.println("protected");
     }
 
-    static void defaultMethod(){
+    static void defaultMethod() {
         System.out.println("Default");
     }
 
-    private static void privateMethod(){
+    private static void privateMethod() {
         System.out.println("Default");
     }
 
@@ -46,8 +46,6 @@ public class AccessModifiers {
         privateMethod();
 
     }
-
-
 
 
 }

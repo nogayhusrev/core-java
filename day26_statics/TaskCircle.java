@@ -2,27 +2,26 @@ package day26_statics;
 
 public class TaskCircle {
 
-    public double radius=0;
-    public double diameter=0;
-    public static double PI=Math.PI;
+    public double radius = 0;
+    public double diameter = 0;
+    public static double PI = Math.PI;
 
 
-
-    public TaskCircle(double radius){
-        this.radius=radius;
-        diameter=2*radius;
+    public TaskCircle(double radius) {
+        this.radius = radius;
+        diameter = 2 * radius;
 
     }
 
-    public double calcArea(){
-        return Math.pow(radius,2)*PI;
+    public double calcArea() {
+        return Math.pow(radius, 2) * PI;
     }
 
-    public double calcPerimeter(){
-        return 2*diameter;
+    public double calcPerimeter() {
+        return 2 * diameter;
     }
 
-    public void printPi(){
+    public void printPi() {
         System.out.println("PI = " + PI);
     }
 

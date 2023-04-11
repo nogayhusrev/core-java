@@ -19,9 +19,9 @@ public class Crypto {
 
     public void setPrice(double price) {
         //1. price can not be set to zero or negative
-        if (price>0){
+        if (price > 0) {
             this.price = price;
-        }else {
+        } else {
             System.err.println("price can not be set to zero or negative");
             System.exit(1);
         }
@@ -30,9 +30,9 @@ public class Crypto {
 
     public void setQuantity(int quantity) {
         //quantity can nt set to negative
-        if (quantity>0){
+        if (quantity > 0) {
             this.quantity = quantity;
-        }else {
+        } else {
             System.err.println("Quantity can not be set to negative");
             System.exit(1);
         }
@@ -40,9 +40,9 @@ public class Crypto {
 
     public void setMarketCap(long marketCap) {
         //3. marketCap can not be zero
-        if (marketCap>0){
+        if (marketCap > 0) {
             this.marketCap = marketCap;
-        }else {
+        } else {
             System.err.println("Market cap can not be set to negative");
             System.exit(1);
         }
@@ -76,8 +76,8 @@ public class Crypto {
         return isMineable;
     }
 
-    public double totalPrice(){
-        return price*quantity;
+    public double totalPrice() {
+        return price * quantity;
     }
 
     @Override

@@ -2,10 +2,10 @@ package day25_constructors;
 
 public class TaskCarpet {
 
-    public double width,length,unitPrice;
+    public double width, length, unitPrice;
     public boolean isPersian;
 
-    public TaskCarpet(double width,double length,double unitPrice, boolean isPersian){
+    public TaskCarpet(double width, double length, double unitPrice, boolean isPersian) {
 
         this.width = width;
         this.length = length;
@@ -14,8 +14,8 @@ public class TaskCarpet {
 
     }
 
-    public double calcCOst(){
-        return  (width*length*unitPrice)+((isPersian)?200:0);
+    public double calcCOst() {
+        return (width * length * unitPrice) + ((isPersian) ? 200 : 0);
     }
 
     @Override

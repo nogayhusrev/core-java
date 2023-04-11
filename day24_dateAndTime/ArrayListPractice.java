@@ -27,7 +27,7 @@ public class ArrayListPractice {
         System.out.println("-------------------------------------------------------");
 
         for (Employee each : employees) {
-            if(each.jobTitle.equals("Java Developer")){ // if the job title of the employee is Java Developer
+            if (each.jobTitle.equals("Java Developer")) { // if the job title of the employee is Java Developer
                 System.out.println(each.name);  // prints the name of the employee
             }
         }
@@ -36,14 +36,14 @@ public class ArrayListPractice {
         System.out.println("-------------------------------------------------------");
 
         double max = employees.get(0).salary;
-        double min =  employees.get(0).salary;
+        double min = employees.get(0).salary;
 
         for (Employee each : employees) {
-            if(each.salary > max){
+            if (each.salary > max) {
                 max = each.salary;
             }
 
-            if(each.salary < min){
+            if (each.salary < min) {
                 min = each.salary;
             }
         }
@@ -58,9 +58,9 @@ public class ArrayListPractice {
         ArrayList<Employee> maleEmployees = new ArrayList<>();
 
         for (Employee employee : employees) {
-            if(employee.gender == 'M'){  // if the employee is male
+            if (employee.gender == 'M') {  // if the employee is male
                 maleEmployees.add(employee);
-            }else{
+            } else {
                 femaleEmployees.add(employee);
             }
 
@@ -68,9 +68,6 @@ public class ArrayListPractice {
 
         System.out.println("Total number of female employees: " + femaleEmployees.size());
         System.out.println("Total number of male employees: " + maleEmployees.size());
-
-
-
 
 
     }

@@ -6,13 +6,12 @@ public class KilosToPounds {
 
     public static void main(String[] args) {
 
-        double kg,lb;
-        Scanner sc=new Scanner(System.in);
+        double kg, lb;
+        Scanner sc = new Scanner(System.in);
         System.out.print("Give any number of Kilos:");
-        kg=sc.nextDouble();
-        lb=kg*2.2;
-        System.out.println(kg+" kilos equals to "+lb+" pounds.");
-
+        kg = sc.nextDouble();
+        lb = kg * 2.2;
+        System.out.println(kg + " kilos equals to " + lb + " pounds.");
 
 
     }

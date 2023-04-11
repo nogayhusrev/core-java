@@ -22,7 +22,7 @@ public class IteratingMaps {
 
         // Iterating the map by the keys
         for (String eachKey : map.keySet()) {
-          //map.replace(eachKey,  map.get(eachKey) * 2 );
+            //map.replace(eachKey,  map.get(eachKey) * 2 );
             System.out.println(eachKey);
         }
 
@@ -47,15 +47,11 @@ public class IteratingMaps {
             String eachKey = eachEntry.getKey();
             Integer eachValue = eachEntry.getValue();
             eachEntry.setValue(eachValue + 10000);
-          //  System.out.println(eachKey +" : "+eachValue);
+            //  System.out.println(eachKey +" : "+eachValue);
         }
 
 
         System.out.println(map);
-
-
-
-
 
 
     }

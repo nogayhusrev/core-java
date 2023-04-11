@@ -15,13 +15,14 @@ public class LongestString {
         System.out.println("Enter the second string:");
         String second = input.nextLine();
 
-        input.close();;
+        input.close();
+        ;
 
-        if( first.length() > second.length()){
+        if (first.length() > second.length()) {
             System.out.println("first string is the longest");
-        }else if(first.length() < second.length()){
+        } else if (first.length() < second.length()) {
             System.out.println("second string is the longest");
-        }else{
+        } else {
             System.out.println("Equal");
         }
 

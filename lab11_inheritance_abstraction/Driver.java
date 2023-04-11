@@ -1,6 +1,6 @@
 package lab11_inheritance_abstraction;
 
-public class Driver extends Employee{
+public class Driver extends Employee {
 
     public Driver(String name, int age, char gender, String id, String jobTitle, double salary) {
         super(name, age, gender, id, jobTitle, salary);
@@ -8,14 +8,12 @@ public class Driver extends Employee{
 
     @Override
     public void work() {
-        System.out.println(getName() +" is driving");
+        System.out.println(getName() + " is driving");
     }
 
-    public void drive(){
+    public void drive() {
         work();
     }
-
-
 
 
 }

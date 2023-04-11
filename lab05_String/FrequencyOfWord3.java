@@ -8,11 +8,11 @@ public class FrequencyOfWord3 {
 
         int countJava = 0;
 
-        for(int i = 0; i <= sentence.length()-4; i++){
+        for (int i = 0; i <= sentence.length() - 4; i++) {
 
-            String each = sentence.substring(i, i+4); // creating all possible substring with 4 characters
+            String each = sentence.substring(i, i + 4); // creating all possible substring with 4 characters
 
-            if(each.equals("Java")){ // if the substring is equal to "Java"
+            if (each.equals("Java")) { // if the substring is equal to "Java"
                 countJava++;
             }
 
@@ -29,15 +29,15 @@ public class FrequencyOfWord3 {
         int countCat = 0;
         int countDog = 0;
 
-        for(int i = 0; i <= s.length()-3; i++){
+        for (int i = 0; i <= s.length() - 3; i++) {
 
-            String each = s.substring(i, i+3); // creating all possible substring with 3 characters
+            String each = s.substring(i, i + 3); // creating all possible substring with 3 characters
 
-            if(each.equals("Cat")){ // if the substring is equal to "cat"
+            if (each.equals("Cat")) { // if the substring is equal to "cat"
                 countCat++;
             }
 
-            if(each.equals("Dog")){
+            if (each.equals("Dog")) {
                 countDog++;
             }
 
@@ -46,7 +46,6 @@ public class FrequencyOfWord3 {
 
         System.out.println("countCat = " + countCat);
         System.out.println("countDog = " + countDog);
-
 
 
     }

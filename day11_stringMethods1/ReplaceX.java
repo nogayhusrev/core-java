@@ -6,13 +6,13 @@ public class ReplaceX {
     public static void main(String[] args) {
         String input;
 
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter a word:");
 
-        input= scanner.next();
+        input = scanner.next();
 
-        input=input.replace("x","a");
+        input = input.replace("x", "a");
 
         System.out.println(input);
 

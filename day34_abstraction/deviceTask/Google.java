@@ -1,6 +1,6 @@
 package day34_abstraction.deviceTask;
 
-public class Google extends Phone implements AndroidApps{
+public class Google extends Phone implements AndroidApps {
     public Google(String brand, String model, String size, String color, double price, boolean hasBattery, boolean hasPowerButton) {
         super(brand, model, size, color, price, hasBattery, hasPowerButton);
     }

@@ -4,7 +4,7 @@ public class RelationalOperators {
 
     public static void main(String[] args) {
 
-        int a =  1000;
+        int a = 1000;
         int b = 200;
 
         //System.out.println(  a > b  );
@@ -25,18 +25,18 @@ public class RelationalOperators {
 
         int age = 21;
 
-        boolean eligibleToBuyAlcohol =  age >= 21;
+        boolean eligibleToBuyAlcohol = age >= 21;
 
         System.out.println(eligibleToBuyAlcohol);
 
-        boolean eligibleToVote =  age >= 18;
+        boolean eligibleToVote = age >= 18;
 
         System.out.println(eligibleToVote);
 
         System.out.println("-------------------------------------------");
 
-        System.out.println( 100 > 100); // false
-        System.out.println( 100 >= 100); // true
+        System.out.println(100 > 100); // false
+        System.out.println(100 >= 100); // true
         System.out.println(100 >= 85); // true
 
         System.out.println("------------------------------------------");
@@ -51,18 +51,16 @@ public class RelationalOperators {
 
         System.out.println("------------------------------------------");
 
-        System.out.println( 95 <= 100);  // true
+        System.out.println(95 <= 100);  // true
 
-        System.out.println( 100 <= 100); // true
+        System.out.println(100 <= 100); // true
 
         System.out.println("------------------------------------------");
 
-       // System.out.println("Java" <= "C#"); // >, <, <=, >= can only be applicable for numbers
+        // System.out.println("Java" <= "C#"); // >, <, <=, >= can only be applicable for numbers
 
-        System.out.println( 'a' > 'b');
+        System.out.println('a' > 'b');
         //                  65  >  66
-
-
 
 
     }

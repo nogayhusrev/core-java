@@ -4,10 +4,10 @@ public class BrowserNmae {
 
     public static void main(String[] args) {
 
-        String browserName="chrome";
-        browserName=browserName.toLowerCase();
+        String browserName = "chrome";
+        browserName = browserName.toLowerCase();
 
-        switch (browserName){
+        switch (browserName) {
             case "chrome":
                 System.out.print("Your Browser is ");
                 System.err.print("chrome");

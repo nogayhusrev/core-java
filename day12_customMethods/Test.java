@@ -17,7 +17,6 @@ public class Test {
         CustomMethodsPractice.initial(firstName, lastName);
 
 
-
     }
 
 

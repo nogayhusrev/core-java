@@ -11,16 +11,15 @@ public class RemoveExtraSpaces {
 
         str = "";
 
-        for(String  each : words ){
-            if(!each.isEmpty()){
-                str += each+" ";
+        for (String each : words) {
+            if (!each.isEmpty()) {
+                str += each + " ";
             }
         }
 
         str = str.trim(); // to remove the last space
 
         System.out.println(str);
-
 
 
     }

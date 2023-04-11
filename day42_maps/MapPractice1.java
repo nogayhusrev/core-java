@@ -38,9 +38,9 @@ public class MapPractice1 {
         }
         */
         for (String eachValue : employeeMap.values()) {
-            if(eachValue.equals("F")){
+            if (eachValue.equals("F")) {
                 countFemaleEmployees++;
-            }else{
+            } else {
                 countMaleEmployee++;
             }
         }
@@ -61,7 +61,7 @@ public class MapPractice1 {
 
          */
         for (Map.Entry<String, String> eachEntry : employeeMap.entrySet()) {
-            if(eachEntry.getValue().equals("F")){
+            if (eachEntry.getValue().equals("F")) {
                 System.out.println(eachEntry.getKey());
             }
         }
@@ -70,19 +70,14 @@ public class MapPractice1 {
         // update all the "M" values with "Male", "F" values with "Female"
 
         for (Map.Entry<String, String> eachEntry : employeeMap.entrySet()) {
-            if(eachEntry.getValue().equals("M")){
+            if (eachEntry.getValue().equals("M")) {
                 eachEntry.setValue("Male");
-            }else{
+            } else {
                 eachEntry.setValue("Female");
             }
         }
 
         System.out.println(employeeMap);
-
-
-
-
-
 
 
     }

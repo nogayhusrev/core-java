@@ -21,19 +21,15 @@ public class TestPizzaObject {
 
         System.out.println(r);
 
-        double total =  ( (Pizza)obj).calcCost();
+        double total = ((Pizza) obj).calcCost();
 
         System.out.println(total);
 
-        double area = ( (Circle)obj ).area();
+        double area = ((Circle) obj).area();
 
-     //   System.out.println(area);
+        //   System.out.println(area);
 
         System.out.println("Test Completed");
-
-
-
-
 
 
     }

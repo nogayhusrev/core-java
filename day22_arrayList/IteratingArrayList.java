@@ -15,7 +15,7 @@ public class IteratingArrayList {
         numbers.add(500);
         numbers.add(3, 255);
 
-       // numbers.add(300, 2000);
+        // numbers.add(300, 2000);
 
         System.out.println(numbers); //{100, 200, 300, 255, 400, 500}
 
@@ -36,11 +36,6 @@ public class IteratingArrayList {
         for (Integer each : numbers) {
             System.out.println(each);
         }
-
-
-
-
-
 
 
     }

@@ -2,7 +2,7 @@ package day27_accessModifiers;
 
 public class StaticBlock {
 
-    public StaticBlock(){
+    public StaticBlock() {
         System.out.println("Constructor");
     }
 
@@ -14,7 +14,7 @@ public class StaticBlock {
         new StaticBlock();
     }
 
-    static{
+    static {
         System.out.println("Static Block");
     }
 

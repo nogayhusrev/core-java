@@ -22,11 +22,7 @@ public class TestAddressObjects {
 
         System.out.println("-------------------------------------");
 
-       // new Address();
-
-
-
-
+        // new Address();
 
 
     }

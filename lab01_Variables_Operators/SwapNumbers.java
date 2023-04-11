@@ -15,12 +15,9 @@ public class SwapNumbers {
 //        n2 = n3 ; // n1=20  n2=10  n3=10
 
         //Option-2 (by not using 3rd variable - with arithmetic operators)
-        n2 = n1 + n2 ; // n1=10  n2=30
-        n1 = n2 - n1 ; // n1=20  n2=30
-        n2 = n2 - n1 ; // n1=20  n2=10
-
-
-
+        n2 = n1 + n2; // n1=10  n2=30
+        n1 = n2 - n1; // n1=20  n2=30
+        n2 = n2 - n1; // n1=20  n2=10
 
 
         System.out.println("n1:" + n1); //20

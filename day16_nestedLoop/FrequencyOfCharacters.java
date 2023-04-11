@@ -13,20 +13,18 @@ public class FrequencyOfCharacters {
         String str = input.next();
 
         String result = "";
-        int j=0;
+        int j = 0;
 
-        for (int i = 0; i < str.length()-1;i++) {
-            j=i-1;
-            result+=str.charAt(i);
-            while(i<str.length()-1 && str.charAt(i) == str.charAt(i+1))  i++;
-            result=result+String.valueOf(i-j);
+        for (int i = 0; i < str.length() - 1; i++) {
+            j = i - 1;
+            result += str.charAt(i);
+            while (i < str.length() - 1 && str.charAt(i) == str.charAt(i + 1)) i++;
+            result = result + String.valueOf(i - j);
 
         }
 
-        System.out.println("String : " +str);
+        System.out.println("String : " + str);
         System.out.println("result = " + result);
-
-
 
 
     }

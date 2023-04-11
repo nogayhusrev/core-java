@@ -8,8 +8,8 @@ public class LogicalOperators {
         int creditScore = 650;
         int age = 42;
 
-        boolean eligibleForLoan =   salary >= 30000 && creditScore >= 650 && age >= 18;
-                                    //  true        &&     true            &&   true
+        boolean eligibleForLoan = salary >= 30000 && creditScore >= 650 && age >= 18;
+        //  true        &&     true            &&   true
 
         System.out.println(eligibleForLoan);
 
@@ -18,7 +18,7 @@ public class LogicalOperators {
         age = 18;
         String country = "USA";
 
-        boolean eligibleToVote = age >= 18  && country == "USA";
+        boolean eligibleToVote = age >= 18 && country == "USA";
         //                          true    &&  false
 
         System.out.println(eligibleToVote);
@@ -27,7 +27,7 @@ public class LogicalOperators {
 
         country = "Mexico";
 
-        boolean nativeEnglishSpeaker =  country == "Canada" || country == "USA" || country == " UK" || country == "Australia";
+        boolean nativeEnglishSpeaker = country == "Canada" || country == "USA" || country == " UK" || country == "Australia";
         //                                false             ||       false      ||   false          ||   true
 
         System.out.println("nativeEnglishSpeaker = " + nativeEnglishSpeaker);
@@ -36,7 +36,7 @@ public class LogicalOperators {
 
         String answer = "maybe";
 
-        boolean validAnswer =  answer == "yes" || answer == "no";
+        boolean validAnswer = answer == "yes" || answer == "no";
 
         System.out.println(validAnswer);
 
@@ -55,7 +55,7 @@ public class LogicalOperators {
 
         String a = "yes";
 
-        boolean yes =  a == "yes"; // true
+        boolean yes = a == "yes"; // true
         boolean no = !yes; // false
 
         System.out.println("yes = " + yes);
@@ -66,7 +66,7 @@ public class LogicalOperators {
         int score = 65;
 
         boolean passed = score >= 60;
-        boolean failed =  !passed;
+        boolean failed = !passed;
 
         System.out.println("passed = " + passed);
         System.out.println("failed = " + failed);
@@ -74,11 +74,8 @@ public class LogicalOperators {
         System.out.println("-----------------------------------------------------");
 
 
-        System.out.println(  true == !false && false  == !true && true != !true  );
+        System.out.println(true == !false && false == !true && true != !true);
         //                    true          &&     true        &&   true
-
-
-
 
 
     }

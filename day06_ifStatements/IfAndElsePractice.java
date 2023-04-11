@@ -6,12 +6,11 @@ public class IfAndElsePractice {
 
         int score = 35;
 
-        if(score >= 60){
+        if (score >= 60) {
             System.out.println("Passed");
-        }else{
+        } else {
             System.out.println("Failed");
         }
-
 
 
     }

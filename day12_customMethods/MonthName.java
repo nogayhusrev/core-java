@@ -7,17 +7,17 @@ public class MonthName {
     public static void main(String[] args) {
 
         int num;
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter the month number:");
-        num= scanner.nextInt();
+        num = scanner.nextInt();
         monthName(num);
 
     }
 
-    public static void monthName(int num){
+    public static void monthName(int num) {
 
-        if (num==1){
+        if (num == 1) {
             System.out.println("January");
         } else if (num == 2) {
             System.out.println("February");
@@ -31,17 +31,17 @@ public class MonthName {
             System.out.println("June");
         } else if (num == 7) {
             System.out.println("July");
-        }else if (num == 8) {
+        } else if (num == 8) {
             System.out.println("August");
-        }else if (num == 9) {
+        } else if (num == 9) {
             System.out.println("September");
-        }else if (num == 10) {
+        } else if (num == 10) {
             System.out.println("October");
-        }else if (num == 11) {
+        } else if (num == 11) {
             System.out.println("November");
-        }else if (num == 12) {
+        } else if (num == 12) {
             System.out.println("December");
-        }else
+        } else
             System.out.println("Invalid argument");
 
     }

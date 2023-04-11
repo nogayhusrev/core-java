@@ -2,19 +2,19 @@ package day07_ifStatements;
 
 public class GradeLevel {
     public static void main(String[] args) {
-        int level=7;
+        int level = 7;
 
-        if(level>=1&&level<=5)
+        if (level >= 1 && level <= 5)
             System.out.println("Elementary school");
-            else if (level>=6&&level<=8)
-                System.out.println("Middle school");
-                else if (level>=9&&level<=12)
-                    System.out.println("High school");
-                    else if (level>=13&&level<=16)
-                        System.out.println("College");
-                        else if (level>=17&&level<=19)
-                            System.out.println("Grad School");
-                        else
+        else if (level >= 6 && level <= 8)
+            System.out.println("Middle school");
+        else if (level >= 9 && level <= 12)
+            System.out.println("High school");
+        else if (level >= 13 && level <= 16)
+            System.out.println("College");
+        else if (level >= 17 && level <= 19)
+            System.out.println("Grad School");
+        else
             System.out.println("Unvalid argument");
 
 

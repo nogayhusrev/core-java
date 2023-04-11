@@ -32,9 +32,6 @@ public class FrequencyOfWord {
         System.out.println(totalNumberOfJava);
 
 
-
-
-
     }
 
 }

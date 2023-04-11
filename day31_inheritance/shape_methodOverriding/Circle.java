@@ -5,7 +5,7 @@ public final class Circle extends Shape {
     private double radius;
 
     public Circle(double radius) {
-       setRadius(radius);
+        setRadius(radius);
     }
 
     public double getRadius() {
@@ -34,14 +34,13 @@ public final class Circle extends Shape {
     }
 
     public String toString() {
-        return getClass().getSimpleName()+"{" +
+        return getClass().getSimpleName() + "{" +
                 "name='" + getName() + '\'' +
                 ", radius='" + radius + '\'' +
                 ", area='" + area() + '\'' +
                 ", perimeter='" + perimeter() + '\'' +
                 '}';
     }
-
 
 
 }

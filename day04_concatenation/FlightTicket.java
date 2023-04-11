@@ -3,13 +3,11 @@ package day04_concatenation;
 public class FlightTicket {
 
     public static void main(String[] args) {
-        String from="Newyork",to="Miami";
+        String from = "Newyork", to = "Miami";
 
-        double ticketPrice=245.89;
+        double ticketPrice = 245.89;
 
-        System.out.println("From "+from+" to "+to+" is $"+ticketPrice);
-
-
+        System.out.println("From " + from + " to " + to + " is $" + ticketPrice);
 
 
     }

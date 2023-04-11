@@ -1,9 +1,9 @@
 package lab08_SplitterApp.lab8Class;
 
 public class Expense {
-    public  int amount;
+    public int amount;
     public String expenseName;
-    public  String user;
+    public String user;
 
     @Override
     public String toString() {

@@ -14,7 +14,7 @@ public class RelationalOperators2 {
 
         System.out.println("Muhtar" == "Good Guy");
 
-        System.out.println( true == false);
+        System.out.println(true == false);
 
         System.out.println("-----------------------------");
 
@@ -28,8 +28,7 @@ public class RelationalOperators2 {
 
         System.out.println("Muhtar" != "Good Guy"); // true
 
-        System.out.println( true != false);  // true
-
+        System.out.println(true != false);  // true
 
 
     }

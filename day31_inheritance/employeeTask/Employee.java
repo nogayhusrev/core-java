@@ -8,12 +8,12 @@ public class Employee {
     private double salary;
 
     public Employee(String name, char gender, String jobTitle, String companyName, int age, double salary) {
-       setName(name);
-       setGender(gender);
-       setJobTitle(jobTitle);
-       setCompanyName(companyName);
-       setAge(age);
-       setSalary(salary);
+        setName(name);
+        setGender(gender);
+        setJobTitle(jobTitle);
+        setCompanyName(companyName);
+        setAge(age);
+        setSalary(salary);
     }
 
     public void setName(String name) {
@@ -22,11 +22,11 @@ public class Employee {
 
     public void setGender(char gender) {
         //3. gender can only be set to 'M' or 'F'
-        if (gender == 'M'){
+        if (gender == 'M') {
             this.gender = gender;
-        }else if (gender =='F'){
+        } else if (gender == 'F') {
             this.gender = gender;
-        }else{
+        } else {
             System.err.println("Gender cannot be other than (M,F)");
             System.exit(1);
         }
@@ -45,7 +45,7 @@ public class Employee {
     public void setAge(int age) {
         //1. Age can not be zero or negative
         //2. Age can not be less than 18
-        if (age < 18){
+        if (age < 18) {
             System.err.println("Age should not be set to negative or zero or less than 18");
             System.exit(1);
         }
@@ -81,13 +81,13 @@ public class Employee {
         return salary;
     }
 
-    public void work(){
+    public void work() {
         System.out.println(name + " is working");
     }
 
     @Override
     public String toString() {
-        return  getClass().getSimpleName() + "{" +
+        return getClass().getSimpleName() + "{" +
                 "name='" + name + '\'' +
                 ", jobTitle='" + jobTitle + '\'' +
                 ", companyName='" + companyName + '\'' +

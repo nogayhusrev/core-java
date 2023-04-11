@@ -23,7 +23,7 @@ public class ArrayListMethods {
 
         System.out.println(groceriesList);
 
-       // groceriesList[2] = "Oranges";
+        // groceriesList[2] = "Oranges";
         groceriesList.set(2, "Oranges");
 
         System.out.println(groceriesList);
@@ -52,7 +52,7 @@ public class ArrayListMethods {
         numbers.add(50); // 4
 
 
-        boolean r1 = numbers.remove( Integer.valueOf(10) );
+        boolean r1 = numbers.remove(Integer.valueOf(10));
 
         System.out.println(numbers);
 
@@ -75,10 +75,10 @@ public class ArrayListMethods {
         names.add("Ali");
         names.add("Sumeye");
 
-        System.out.println(  names.indexOf("Vasyl") );
-        System.out.println( names.lastIndexOf("Vasyl") );
+        System.out.println(names.indexOf("Vasyl"));
+        System.out.println(names.lastIndexOf("Vasyl"));
 
-        System.out.println( names.lastIndexOf("Sumeye") );
+        System.out.println(names.lastIndexOf("Sumeye"));
 
 
         boolean hasMuhtar = names.contains("Muhtar"); // false
@@ -140,14 +140,6 @@ public class ArrayListMethods {
 
         System.out.println(n1.isEmpty());
         System.out.println(n2.isEmpty());
-
-
-
-
-
-
-
-
 
 
     }

@@ -15,49 +15,48 @@ public class MyInfo {
         int buildingNumber;
         String streetName;
 
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter your name:");
-        name= scanner.nextLine();
+        name = scanner.nextLine();
 
 
         System.out.println("Enter your age:");
-        age=scanner.nextInt();
+        age = scanner.nextInt();
 
         System.out.println("Enter your gender:");
-        gender=scanner.next();
+        gender = scanner.next();
         scanner.nextLine();
 
         System.out.println("Enter your phone number:");
-        phoneNumber=scanner.nextLong();
+        phoneNumber = scanner.nextLong();
 
         System.out.println("Enter your street name:");
-        streetName=scanner.nextLine();
+        streetName = scanner.nextLine();
         scanner.nextLine();
 
 
         System.out.println("Enter your building number:");
-        buildingNumber= scanner.nextInt();
+        buildingNumber = scanner.nextInt();
 
         System.out.println("Enter your city name:");
-        cityName= scanner.nextLine();
+        cityName = scanner.nextLine();
         scanner.nextLine();
 
         System.out.println("Enter your state name:");
-        stateName= scanner.nextLine();
+        stateName = scanner.nextLine();
 
 
         System.out.println("Enter your zipcode:");
-        zipCode=scanner.nextInt();
+        zipCode = scanner.nextInt();
         scanner.nextLine();
 
         System.out.println("Enter your school name:");
-        schoolName= scanner.nextLine();
-
+        schoolName = scanner.nextLine();
 
 
         System.out.println(name);
-        System.out.println( age);
+        System.out.println(age);
         System.out.println(gender);
         System.out.println(phoneNumber);
         System.out.print("\t" + buildingNumber);
@@ -66,9 +65,6 @@ public class MyInfo {
         System.out.print(" " + stateName);
         System.out.println(" " + zipCode);
         System.out.println(schoolName);
-
-
-
 
 
     }

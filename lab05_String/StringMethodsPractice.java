@@ -103,7 +103,7 @@ public class StringMethodsPractice {
 
         String s3 = "Java is my favorite programming language";
 
-        System.out.println( s3.equals("Java") );
+        System.out.println(s3.equals("Java"));
         System.out.println(s3.contains("Java"));
 
         System.out.println("-----------------------------------------------------------");
@@ -111,12 +111,9 @@ public class StringMethodsPractice {
 
         String w = "Cydeo School";
 
-        System.out.println( w.startsWith("Cydeo"));
+        System.out.println(w.startsWith("Cydeo"));
 
-        System.out.println( w.endsWith("ool") );
-
-
-
+        System.out.println(w.endsWith("ool"));
 
 
     }

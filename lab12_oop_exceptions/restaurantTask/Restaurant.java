@@ -39,8 +39,8 @@ public class Restaurant {
     }
 
     public void setNumberOfStars(double numberOfStars) {
-        if(numberOfStars < 0 || numberOfStars > 5){
-            throw new IllegalArgumentException("Number of starts must be between 0 ~ 5: "+numberOfStars);
+        if (numberOfStars < 0 || numberOfStars > 5) {
+            throw new IllegalArgumentException("Number of starts must be between 0 ~ 5: " + numberOfStars);
         }
         this.numberOfStars = numberOfStars;
     }
@@ -54,19 +54,19 @@ public class Restaurant {
     }
 
 
-    public void hireServer(Server server){
+    public void hireServer(Server server) {
 
-        if(server == null){
-           // return;
+        if (server == null) {
+            // return;
             throw new NullPointerException("Server object can not be null");
         }
         servers.add(server);
     }
 
 
-    public void hireServer(Server[] servers){
+    public void hireServer(Server[] servers) {
         for (Server each : servers) {
-            if(each == null){
+            if (each == null) {
                 throw new NullPointerException("Server object can not be null");
             }
         }
@@ -74,31 +74,31 @@ public class Restaurant {
     }
 
 
-    public void hireChef(Chef chef){
-        if(chef == null){
+    public void hireChef(Chef chef) {
+        if (chef == null) {
             throw new NullPointerException("Chef object can not be null");
         }
         chefs.add(chef);
     }
 
 
-    public void hireChef(Chef[] chefs){
+    public void hireChef(Chef[] chefs) {
         for (Chef each : chefs) {
-            if(each == null){
+            if (each == null) {
                 throw new NullPointerException("Chef object can not be null");
             }
         }
-      this.chefs.addAll(Arrays.asList(chefs));
+        this.chefs.addAll(Arrays.asList(chefs));
 
     }
 
 
-    public void terminateServer(String id){
-        servers.removeIf( p -> p.getId().equalsIgnoreCase(id));
+    public void terminateServer(String id) {
+        servers.removeIf(p -> p.getId().equalsIgnoreCase(id));
     }
 
-    public void terminateChef(String id){
-        chefs.removeIf( p -> p.getId().equalsIgnoreCase(id));
+    public void terminateChef(String id) {
+        chefs.removeIf(p -> p.getId().equalsIgnoreCase(id));
     }
 
 

@@ -15,12 +15,11 @@ public class WarmupTasks {
 
         System.out.println("-----------------------------------------------");
 
-        System.out.println(    sumOf2IntegerNumbers(10, 20)   );
+        System.out.println(sumOf2IntegerNumbers(10, 20));
 
-        System.out.println( sumOf3IntegerNumbers(10, 20, 30) );
+        System.out.println(sumOf3IntegerNumbers(10, 20, 30));
 
-        System.out.println( sumOf4IntegerNumbers(10, 20, 30, 40) );
-
+        System.out.println(sumOf4IntegerNumbers(10, 20, 30, 40));
 
 
     }
@@ -60,11 +59,11 @@ public class WarmupTasks {
 
 
     public static int sumOf4IntegerNumbers(int n1, int n2, int n3, int n4) {
-       // return n1 + n2 + n3 + n4;
-      //  return sumOf3IntegerNumbers(n1, n2, n3) + n4;
-      //  return sumOf2IntegerNumbers(n1, n2) + sumOf2IntegerNumbers(n3, n4);
-      //  return  sumOf2IntegerNumbers(   sumOf3IntegerNumbers(n1, n2, n3)  ,   n4 );
-        return  sumOf3IntegerNumbers(   sumOf2IntegerNumbers(n1, n2)  ,  n3 ,  n4  );
+        // return n1 + n2 + n3 + n4;
+        //  return sumOf3IntegerNumbers(n1, n2, n3) + n4;
+        //  return sumOf2IntegerNumbers(n1, n2) + sumOf2IntegerNumbers(n3, n4);
+        //  return  sumOf2IntegerNumbers(   sumOf3IntegerNumbers(n1, n2, n3)  ,   n4 );
+        return sumOf3IntegerNumbers(sumOf2IntegerNumbers(n1, n2), n3, n4);
 
     }
 

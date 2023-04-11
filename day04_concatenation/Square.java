@@ -2,11 +2,9 @@ package day04_concatenation;
 
 public class Square {
     public static void main(String[] args) {
-        int side=3,area,perimeter;
-        System.out.println("Area of the square is : "+side*side);
-        System.out.println("Perimeter of the square is: "+4*side);
-
-
+        int side = 3, area, perimeter;
+        System.out.println("Area of the square is : " + side * side);
+        System.out.println("Perimeter of the square is: " + 4 * side);
 
 
     }

@@ -6,26 +6,25 @@ public class PositiveNegative {
 
     public static void main(String[] args) {
 
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         int num;
         int
-                negatives=0,
-                positives=0;
+                negatives = 0,
+                positives = 0;
 
         System.out.println("Enter 5 times number:");
         System.out.println("Inputs:");
 
 
-        for (int i=0;i<5;i++){
-            num= scanner.nextInt();
-            if (num>=0)
+        for (int i = 0; i < 5; i++) {
+            num = scanner.nextInt();
+            if (num >= 0)
                 positives++;
             else
                 negatives++;
 
         }
         System.out.println(positives + " positive and " + negatives + " negative");
-
 
 
     }

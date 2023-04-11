@@ -9,11 +9,11 @@ public class SalaryCalculator {
         double stateTaxRate = 7.5; // implicit casting
         double federalTaxRate = 24.5;
 
-    //------------------------------------------------------------------------
+        //------------------------------------------------------------------------
 
-        double salaryBeforeTax = hourlyRate * weeklyHours * 52 ;
+        double salaryBeforeTax = hourlyRate * weeklyHours * 52;
 
-        double stateTax = salaryBeforeTax * stateTaxRate / 100 ;
+        double stateTax = salaryBeforeTax * stateTaxRate / 100;
 
         double federalTax = salaryBeforeTax * federalTaxRate / 100;
 
@@ -30,11 +30,10 @@ public class SalaryCalculator {
         System.out.println("----------------------------------------------------------");
 
         System.out.println("Gross pay is: $" + salaryBeforeTax +
-                "\nFederal tax is: $" + federalTax  +
+                "\nFederal tax is: $" + federalTax +
                 "\nState tax is: $" + stateTax +
                 "\nTotal tax is: $" + totalTax +
                 "\nNet income is: $" + salaryAfterTax);
-
 
 
     }

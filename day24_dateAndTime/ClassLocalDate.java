@@ -10,7 +10,7 @@ public class ClassLocalDate {
         System.out.println("-----------------");
         System.out.println(today);
 
-        LocalDate bithDay=LocalDate.of(1990,8,31);
+        LocalDate bithDay = LocalDate.of(1990, 8, 31);
 
         System.out.println("-----------------");
         System.out.println(bithDay);
@@ -35,7 +35,7 @@ public class ClassLocalDate {
         System.out.println(today.minusYears(2500));
 
 
-        LocalDate graduationDate=LocalDate.of(2015,7,3);
+        LocalDate graduationDate = LocalDate.of(2015, 7, 3);
 
         System.out.println("-----------------");
         System.out.println(graduationDate);

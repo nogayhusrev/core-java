@@ -41,11 +41,10 @@ public class TestCarObjects {
         System.out.println("-------------------------------------------------");
 
         Car car4 = new Car();
-      //  car4 = null;
+        //  car4 = null;
         car4 = new Car();
 
         car4.drive();
-
 
 
     }

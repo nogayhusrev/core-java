@@ -5,32 +5,32 @@ import java.util.Scanner;
 public class RoomReservation {
     public static void main(String[] args) {
         String
-                king="King Bed ==> 120$",
-                queen="Queen Bed ==> 100$",
-                single="Single Bed ==> 80$",
-                wantToRoom="no",
+                king = "King Bed ==> 120$",
+                queen = "Queen Bed ==> 100$",
+                single = "Single Bed ==> 80$",
+                wantToRoom = "no",
                 room;
 
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
 
         System.out.println("Do you want a room?(yes/no)");
-        wantToRoom= scanner.next();
+        wantToRoom = scanner.next();
 
 
-        while(!(wantToRoom.equalsIgnoreCase("yes")||wantToRoom.equalsIgnoreCase("no"))) {
+        while (!(wantToRoom.equalsIgnoreCase("yes") || wantToRoom.equalsIgnoreCase("no"))) {
             System.err.println("Please enter a valid answer!!!");
             System.out.println("Do you want a room?(yes/no)");
             wantToRoom = scanner.next();
         }
 
-        if (wantToRoom.equalsIgnoreCase("yes")){
+        if (wantToRoom.equalsIgnoreCase("yes")) {
             System.out.println("Please enter which room you want:(king/queen/single)");
-            room= scanner.next();
+            room = scanner.next();
 
-            while(!((room.equalsIgnoreCase("king") ||
-                    room.equalsIgnoreCase("queen")||
-                            room.equalsIgnoreCase("single")))) {
+            while (!((room.equalsIgnoreCase("king") ||
+                    room.equalsIgnoreCase("queen") ||
+                    room.equalsIgnoreCase("single")))) {
                 System.err.println("Please enter a valid answer!!!");
                 System.out.println("Please enter which room you want:(king/queen/single)");
                 room = scanner.next();
@@ -43,10 +43,7 @@ public class RoomReservation {
             else
                 System.out.println(single);
 
-        }
-
-
-        else {
+        } else {
             System.out.println("Have a nice day.");
         }
 

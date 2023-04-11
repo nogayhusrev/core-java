@@ -1,11 +1,12 @@
 package day06_ifStatements;
+
 public class OxygenTank {
 
     public static void main(String[] args) {
 
-        int level=90;
+        int level = 90;
 
-        if(level>90){
+        if (level > 90) {
             System.out.println("Your tank is full");
         } else if (level > 80) {
             System.out.println("Still okay");

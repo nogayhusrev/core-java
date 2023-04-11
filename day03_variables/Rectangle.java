@@ -4,10 +4,10 @@ public class Rectangle {
 
     public static void main(String[] args) {
 
-        int width=23,length=43;
-        int area=width*length;
-        System.out.println("Area:"+ width+"*"+length+"="+area);
-        System.out.println("Perimeter:"+ width+"*"+length+"="+2*width*length);
+        int width = 23, length = 43;
+        int area = width * length;
+        System.out.println("Area:" + width + "*" + length + "=" + area);
+        System.out.println("Perimeter:" + width + "*" + length + "=" + 2 * width * length);
 
     }
 }

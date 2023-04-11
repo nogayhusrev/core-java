@@ -11,12 +11,12 @@ public abstract class Employee {
 
 
     public Employee(String name, int age, char gender, String id, String jobTitle, double salary) {
-       setName(name);
-       setAge(age);
-       setGender(gender);
-       setId(id);
-       setJobTitle(jobTitle);
-       setSalary(salary);
+        setName(name);
+        setAge(age);
+        setGender(gender);
+        setId(id);
+        setJobTitle(jobTitle);
+        setSalary(salary);
     }
 
     public String getName() {
@@ -72,7 +72,7 @@ public abstract class Employee {
 
 
     public String toString() {
-        return getClass().getSimpleName()+"{" +
+        return getClass().getSimpleName() + "{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", gender=" + gender +

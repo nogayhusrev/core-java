@@ -4,22 +4,21 @@ import java.util.Scanner;
 
 public class CombineWords {
     public static void main(String[] args) {
-        String input1,input2,output;
+        String input1, input2, output;
 
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter a word:");
-        input1= scanner.next();
+        input1 = scanner.next();
         System.out.println("Enter a word:");
-        input2= scanner.next();
+        input2 = scanner.next();
 
 
-        if (input1.endsWith((""+input2.charAt(0))))
-            output=input1+input2.substring(1);
+        if (input1.endsWith(("" + input2.charAt(0))))
+            output = input1 + input2.substring(1);
         else
-            output=input1+input2;
+            output = input1 + input2;
         System.out.println("output = " + output);
-
 
 
     }

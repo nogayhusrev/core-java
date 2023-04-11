@@ -18,8 +18,8 @@ public class CollectionsUtility {
 
         System.out.println("---------------------------------------------------------------");
 
-        ArrayList<String>  items = new ArrayList<>();
-        items.addAll(Arrays.asList("Eggs", "Potato",  "Milk", "Tomato", "Rice", "Orange", "Strawberry", "Blueberry", "Paper towels"));
+        ArrayList<String> items = new ArrayList<>();
+        items.addAll(Arrays.asList("Eggs", "Potato", "Milk", "Tomato", "Rice", "Orange", "Strawberry", "Blueberry", "Paper towels"));
 
         Collections.sort(items);
 
@@ -33,21 +33,17 @@ public class CollectionsUtility {
         System.out.println("---------------------------------------------------------------");
 
         ArrayList<String> students = new ArrayList<>();
-        students.addAll(  Arrays.asList("Gadir", "Hasan", "Abidullah", "Bilal" )   );
+        students.addAll(Arrays.asList("Gadir", "Hasan", "Abidullah", "Bilal"));
 
         System.out.println(students);
 
-        Collections.swap(students, 0 , 1);
+        Collections.swap(students, 0, 1);
 
         System.out.println(students);
 
-        Collections.swap(students, 0, students.size()-1);
+        Collections.swap(students, 0, students.size() - 1);
 
         System.out.println(students);
-
-
-
-
 
 
     }

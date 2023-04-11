@@ -1,6 +1,6 @@
 package day31_inheritance.studentTask;
 
-public class UnderGraduateStudent extends Student{
+public class UnderGraduateStudent extends Student {
 
     public UnderGraduateStudent(String name, String gender, int age, int studentId, String fieldOfStudy, String schoolName, char grade) {
         super(name, gender, age, studentId, fieldOfStudy, schoolName, grade);
@@ -8,7 +8,7 @@ public class UnderGraduateStudent extends Student{
 
     @Override
     public void study() {
-        System.out.println(getClass().getSimpleName() + " " + getName() + " is still studying in university" );
+        System.out.println(getClass().getSimpleName() + " " + getName() + " is still studying in university");
     }
 }
 /*

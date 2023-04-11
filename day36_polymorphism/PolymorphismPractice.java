@@ -11,7 +11,7 @@ public class PolymorphismPractice {
 
     public static void main(String[] args) {
 
-     //   IPhone phone = new Phone("Iphone 11 Pro", "Large", "Black", 900);
+        //   IPhone phone = new Phone("Iphone 11 Pro", "Large", "Black", 900);
 
         //Phone phone =  new Samsung("Galaxy S19", "Medium", "Pink", 700);
 
@@ -37,8 +37,8 @@ public class PolymorphismPractice {
 
 
         // model - color - price
-        for(Phone eachPhone : phones){
-            System.out.println(eachPhone.getModel() +" - "+eachPhone.getColor() +" - "+ eachPhone.getPrice());
+        for (Phone eachPhone : phones) {
+            System.out.println(eachPhone.getModel() + " - " + eachPhone.getColor() + " - " + eachPhone.getPrice());
         }
 
         System.out.println("---------------------------------------------------------");
@@ -48,11 +48,11 @@ public class PolymorphismPractice {
 
         for (Phone each : phones) {
 
-            if(each instanceof IPhone){ // if the phone is Iphone
+            if (each instanceof IPhone) { // if the phone is Iphone
                 countIphone++;
             }
 
-            if(each instanceof Samsung){ // if the phone is samsung
+            if (each instanceof Samsung) { // if the phone is samsung
                 countSamsung++;
             }
 
@@ -65,8 +65,8 @@ public class PolymorphismPractice {
         System.out.println("---------------------------------------------------------");
 
         for (Phone each : phones) {
-            if( each instanceof IPhone || each instanceof Samsung){ // if the phone is Iphone or samsung
-                if(each.getPrice() >= 700){
+            if (each instanceof IPhone || each instanceof Samsung) { // if the phone is Iphone or samsung
+                if (each.getPrice() >= 700) {
                     System.out.println(each.getModel());
                 }
             }
@@ -77,7 +77,6 @@ public class PolymorphismPractice {
 
 
     }
-
 
 
 }

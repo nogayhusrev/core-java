@@ -28,16 +28,16 @@ public class Car {
     }
 
     public void setYear(int year) {
-        if(year <= 0){
-            System.err.println("Invalid year: "+year);
+        if (year <= 0) {
+            System.err.println("Invalid year: " + year);
             System.exit(1);
         }
         this.year = year;
     }
 
     public void setPrice(double price) {
-        if(price <= 0){
-            System.err.println("Invalid price: "+price);
+        if (price <= 0) {
+            System.err.println("Invalid price: " + price);
             System.exit(1);
         }
         this.price = price;
@@ -64,7 +64,7 @@ public class Car {
     }
 
     public String toString() {
-        return make+"{" +
+        return make + "{" +
                 "model='" + model + '\'' +
                 ", color='" + color + '\'' +
                 ", year=" + year +

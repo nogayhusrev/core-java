@@ -20,7 +20,7 @@ public class Candy {
 
     public void setQuantity(int quantity) {
         //(quantity of candy can not be set to zero or negative)
-        if (quantity < 1){
+        if (quantity < 1) {
             System.err.println("Invalid quantity.");
             System.exit(1);
         }
@@ -30,7 +30,7 @@ public class Candy {
     public void setPrice(double price) {
         //  (price of candy can not be set to negative)
 
-        if (price < 0){
+        if (price < 0) {
             System.err.println("Invalid price.");
             System.exit(1);
         }
@@ -62,7 +62,7 @@ public class Candy {
         return "Candy{" +
                 "brand='" + brand + '\'' +
                 ", quantity=" + quantity +
-                ", price=" + (price==0?"free":price) +
+                ", price=" + (price == 0 ? "free" : price) +
                 ", hasPeanuts=" + hasPeanuts +
                 '}';
     }

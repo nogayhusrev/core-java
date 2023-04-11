@@ -13,11 +13,9 @@ public class ArrayObjects {
         arr1[0] = 1000;
         arr2[2] = 3000;
 
-        System.out.println(Arrays.toString(arr1) );
-        System.out.println(Arrays.toString(arr2) );
-        System.out.println(Arrays.toString(arr3) );
-
-
+        System.out.println(Arrays.toString(arr1));
+        System.out.println(Arrays.toString(arr2));
+        System.out.println(Arrays.toString(arr3));
 
 
         System.out.println("----------------------------------------------------");
@@ -28,8 +26,6 @@ public class ArrayObjects {
 
 
         System.out.println(Arrays.toString(a1));
-
-
 
 
     }

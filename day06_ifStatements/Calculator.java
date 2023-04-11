@@ -1,28 +1,28 @@
 package day06_ifStatements;
+
 import java.util.Scanner;
 
 public class Calculator {
 
     public static void main(String[] args) {
-        int num1=45,
-                num2=123;
+        int num1 = 45,
+                num2 = 123;
 
-        char op='/';
+        char op = '/';
 
-        System.out.println("NUmber1="+num1);
-        System.out.println("NUmber2="+num2);
-        System.out.println("Op="+op);
+        System.out.println("NUmber1=" + num1);
+        System.out.println("NUmber2=" + num2);
+        System.out.println("Op=" + op);
 
-      if(op =='+')
-         System.out.println(num1+" "+op+" "+num2+" = "+(num1+num2));
-      else if (op == '*') {
-          System.out.println(num1+" "+op+" "+num2+" = "+(num1*num2));
-      }
-      else if (op == '-') {
-          System.out.println(num1+" "+op+" "+num2+" = "+(num1-num2));
-      }else if (op == '/') {
-          System.out.println(num1+" "+op+" "+num2+" = "+(num1/num2));
-      }
+        if (op == '+')
+            System.out.println(num1 + " " + op + " " + num2 + " = " + (num1 + num2));
+        else if (op == '*') {
+            System.out.println(num1 + " " + op + " " + num2 + " = " + (num1 * num2));
+        } else if (op == '-') {
+            System.out.println(num1 + " " + op + " " + num2 + " = " + (num1 - num2));
+        } else if (op == '/') {
+            System.out.println(num1 + " " + op + " " + num2 + " = " + (num1 / num2));
+        }
 
     }
 }

@@ -30,7 +30,7 @@ public class MultiDimensionalArrayPractice {
         System.out.println("-----------------------------------------------------------");
 
         for (String[] eachGroup : groups) {
-            System.out.println(Arrays.toString(eachGroup) );
+            System.out.println(Arrays.toString(eachGroup));
             for (String eachStudent : eachGroup) {
                 System.out.println(eachStudent);
             }
@@ -55,11 +55,9 @@ public class MultiDimensionalArrayPractice {
 
         System.out.println(groups);
 
-        System.out.println( Arrays.toString(groups)); // toString() ==> for single dimensional arrays ONLY
+        System.out.println(Arrays.toString(groups)); // toString() ==> for single dimensional arrays ONLY
 
-        System.out.println( Arrays.deepToString(groups) ); // deepToString() ==> for multi-dimensional dimensional arrays ONLY
-
-
+        System.out.println(Arrays.deepToString(groups)); // deepToString() ==> for multi-dimensional dimensional arrays ONLY
 
 
     }

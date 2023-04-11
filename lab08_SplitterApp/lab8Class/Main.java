@@ -6,21 +6,20 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Welcome to the budget splitter");
 
 
         //User DB
-        ArrayList<User> userList=prepareUserList(scanner);
+        ArrayList<User> userList = prepareUserList(scanner);
         //Expenses DB
         ArrayList<Expense> expenseList = new ArrayList<>();
 
         System.out.println("Added user count: " + userList.size());
 
 
-
-        String [] optionList = prepareOptionList();
+        String[] optionList = prepareOptionList();
 
 
         while (true) {
@@ -41,7 +40,7 @@ public class Main {
                     Expense expense = new Expense();
 
                     System.out.println("Expense name:");
-                    expense.expenseName= scanner.next();
+                    expense.expenseName = scanner.next();
 
                     System.out.println("Expense amount:");
                     expense.amount = scanner.nextInt();
@@ -50,7 +49,7 @@ public class Main {
 
 
                     //show all users: id:0 name: Ozzy
-                    for(User user : userList){
+                    for (User user : userList) {
                         System.out.println("id: " + userList.indexOf(user) + ", name: " + user.name);
                     }
 
@@ -66,25 +65,25 @@ public class Main {
                 case 1:
                     //1:List Specific Person Expense
                     System.out.println("Please provide user name that you would like to search");
-                    String userName=scanner.next();
-                    
-                    User myUser=null;
-                    for (User usr:userList) {
-                        if (usr.name.equals(userName)){
-                            myUser=usr;
+                    String userName = scanner.next();
+
+                    User myUser = null;
+                    for (User usr : userList) {
+                        if (usr.name.equals(userName)) {
+                            myUser = usr;
                         }
                     }
 
                     int userExpenseAmount = 0;
-                    int expenseCount=0;
+                    int expenseCount = 0;
 
-                    if (myUser==null){
+                    if (myUser == null) {
                         System.out.println("User is not exist");
-                    }else {
-                        for(int i = 0;i<expenseList.size();i++){
-                            if(myUser.name.equals(expenseList.get(i).user)){
+                    } else {
+                        for (int i = 0; i < expenseList.size(); i++) {
+                            if (myUser.name.equals(expenseList.get(i).user)) {
                                 expenseCount++;
-                                userExpenseAmount+=expenseList.get(i).amount;
+                                userExpenseAmount += expenseList.get(i).amount;
                                 System.out.println(expenseCount + " - Expense name:" + expenseList.get(i).expenseName + " Amount:" + expenseList.get(i).amount + ", Expense by:" + expenseList.get(i).user);
                             }
                         }
@@ -101,7 +100,7 @@ public class Main {
                 case 2:
                     //2:List All Expenses
 
-                    for(int i = 0;i<expenseList.size();i++){
+                    for (int i = 0; i < expenseList.size(); i++) {
                         System.out.println(i + " - expense amount:" + expenseList.get(i).amount + ", expense by:" + expenseList.get(i).user);
                     }
 
@@ -112,19 +111,19 @@ public class Main {
                     double totalAmount = 0;
                     ArrayList<Split> splitList = calculateSplitByUser(expenseList);
 
-                    for(Split split : splitList){
+                    for (Split split : splitList) {
 
                         totalAmount += split.amount;
                     }
 
-                    makeSplit(totalAmount,splitList);
+                    makeSplit(totalAmount, splitList);
 
                     break;
                 case 4:
                     //4:Lİst All Users
 
-                    for (User usr:userList){
-                        System.out.println(usr.name + "-" + usr.email );
+                    for (User usr : userList) {
+                        System.out.println(usr.name + "-" + usr.email);
                     }
 
 
@@ -137,23 +136,21 @@ public class Main {
         }
 
 
-
-
     }
 
     private static void makeSplit(double totalAmount, ArrayList<Split> splitList) {
-        double amount = totalAmount /splitList.size();
+        double amount = totalAmount / splitList.size();
 
 
         //total 300
         //each person : 100
 
-        for(Split split : splitList){
+        for (Split split : splitList) {
 
-            if(split.amount > amount){
+            if (split.amount > amount) {
                 System.out.println(split.userName + " needs to take back " + (split.amount - amount));
-            }else{
-                System.out.println(split.userName + " need to give " + (-1 * (split.amount-amount)));
+            } else {
+                System.out.println(split.userName + " need to give " + (-1 * (split.amount - amount)));
             }
 
         }
@@ -163,14 +160,14 @@ public class Main {
     private static ArrayList<Split> calculateSplitByUser(ArrayList<Expense> expenseList) {
         ArrayList<Split> splitList = new ArrayList<>();
 
-        for(Expense expense : expenseList){
+        for (Expense expense : expenseList) {
 
-            Split split = existSplitList(expense.user,splitList);
+            Split split = existSplitList(expense.user, splitList);
 
-            if(split != null){
+            if (split != null) {
                 split.amount += expense.amount;
 
-            }else{
+            } else {
                 Split willbeAdded = new Split();
                 willbeAdded.userName = expense.user;
                 willbeAdded.amount = expense.amount;
@@ -183,8 +180,8 @@ public class Main {
 
     public static Split existSplitList(String userName, ArrayList<Split> splitList) {
 
-        for(Split split : splitList){
-            if(split.userName.equals(userName)){
+        for (Split split : splitList) {
+            if (split.userName.equals(userName)) {
                 return split;
             }
         }
@@ -205,7 +202,7 @@ public class Main {
         5:Close The Budget
         */
 
-        String [] optionList = {"Make Expense","List Specific Person Expense","List All Expenses","Make Split","Lİst All Users","Close The Budget"};
+        String[] optionList = {"Make Expense", "List Specific Person Expense", "List All Expenses", "Make Split", "Lİst All Users", "Close The Budget"};
 
         return optionList;
     }
@@ -214,11 +211,11 @@ public class Main {
 
         //Ask how many ppl in the budget planner?
         System.out.println("How many people will split the budget");
-        int userCount= scanner.nextInt();
+        int userCount = scanner.nextInt();
 
-        ArrayList<User> userList= new ArrayList<>();
+        ArrayList<User> userList = new ArrayList<>();
 
-        for (int i = 0;i< userCount; i++){
+        for (int i = 0; i < userCount; i++) {
 
             User user = new User();
             System.out.println("Name:");

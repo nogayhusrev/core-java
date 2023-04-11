@@ -10,13 +10,13 @@ public abstract class Plane extends Transportation implements Flyable {
     }
 
 
-    public void land(){
-        System.out.println("Plane "+getMake()+" "+getModel() +" is landing");
+    public void land() {
+        System.out.println("Plane " + getMake() + " " + getModel() + " is landing");
     }
 
     @Override
     public void fly() {
-        System.out.println(getMake()+" "+getModel()+" is flying");
+        System.out.println(getMake() + " " + getModel() + " is flying");
     }
 
 

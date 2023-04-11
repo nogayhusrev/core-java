@@ -6,36 +6,29 @@ public class Capitalization {
     public static void main(String[] args) {
 
 
-        String first,last;
-        Scanner scanner=new Scanner(System.in);
+        String first, last;
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter your firstname:");
-        first= scanner.next();
+        first = scanner.next();
         System.out.println("Enter your lastname:");
-        last=scanner.next();
+        last = scanner.next();
 
-        capitalization(first,last);
-
-
-
-
-
+        capitalization(first, last);
 
 
     }
 
-    public static void capitalization(String first, String last){
+    public static void capitalization(String first, String last) {
 
 
-        first=first.trim().replace(" ","");
-        last=last.trim().replace(" ","");
+        first = first.trim().replace(" ", "");
+        last = last.trim().replace(" ", "");
 
-        first=first.substring(0,1).toUpperCase()+first.substring(1).toLowerCase();
-        last=last.substring(0,1).toUpperCase()+first.substring(1).toLowerCase();
+        first = first.substring(0, 1).toUpperCase() + first.substring(1).toLowerCase();
+        last = last.substring(0, 1).toUpperCase() + first.substring(1).toLowerCase();
 
-        System.out.println(first+" "+last);
-
-
+        System.out.println(first + " " + last);
 
 
     }

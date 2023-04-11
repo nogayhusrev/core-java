@@ -41,7 +41,7 @@ public class SetDemo {
         System.out.println("----------------------------------------");
 
         String str = null;
-       // System.out.println(str.toLowerCase());
+        // System.out.println(str.toLowerCase());
 
 
         Set<Integer> set3 = new TreeSet<>(); // Keeps sorted order, does not accept duplicate
@@ -49,7 +49,7 @@ public class SetDemo {
         set3.addAll(Arrays.asList(10, 200, 300, 40, 90));
         set3.addAll(Arrays.asList(10, 200, 300, 40, 90));
         set3.addAll(Arrays.asList(10, 200, 300, 40, 90));
-      //  set3.addAll(Arrays.asList(null, null, null, null, null));
+        //  set3.addAll(Arrays.asList(null, null, null, null, null));
 
         System.out.println(set3);
 
@@ -59,7 +59,7 @@ public class SetDemo {
         String[] words = {"Java", "Java", "Java", "Python", "Python", "C#", "C++", "Ruby", "C#", "C#"};
 
         Set<String> result = new LinkedHashSet<>();
-        result.addAll( Arrays.asList(words) );
+        result.addAll(Arrays.asList(words));
 
         System.out.println(result);
 
@@ -71,7 +71,7 @@ public class SetDemo {
         }
         */
 
-        System.out.println( new ArrayList<>(result).get(1) );
+        System.out.println(new ArrayList<>(result).get(1));
 
         words = result.toArray(new String[0]);  // converting Set to Array
 
@@ -83,15 +83,14 @@ public class SetDemo {
 
 
         List<Integer> numbers = new ArrayList<>();
-        numbers.addAll(Arrays.asList(10, 10, 10, 20, 20, 30, 30, 30, 40, 40, 40, 50, 50, 50,5, 5, 5, 1, 1, 1, 2, 2,2));
+        numbers.addAll(Arrays.asList(10, 10, 10, 20, 20, 30, 30, 30, 40, 40, 40, 50, 50, 50, 5, 5, 5, 1, 1, 1, 2, 2, 2));
 
         Set<Integer> n = new TreeSet<>(numbers); // List to Set
 
         System.out.println(n);
 
 
-       // numbers = new ArrayList<>(n);
-
+        // numbers = new ArrayList<>(n);
 
 
     }

@@ -8,26 +8,24 @@ public class Car { // outer class
 
     public static int wheels = 4;
 
-    public class CarEngine{ // Inner
+    public class CarEngine { // Inner
 
-       public void method(){
-           System.out.println(make);
-           System.out.println(wheels);
-       }
-
-    }
-
-
-    public static class StaticInnerClass{ // static only accepts static
-
-        public void method(){
-          //  System.out.println(make);
+        public void method() {
+            System.out.println(make);
             System.out.println(wheels);
         }
 
     }
 
 
+    public static class StaticInnerClass { // static only accepts static
+
+        public void method() {
+            //  System.out.println(make);
+            System.out.println(wheels);
+        }
+
+    }
 
 
 }

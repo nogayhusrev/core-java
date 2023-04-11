@@ -8,17 +8,18 @@ public class FrequencyOfChar {
 
         String str;
         char ch;
-        int freq=0;
+        int freq = 0;
 
-        Scanner scan=new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
 
         System.out.println("Enter a string");
-        str= scan.nextLine();;
+        str = scan.nextLine();
+        ;
         System.out.println("Enter a char");
-        ch=scan.next().charAt(0);
+        ch = scan.next().charAt(0);
 
-        for (int i=0;i<str.length()-1;i++){
-            freq+=(str.charAt(i)==ch)?1:0;
+        for (int i = 0; i < str.length() - 1; i++) {
+            freq += (str.charAt(i) == ch) ? 1 : 0;
 
         }
 

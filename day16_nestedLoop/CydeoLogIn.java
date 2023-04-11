@@ -14,9 +14,9 @@ public class CydeoLogIn {
         System.out.println("Enter your password:");
         String p = input.next();
 
-        if(u.equals("Cydeo") && p.equals("WoodenSpoon")){  // if the credentials are correct
+        if (u.equals("Cydeo") && p.equals("WoodenSpoon")) {  // if the credentials are correct
             System.out.println("Logged in");
-        }else{ // otherwise
+        } else { // otherwise
 
             for (int i = 0; i < 3; i++) { //i : 0, 1, 2
                 /*
@@ -36,14 +36,14 @@ public class CydeoLogIn {
                 System.out.println("Enter your password:");
                 p = input.next();
 
-                if(u.equals("Cydeo") && p.equals("WoodenSpoon")){ //if the user enters valid credentials
+                if (u.equals("Cydeo") && p.equals("WoodenSpoon")) { //if the user enters valid credentials
                     System.out.println("You are now logged in");
                     break; // exits the loop
                 }
 
             }
 
-            if( ! (u.equals("Cydeo") && p.equals("WoodenSpoon") ) ){ // after all three attempts, if the username & password are still incorrect
+            if (!(u.equals("Cydeo") && p.equals("WoodenSpoon"))) { // after all three attempts, if the username & password are still incorrect
                 System.err.println("Your account now is locked, please contact with the support team");
             }
 
@@ -57,19 +57,14 @@ public class CydeoLogIn {
     }
 
 
-
-    public static void cydeoLogIn(String username, String password){
-        if(username.equals("Cydeo") && password.equals("WoodenSpoon")){
+    public static void cydeoLogIn(String username, String password) {
+        if (username.equals("Cydeo") && password.equals("WoodenSpoon")) {
             System.out.println("Logged in");
-        }else {
+        } else {
             System.out.println("Invalid credentials");
         }
 
     }
-
-
-
-
 
 
 }

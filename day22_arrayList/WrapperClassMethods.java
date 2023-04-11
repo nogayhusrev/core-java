@@ -9,7 +9,7 @@ public class WrapperClassMethods {
 
         System.out.println(str + 1);
 
-      //  Integer num1 = Integer.parseInt(str); // unboxing
+        //  Integer num1 = Integer.parseInt(str); // unboxing
         int num = Integer.parseInt(str);
 
         System.out.println(num + 1);
@@ -44,8 +44,8 @@ public class WrapperClassMethods {
 
         char ch = '$';
 
-        boolean isDigit =Character.isDigit(ch);
-        
+        boolean isDigit = Character.isDigit(ch);
+
         boolean isLetter = Character.isLetter(ch);
 
         boolean isLowerCaseLetter = Character.isLowerCase(ch);
@@ -73,19 +73,14 @@ public class WrapperClassMethods {
 
         for (char each : string.toCharArray()) {
 
-            if(Character.isDigit(each)){
-               sum += Integer.parseInt(""+each);
+            if (Character.isDigit(each)) {
+                sum += Integer.parseInt("" + each);
             }
 
         }
 
 
         System.out.println("sum = " + sum);
-
-
-
-
-
 
 
     }

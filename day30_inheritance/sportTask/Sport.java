@@ -8,10 +8,10 @@ public class Sport {
     private String rules;
 
     public Sport(String name, int numberOfPlayers, int numberOfReferee, String rules) {
-       setName(name);
-       setNumberOfPlayers(numberOfPlayers);
-       setNumberOfReferee(numberOfReferee);
-       setRules(rules);
+        setName(name);
+        setNumberOfPlayers(numberOfPlayers);
+        setNumberOfReferee(numberOfReferee);
+        setRules(rules);
     }
 
     public void setName(String name) {
@@ -20,19 +20,19 @@ public class Sport {
 
     public void setNumberOfPlayers(int numberOfPlayers) {
         //1. numberOfPlayers can not be set to zero or negative
-       if (numberOfPlayers>0){
-           this.numberOfPlayers = numberOfPlayers;
-       }else {
-           System.err.println("Number of players cannot be negative or zero");
-           System.exit(1);
-       }
+        if (numberOfPlayers > 0) {
+            this.numberOfPlayers = numberOfPlayers;
+        } else {
+            System.err.println("Number of players cannot be negative or zero");
+            System.exit(1);
+        }
     }
 
     public void setNumberOfReferee(int numberOfReferee) {
         //						2. numberOfReferre can not be set to zero or negative
-        if (numberOfReferee>0){
+        if (numberOfReferee > 0) {
             this.numberOfReferee = numberOfReferee;
-        }else {
+        } else {
             System.err.println("Number of referee cannot be negative or zero");
             System.exit(1);
         }
@@ -58,7 +58,7 @@ public class Sport {
         return rules;
     }
 
-    public void play(){
+    public void play() {
         System.out.println("Everyone is playing " + name);
     }
 

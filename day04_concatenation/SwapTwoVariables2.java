@@ -4,18 +4,16 @@ public class SwapTwoVariables2 {
 
     public static void main(String[] args) {
 
-        int x,y,z;
+        int x, y, z;
 
 
-        x=10;
-        y=14;
-        System.out.println("Before swapping x="+x+" y="+y);
-        z=x;
-        x=y;
-        y=z;
-        System.out.println("After swapping x="+x+" y="+y);
-
-
+        x = 10;
+        y = 14;
+        System.out.println("Before swapping x=" + x + " y=" + y);
+        z = x;
+        x = y;
+        y = z;
+        System.out.println("After swapping x=" + x + " y=" + y);
 
 
     }

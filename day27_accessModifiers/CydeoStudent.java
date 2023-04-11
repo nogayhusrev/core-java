@@ -14,11 +14,11 @@ public class CydeoStudent {
         this.name = name;
         this.age = age;
         this.gender = gender;
-      //  schoolName = "Cydeo School";
-     //   secretCode = "Wooden Spoon";
+        //  schoolName = "Cydeo School";
+        //   secretCode = "Wooden Spoon";
     }
 
-    static{
+    static {
         schoolName = "Cydeo School";
         secretCode = "Wooden Spoon";
     }
@@ -30,7 +30,6 @@ public class CydeoStudent {
                 ", gender=" + gender +
                 '}';
     }
-
 
 
 }

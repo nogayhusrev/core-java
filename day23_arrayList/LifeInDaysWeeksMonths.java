@@ -9,7 +9,7 @@ public class LifeInDaysWeeksMonths {
         System.out.println("Welcome to Life İn Days Calculator");
         System.out.println("This program calculates how much time you have to live as days, weeks, months... ");
 
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         int lifeExpectation;
         int currentAge;
         int yearsRemaining;
@@ -20,15 +20,15 @@ public class LifeInDaysWeeksMonths {
 
         System.out.println("-----------------------------");
         System.out.println("Please enter your life expectation as year : ");
-        lifeExpectation= scanner.nextInt();
+        lifeExpectation = scanner.nextInt();
         System.out.println("-----------------------------");
         System.out.println("Please enter your age : ");
-        currentAge= scanner.nextInt();
+        currentAge = scanner.nextInt();
 
-        yearsRemaining=lifeExpectation-currentAge;
-        daysRemaining=yearsRemaining*365;
-        weeksRemaining=yearsRemaining*52;
-        monthsRemaining=yearsRemaining*12;
+        yearsRemaining = lifeExpectation - currentAge;
+        daysRemaining = yearsRemaining * 365;
+        weeksRemaining = yearsRemaining * 52;
+        monthsRemaining = yearsRemaining * 12;
 
         System.out.println("-----------------------------");
 

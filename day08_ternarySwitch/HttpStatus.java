@@ -1,29 +1,30 @@
 package day08_ternarySwitch;
+
 public class HttpStatus {
 
     public static void main(String[] args) {
-        int statusCode=404;
+        int statusCode = 404;
 
 
         String
-                status200="200, OK",
-                status201="Created",
-                status202="Accepted",
-                status301="Moved Permanently",
-                status303="See Other",
-                status304="Not Modified",
-                status307="Temporary Redirect",
-                status400="Bad Request",
-                status401="Unauthorized",
-                status403="Forbidden",
-                status404="Not Found",
-                status410="Gone",
-                status500="Internal Server Error",
-                status503="Service Unavailable";
+                status200 = "200, OK",
+                status201 = "Created",
+                status202 = "Accepted",
+                status301 = "Moved Permanently",
+                status303 = "See Other",
+                status304 = "Not Modified",
+                status307 = "Temporary Redirect",
+                status400 = "Bad Request",
+                status401 = "Unauthorized",
+                status403 = "Forbidden",
+                status404 = "Not Found",
+                status410 = "Gone",
+                status500 = "Internal Server Error",
+                status503 = "Service Unavailable";
 
         System.out.println("--------------------------");
 
-        switch (statusCode){
+        switch (statusCode) {
             case 200:
                 System.out.println(status200);
                 break;
@@ -74,21 +75,21 @@ public class HttpStatus {
 
         System.out.println("--------------------------");
 
-        String result=
-                ((statusCode==200)?status200:
-                        ((statusCode==201)?status201:
-                                ((statusCode==202)?status202:
-                                        ((statusCode==301)?status301:
-                                                ((statusCode==303)?status303:
-                                                        ((statusCode==304)?status304:
-                                                                ((statusCode==307)?status307:
-                                                                        ((statusCode==400)?status400:
-                                                                                ((statusCode==401)?status401:
-                                                                                        ((statusCode==403)?status403:
-                                                                                                ((statusCode==404)?status404:
-                                                                                                        ((statusCode==410)?status410:
-                                                                                                                ((statusCode==500)?status500:
-                                                                                                                        ((statusCode==503)?status503:"Invalid Argumrnt"))))))))))))));
+        String result =
+                ((statusCode == 200) ? status200 :
+                        ((statusCode == 201) ? status201 :
+                                ((statusCode == 202) ? status202 :
+                                        ((statusCode == 301) ? status301 :
+                                                ((statusCode == 303) ? status303 :
+                                                        ((statusCode == 304) ? status304 :
+                                                                ((statusCode == 307) ? status307 :
+                                                                        ((statusCode == 400) ? status400 :
+                                                                                ((statusCode == 401) ? status401 :
+                                                                                        ((statusCode == 403) ? status403 :
+                                                                                                ((statusCode == 404) ? status404 :
+                                                                                                        ((statusCode == 410) ? status410 :
+                                                                                                                ((statusCode == 500) ? status500 :
+                                                                                                                        ((statusCode == 503) ? status503 : "Invalid Argumrnt"))))))))))))));
 
 
         System.out.println(result);

@@ -16,7 +16,7 @@ public class VariableNamingRules {
 
         double salaryBeforeTax = 100000.5;
 
-        double  salary_after_tax$  = 80000.5;
+        double salary_after_tax$ = 80000.5;
 
         System.out.println("-----------------------------------");
 
@@ -25,8 +25,8 @@ public class VariableNamingRules {
         int number3 = 30;
 
 
-      //  double abstract = 5.5;  // variables names can not be java reserved words
-      //  double final = 85.5;
+        //  double abstract = 5.5;  // variables names can not be java reserved words
+        //  double final = 85.5;
 
         System.out.println("-----------------------------------");
 
@@ -34,8 +34,6 @@ public class VariableNamingRules {
         String gender = "Male";
 
         String fullName = "Cydeo School";
-
-
 
 
     }

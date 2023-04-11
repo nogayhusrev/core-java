@@ -18,17 +18,17 @@ public abstract class Device {
         //1. brand, model color and size can not be null (if obj == null means it's error)
         //2. brand, model color and size can not be empty
         //3. price can not be set to negative or zero
-        if (brand == null || brand.isEmpty()){
+        if (brand == null || brand.isEmpty()) {
             System.err.println("Brand cannot be null or empty!");
             System.exit(1);
         }
         this.brand = brand;
-        if (model == null || model.isEmpty()){
+        if (model == null || model.isEmpty()) {
             System.err.println("Model cannot be null or empty!");
             System.exit(1);
         }
         this.model = model;
-        if (size == null || size.isEmpty()){
+        if (size == null || size.isEmpty()) {
             System.err.println("Size cannot be null or empty!");
             System.exit(1);
         }
@@ -43,7 +43,7 @@ public abstract class Device {
     public void setColor(String color) {
         //1. brand, model color and size can not be null (if obj == null means it's error)
         //2. brand, model color and size can not be empty
-        if (color == null || color.isEmpty()){
+        if (color == null || color.isEmpty()) {
             System.err.println("Color cannot be null or empty!");
             System.exit(1);
         }
@@ -52,7 +52,7 @@ public abstract class Device {
 
     public void setPrice(double price) {
         //3. price can not be set to negative or zero
-        if (price < 1){
+        if (price < 1) {
             System.err.println("Price cannot be negative or zero!");
             System.exit(1);
         }
@@ -98,6 +98,7 @@ public abstract class Device {
     //Abstract Methods:
     //	turnOn(), turnOff()
     public abstract void turnOn();
+
     public abstract void turnOff();
 
     //None Abstract methods:
@@ -105,7 +106,7 @@ public abstract class Device {
 
     @Override
     public String toString() {
-        return  getClass().getSimpleName() + "{" +
+        return getClass().getSimpleName() + "{" +
                 "brand='" + brand + '\'' +
                 ", model='" + model + '\'' +
                 ", price=$" + price +

@@ -24,34 +24,34 @@ public class QuizApplicationNonBug {
         int answer4 = scanner.nextInt();
         System.out.println(question5);
         int answer5 = scanner.nextInt();
-        int rightAnswerCount=0;
-        int wrongAnswerCount=0;
+        int rightAnswerCount = 0;
+        int wrongAnswerCount = 0;
 
-        if (answer1 == 0){
+        if (answer1 == 0) {
             rightAnswerCount++;
-        }else {
+        } else {
             wrongAnswerCount++;
         }
 
         if (answer2 == 2147483647) {
             rightAnswerCount++;
-        }else {
+        } else {
             wrongAnswerCount++;
         }
-        if (answer3 == 1){
+        if (answer3 == 1) {
             rightAnswerCount++;
-        }else {
+        } else {
             wrongAnswerCount++;
         }
-        if (answer4== 0){
+        if (answer4 == 0) {
             rightAnswerCount++;
-        }else {
+        } else {
             wrongAnswerCount++;
         }
 
-        if (answer5== 0){
+        if (answer5 == 0) {
             rightAnswerCount++;
-        }else {
+        } else {
             wrongAnswerCount++;
         }
 

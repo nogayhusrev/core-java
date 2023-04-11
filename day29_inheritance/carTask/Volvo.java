@@ -1,6 +1,6 @@
 package day29_inheritance.carTask;
 
-public class Volvo extends Car{
+public class Volvo extends Car {
 }
 /*
 5. Create a class named Volvo

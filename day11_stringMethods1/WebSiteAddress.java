@@ -6,16 +6,15 @@ public class WebSiteAddress {
     public static void main(String[] args) {
 
         String adddr;
-        Boolean check=false;
+        Boolean check = false;
 
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Please enter the address:");
-        adddr= scanner.nextLine();
+        adddr = scanner.nextLine();
 
-        check=adddr.startsWith("www.");
-        check=adddr.endsWith(".com") | adddr.endsWith(".edu") | adddr.endsWith(".gov");
-
+        check = adddr.startsWith("www.");
+        check = adddr.endsWith(".com") | adddr.endsWith(".edu") | adddr.endsWith(".gov");
 
 
         if (check)

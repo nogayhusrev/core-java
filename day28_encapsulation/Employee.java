@@ -25,8 +25,8 @@ public class Employee {
 
     public void setAge(int age) {
 
-        if(age < 16){
-            System.err.println("Invalid age: "+age);
+        if (age < 16) {
+            System.err.println("Invalid age: " + age);
             System.exit(1);
         }
 
@@ -39,7 +39,7 @@ public class Employee {
 
     public void setJobTitle(String jobTitle) {
 
-        if(jobTitle.isEmpty() || jobTitle.isBlank()){
+        if (jobTitle.isEmpty() || jobTitle.isBlank()) {
             System.err.println("Job title of the employee can not be empty or blank");
             System.exit(1);
         }
@@ -50,7 +50,7 @@ public class Employee {
 
     public String getName() {
 
-        if(name == null){
+        if (name == null) {
             return "Unknown";
         }
 
@@ -59,7 +59,7 @@ public class Employee {
 
     public void setName(String name) {
 
-        if(name.isEmpty() || name.isBlank()){
+        if (name.isEmpty() || name.isBlank()) {
             System.err.println("Employee name can not empty or blank");
             System.exit(1);
         }
@@ -73,8 +73,8 @@ public class Employee {
 
     public void setSalary(double salary) { // WRITE
 
-        if(salary < 0){
-            System.err.println("Salary can not be negative: "+salary);
+        if (salary < 0) {
+            System.err.println("Salary can not be negative: " + salary);
             System.exit(1);
         }
 

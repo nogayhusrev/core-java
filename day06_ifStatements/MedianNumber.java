@@ -2,31 +2,30 @@ package day06_ifStatements;
 
 public class MedianNumber {
     public static void main(String[] args) {
-        int a=14,b=10,c=20;
+        int a = 14, b = 10, c = 20;
 
 
-        if((a > b) && (a > c)){
-            if (b>c){
-                System.out.println(b+" is the median number");
-            }else{
-                System.out.println(c+" is the median number");
+        if ((a > b) && (a > c)) {
+            if (b > c) {
+                System.out.println(b + " is the median number");
+            } else {
+                System.out.println(c + " is the median number");
             }
-        } else if (b>a && b>c) {
-            if (a>c){
-                System.out.println(a+" is the median number");
-            }else{
-                System.out.println(c+" is the median number");
-            }
-
-        } else if (c>a &&c>b) {
-            if (a>b){
-                System.out.println(a+" is the median number");
-            }else{
-                System.out.println(b+" is the median number");
+        } else if (b > a && b > c) {
+            if (a > c) {
+                System.out.println(a + " is the median number");
+            } else {
+                System.out.println(c + " is the median number");
             }
 
-        }
-        else System.out.println("Invalid Argument");
+        } else if (c > a && c > b) {
+            if (a > b) {
+                System.out.println(a + " is the median number");
+            } else {
+                System.out.println(b + " is the median number");
+            }
+
+        } else System.out.println("Invalid Argument");
 
     }
 }

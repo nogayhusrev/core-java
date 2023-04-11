@@ -4,7 +4,7 @@ public class WhileLoopIntro {
 
     public static void main(String[] args) {
 
-        if(true){
+        if (true) {
             System.out.println("Hello World");
         }
 
@@ -16,15 +16,12 @@ public class WhileLoopIntro {
 
         System.out.println("----------------------------------------------");
 
-        while(true){
+        while (true) {
             System.out.println("Hello Cydeo");
         }
 
 
-
-
     }
-
 
 
 }

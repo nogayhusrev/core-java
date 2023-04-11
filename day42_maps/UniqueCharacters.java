@@ -14,9 +14,9 @@ public class UniqueCharacters {
         Map<Character, Integer> map = new LinkedHashMap<>();
 
         for (String each : str.split("")) {
-            int frequency = Collections.frequency( Arrays.asList( str.split(""))  , each );
-            if(frequency == 1)
-                map. put(each.charAt(0), frequency);
+            int frequency = Collections.frequency(Arrays.asList(str.split("")), each);
+            if (frequency == 1)
+                map.put(each.charAt(0), frequency);
 
         }
 

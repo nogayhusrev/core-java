@@ -19,17 +19,17 @@ public class RemovePalindromes {
 
         Iterator<String> it = names.iterator();
 
-        while(it.hasNext()){
+        while (it.hasNext()) {
             String each = it.next();
 
             String reverse = "";
 
-            for (int i = each.length()-1; i >= 0 ; i--) {
+            for (int i = each.length() - 1; i >= 0; i--) {
                 reverse += each.charAt(i);
             }
 
-            if(each.equalsIgnoreCase(reverse)){
-               // names.remove(each);
+            if (each.equalsIgnoreCase(reverse)) {
+                // names.remove(each);
                 it.remove();
 
             }
@@ -45,17 +45,10 @@ public class RemovePalindromes {
                 Arrays.asList("Java", "Python", "Cydeo", "Car", "Level", "civic", "radar", "kayak", "reviver", "racecar", "madam")
         );
 
-          names2.removeIf(p -> StringUtility.reverse(p).equalsIgnoreCase(p));
-      //  names2.removeIf( p -> new StringBuilder(p).reverse().toString().equalsIgnoreCase(p) );
+        names2.removeIf(p -> StringUtility.reverse(p).equalsIgnoreCase(p));
+        //  names2.removeIf( p -> new StringBuilder(p).reverse().toString().equalsIgnoreCase(p) );
 
         System.out.println(names2);
-
-
-
-
-
-
-
 
 
     }

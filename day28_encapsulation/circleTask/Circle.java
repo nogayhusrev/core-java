@@ -3,7 +3,7 @@ package day28_encapsulation.circleTask;
 public class Circle {
 
     private double radius;
-    public double pi= Math.PI;
+    public double pi = Math.PI;
 
 
     public Circle(double radius) {
@@ -12,9 +12,9 @@ public class Circle {
 
     public void setRadius(double radius) {
 
-        if (radius > 0 ) {
+        if (radius > 0) {
             this.radius = radius;
-        }else {
+        } else {
             System.err.println("Invalid argument");
             System.exit(0);
         }
@@ -28,12 +28,12 @@ public class Circle {
         return pi;
     }
 
-    public double calcArea(){
-        return pi*radius*radius;
+    public double calcArea() {
+        return pi * radius * radius;
     }
 
-    public double calcPerimeter(){
-        return 2*pi*radius;
+    public double calcPerimeter() {
+        return 2 * pi * radius;
     }
 
     @Override
@@ -42,7 +42,7 @@ public class Circle {
                 "radius=" + radius +
                 ", pi=" + pi +
                 ", area=" + calcArea() +
-                ", perimeter="+ calcPerimeter() +
+                ", perimeter=" + calcPerimeter() +
                 '}';
     }
 }

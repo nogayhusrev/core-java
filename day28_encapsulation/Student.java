@@ -8,7 +8,7 @@ public class Student {
 
     public String getName() {
 
-        if(name == null){
+        if (name == null) {
             System.err.println("Name has not been set");
             System.exit(1);
         }
@@ -21,15 +21,15 @@ public class Student {
         boolean hasDigit = false;
 
         for (char each : name.toCharArray()) {
-            if(Character.isDigit(each)){
+            if (Character.isDigit(each)) {
                 hasDigit = true;
                 break;
             }
 
         }
 
-        if(hasDigit){
-            System.err.println("Invalid name: "+name);
+        if (hasDigit) {
+            System.err.println("Invalid name: " + name);
             System.exit(1);
         }
 
@@ -37,9 +37,9 @@ public class Student {
     }
 
 
-    public int getAge(){ // READ ONLY
+    public int getAge() { // READ ONLY
 
-        if(age == 0){
+        if (age == 0) {
             System.err.println("Age has not been set");
             System.exit(1);
         }
@@ -47,21 +47,16 @@ public class Student {
         return age;
     }
 
-    public void setAge(int age){ // WRITE ONLY
+    public void setAge(int age) { // WRITE ONLY
 
-        if( age < 1 || age > 100){ // if age is invalid
-            System.err.println("Invalid Age: "+age);
-           // return; // exiting the method
+        if (age < 1 || age > 100) { // if age is invalid
+            System.err.println("Invalid Age: " + age);
+            // return; // exiting the method
             System.exit(1); // program gets terminated
         }
 
         this.age = age;
     }
-
-
-
-
-
 
 
 }

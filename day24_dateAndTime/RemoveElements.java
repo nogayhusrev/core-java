@@ -16,7 +16,7 @@ public class RemoveElements {
         System.out.println(list);
 
         for (int i = 0; i < list.size(); i++) {
-            if(list.get(i) < 4){
+            if (list.get(i) < 4) {
                 list.remove(i);
 
             }
@@ -31,7 +31,7 @@ public class RemoveElements {
 
         System.out.println(list2);
 
-        list2.removeIf( p -> p < 4);
+        list2.removeIf(p -> p < 4);
 
         System.out.println(list2);
 
@@ -39,9 +39,9 @@ public class RemoveElements {
         System.out.println("-------------------------------------------------------------");
 
         ArrayList<String> names = new ArrayList<>();
-        names.addAll( Arrays.asList("Java", "Python", "C#", "Java", "Ruby", "JavaScript", "C++", "C") );
+        names.addAll(Arrays.asList("Java", "Python", "C#", "Java", "Ruby", "JavaScript", "C++", "C"));
 
-        names.removeIf( p -> p.startsWith("J") );
+        names.removeIf(p -> p.startsWith("J"));
 
         System.out.println(names);
 
@@ -56,14 +56,11 @@ public class RemoveElements {
         employees.get(4).setInfo("Jimmy", 54, 'M', "Data Analyst", 105000, "A05");
 
 
-        employees.removeIf( p -> p.salary > 100000 );
+        employees.removeIf(p -> p.salary > 100000);
 
         for (Employee each : employees) {
-            System.out.println(each.name + " : "+each.salary);
+            System.out.println(each.name + " : " + each.salary);
         }
-
-
-
 
 
     }

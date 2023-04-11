@@ -10,7 +10,7 @@ public class Anagram {
         String str2 = "earth"; //"aehtr"
 
 
-       // String[] a1 = str1.split("");
+        // String[] a1 = str1.split("");
 
         char[] a1 = str1.toCharArray();
         char[] a2 = str2.toCharArray();

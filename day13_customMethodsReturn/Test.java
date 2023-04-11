@@ -10,10 +10,9 @@ public class Test {
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
 
-      //  double n2 = input.close();
+        //  double n2 = input.close();
 
-      //  String word = System.out.println("Hello");
-
+        //  String word = System.out.println("Hello");
 
 
     }

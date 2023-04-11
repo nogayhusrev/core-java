@@ -15,7 +15,6 @@ public class CalculationOfAreaAndPerimeter {
         String cont;
 
 
-
         while (true) {
             System.out.println("Enter the radius:");
             radius = scanner.nextInt();
@@ -34,35 +33,30 @@ public class CalculationOfAreaAndPerimeter {
 
             }
 
-            do{
+            do {
                 //  3. Ask the user "Would you like to calculate another Square?"
                 //         If "yes" --> repeat the previous steps
                 //         If "No" --> Print "Thank you for using Cydeo Square Calculator APP"
                 //         If user enters an invalid entry, ask the user to re-enter until user provides a valid entry
 
                 System.out.println("Would you like to calculate another circle?");
-                cont= scanner.next();
-                if(cont.equalsIgnoreCase("yes")){
+                cont = scanner.next();
+                if (cont.equalsIgnoreCase("yes")) {
                     break;
-                }else if (cont.equalsIgnoreCase("no")){
+                } else if (cont.equalsIgnoreCase("no")) {
                     System.out.println("Thank you for using Cydeo Circle Calculator APP");
                     System.exit(1);
-                }else{
+                } else {
                     System.err.println("Invalid entry!!!");
                     System.out.println("------------");
                     continue;
                 }
 
 
-            }while (true);
-
-
-
+            } while (true);
 
 
         }
-
-
 
 
     }

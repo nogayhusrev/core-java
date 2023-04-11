@@ -6,17 +6,17 @@ public class WithoutFirstChar {
 
     public static void main(String[] args) {
 
-        String input1,input2;
+        String input1, input2;
 
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter a word:");
-        input1= scanner.next();
+        input1 = scanner.next();
         System.out.println("Enter a word:");
-        input2= scanner.next();
+        input2 = scanner.next();
 
-        input1=input1.substring(1,input1.length());
-        input2=input2.substring(1,input2.length());
+        input1 = input1.substring(1, input1.length());
+        input2 = input2.substring(1, input2.length());
 
         System.out.println("input1 = " + input1);
         System.out.println("input2 = " + input2);

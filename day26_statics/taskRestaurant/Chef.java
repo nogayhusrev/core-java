@@ -14,11 +14,11 @@ public class Chef {
         this.fullTime = fullTime;
     }
 
-    public void makeOrder(){
+    public void makeOrder() {
         System.out.println(name + " is making an order");
     }
 
-    public void washDishes(){
+    public void washDishes() {
         System.out.println(name + " is washing the dishes");
     }
 

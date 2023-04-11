@@ -15,18 +15,17 @@ public class Pizza {
     public void setSize(String size) {
         //size of the pizza can only be small, medium, large. case insensitive
 
-        if (size==null){
+        if (size == null) {
             System.err.println("Size cannot be null ");
             System.exit(1);
         }
 
-        if (size.equalsIgnoreCase("small") || size.equalsIgnoreCase("medium") || size.equalsIgnoreCase("large")){
+        if (size.equalsIgnoreCase("small") || size.equalsIgnoreCase("medium") || size.equalsIgnoreCase("large")) {
             this.size = size;
-        }else {
-            System.err.println("Invalid Size: "+size);
+        } else {
+            System.err.println("Invalid Size: " + size);
             System.exit(1);
         }
-
 
 
     }
@@ -37,8 +36,8 @@ public class Pizza {
         //                                        medium: 4
         //                                        large: 5
 
-        if (numberOfCheeseTopping < 0 || (size.equalsIgnoreCase("small") && numberOfCheeseTopping > 3) || (size.equalsIgnoreCase("medium") && numberOfCheeseTopping > 4) || (size.equalsIgnoreCase("large") && numberOfCheeseTopping > 5)){
-            System.err.println("Invalid number of cheese topping: "+numberOfCheeseTopping);
+        if (numberOfCheeseTopping < 0 || (size.equalsIgnoreCase("small") && numberOfCheeseTopping > 3) || (size.equalsIgnoreCase("medium") && numberOfCheeseTopping > 4) || (size.equalsIgnoreCase("large") && numberOfCheeseTopping > 5)) {
+            System.err.println("Invalid number of cheese topping: " + numberOfCheeseTopping);
             System.exit(1);
         }
 
@@ -52,8 +51,8 @@ public class Pizza {
         //                                        medium: 5
         //                                        large: 6
 
-        if (numberOfPepperoniTopping < 0 || (size.equalsIgnoreCase("small") && numberOfPepperoniTopping > 3) || (size.equalsIgnoreCase("medium") && numberOfPepperoniTopping > 4) || (size.equalsIgnoreCase("large") && numberOfPepperoniTopping > 5)){
-            System.err.println("Invalid number of cheese topping: "+numberOfPepperoniTopping);
+        if (numberOfPepperoniTopping < 0 || (size.equalsIgnoreCase("small") && numberOfPepperoniTopping > 3) || (size.equalsIgnoreCase("medium") && numberOfPepperoniTopping > 4) || (size.equalsIgnoreCase("large") && numberOfPepperoniTopping > 5)) {
+            System.err.println("Invalid number of cheese topping: " + numberOfPepperoniTopping);
             System.exit(1);
         }
 
@@ -78,9 +77,9 @@ public class Pizza {
         //                        M: $12 + $2 per topping
         //                        L: $14 + $2 per topping
 
-        double price=0;
-        price += (size.equalsIgnoreCase("small")? 10 : (size.equalsIgnoreCase("medium") ? 12: 14 ));
-        price += (2*numberOfCheeseTopping) + (2*numberOfPepperoniTopping);
+        double price = 0;
+        price += (size.equalsIgnoreCase("small") ? 10 : (size.equalsIgnoreCase("medium") ? 12 : 14));
+        price += (2 * numberOfCheeseTopping) + (2 * numberOfPepperoniTopping);
 
         return price;
     }

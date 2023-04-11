@@ -8,19 +8,19 @@ public class Server extends Employee {
 
     @Override
     public void work() {
-        System.out.println(getName()+" is serving the customers");
+        System.out.println(getName() + " is serving the customers");
     }
 
-    public void takeOrder(){
-        System.out.println(getName()+" is taking customer orders");
+    public void takeOrder() {
+        System.out.println(getName() + " is taking customer orders");
     }
 
-    public void cleanTable(){
-        System.out.println(getName()+" is cleaning tables");
+    public void cleanTable() {
+        System.out.println(getName() + " is cleaning tables");
     }
 
-    public Chef promoteToChef(){
-        return new Chef(getName(), getAge(), getGender(), getId(),"Head Chef", getSalary());
+    public Chef promoteToChef() {
+        return new Chef(getName(), getAge(), getGender(), getId(), "Head Chef", getSalary());
     }
 
 }

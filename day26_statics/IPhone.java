@@ -44,10 +44,9 @@ public class IPhone {
     }
 
 
-    public static void printOperatingSystem(){
+    public static void printOperatingSystem() {
         System.out.println("Operating System: " + OS);
     }
-
 
 
 }

@@ -14,8 +14,8 @@ public class ArrayLiterals {
         System.out.println(numbers.length);
         System.out.println(nums.length);
 
-        System.out.println("numbers = " + Arrays.toString(numbers) );
-        System.out.println("nums = " + Arrays.toString(nums) );
+        System.out.println("numbers = " + Arrays.toString(numbers));
+        System.out.println("nums = " + Arrays.toString(nums));
 
 
         System.out.println("----------------------------------------------------------");
@@ -26,11 +26,11 @@ public class ArrayLiterals {
 
         int n = 1;
 
-        System.out.println( days[n-1] );
+        System.out.println(days[n - 1]);
 
         System.out.println("----------------------------------------------------------");
 
-        String[] month = {"Jan", "Feb", "Mar", "Apr", "May","Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
+        String[] month = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
 
         /*
         month = new String[12];
@@ -39,20 +39,16 @@ public class ArrayLiterals {
 
          */
 
-        System.out.println("month = " + Arrays.toString(month) );
+        System.out.println("month = " + Arrays.toString(month));
 
 
         System.out.println("----------------------------------------------------------");
 
-      //  int[] numbers2 = new int[100];
+        //  int[] numbers2 = new int[100];
 
         for (int i = month.length - 1; i >= 0; i--) {
             System.out.println(month[i]);
         }
-
-
-
-
 
 
     }

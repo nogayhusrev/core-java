@@ -7,7 +7,7 @@ public class MapPractice {
 
     public static void main(String[] args) {
 
-        Map<String, Object>  person1 = new LinkedHashMap<>();
+        Map<String, Object> person1 = new LinkedHashMap<>();
         person1.put("name", "Arthur");
         person1.put("gender", 'M');
         person1.put("age", 32);
@@ -17,9 +17,9 @@ public class MapPractice {
 
         System.out.println(person1);
 
-        System.out.println( person1.get("name") );
-        System.out.println( person1.get("salary"));
-        System.out.println( person1.get("job_title"));
+        System.out.println(person1.get("name"));
+        System.out.println(person1.get("salary"));
+        System.out.println(person1.get("job_title"));
 
 
     }

@@ -8,15 +8,15 @@ public class TaskExtractLettersCharsSpecials {
 
         String str = "ABCD123$%#@&456EFG!";
 
-        char[] ch =str.toCharArray();
+        char[] ch = str.toCharArray();
 
-        ArrayList<Character> letters=new ArrayList<>();
-        ArrayList<Character> digits=new ArrayList<>();
-        ArrayList<Character> specials=new ArrayList<>();
+        ArrayList<Character> letters = new ArrayList<>();
+        ArrayList<Character> digits = new ArrayList<>();
+        ArrayList<Character> specials = new ArrayList<>();
 
 
         for (char c : ch) {
-            if(Character.isLetter(c)) letters.add(c);
+            if (Character.isLetter(c)) letters.add(c);
             else if (Character.isDigit(c)) digits.add(c);
             else specials.add(c);
 

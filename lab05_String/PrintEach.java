@@ -17,11 +17,10 @@ public class PrintEach {
         */
 
 
-        for(int i = 0; i <= word.length()-1; i++ ){
-            char each =  word.charAt(i);
+        for (int i = 0; i <= word.length() - 1; i++) {
+            char each = word.charAt(i);
             System.out.println(each);
         }
-
 
 
     }

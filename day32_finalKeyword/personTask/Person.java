@@ -13,14 +13,14 @@ Person {
 
     public static final int numberOfHead;
 
-    static{
+    static {
         numberOfHead = 1;
     }
 
     public Person(String name, char gender, LocalDate dateOfBirth) {
         setName(name);
-        if( !(gender=='M' || gender == 'F')){
-            System.err.println("Invalid gender: "+gender);
+        if (!(gender == 'M' || gender == 'F')) {
+            System.err.println("Invalid gender: " + gender);
             System.exit(1);
         }
         this.gender = gender;
@@ -50,20 +50,20 @@ Person {
     }
 
 
-    public void eat(){
-        System.out.println(name+" is eating");
+    public void eat() {
+        System.out.println(name + " is eating");
     }
 
-    public void drink(){
-        System.out.println(name+" is drinking");
+    public void drink() {
+        System.out.println(name + " is drinking");
     }
 
-    public void sleep(){
-        System.out.println(name+" is sleeping");
+    public void sleep() {
+        System.out.println(name + " is sleeping");
     }
 
-    public final void breath(){ // To make sure that this implementation will not change for any sub class
-        System.out.println(name +" is breathing");
+    public final void breath() { // To make sure that this implementation will not change for any sub class
+        System.out.println(name + " is breathing");
     }
 
     public String toString() {

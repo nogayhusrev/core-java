@@ -12,7 +12,7 @@ public class LogIn {
         String u, p;
         int attempt = 3;
 
-        do{
+        do {
 
             System.out.println("Enter your user name:");
             u = input.next();
@@ -22,14 +22,12 @@ public class LogIn {
 
             attempt--;
 
-            if(attempt == 0){
+            if (attempt == 0) {
                 break;
             }
 
 
-        }while( !(u.equals("Cydeo") && p.equals("WoodenSpoon")) );  // while the credentials are invalid
-
-
+        } while (!(u.equals("Cydeo") && p.equals("WoodenSpoon")));  // while the credentials are invalid
 
 
     }

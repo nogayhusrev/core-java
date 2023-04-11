@@ -1,4 +1,5 @@
 package day08_ternarySwitch;
+
 public class IfStatementAndTernariesPractice {
 
     public static void main(String[] args) {

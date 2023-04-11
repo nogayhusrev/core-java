@@ -6,11 +6,11 @@ public class ReverseOfArray {
 
     public static void main(String[] args) {
 
-        int array[] = {1,2,3,4,5};
-        int [] reverseArray=new int[array.length];
+        int array[] = {1, 2, 3, 4, 5};
+        int[] reverseArray = new int[array.length];
 
-        for (int i=(array.length-1);i>=0;i--)
-            reverseArray[(array.length-1-i)]=array[i];
+        for (int i = (array.length - 1); i >= 0; i--)
+            reverseArray[(array.length - 1 - i)] = array[i];
 
         System.out.println("reverseArray = " + Arrays.toString(reverseArray));
 

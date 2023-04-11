@@ -6,7 +6,7 @@ public class TestPersonObject {
 
     public static void main(String[] args) {
 
-        Person person = new Person("Daniel", 'M', LocalDate.of(1991,1,25));
+        Person person = new Person("Daniel", 'M', LocalDate.of(1991, 1, 25));
 
         System.out.println(person);
 
@@ -19,10 +19,6 @@ public class TestPersonObject {
         System.out.println(employee);
 
         employee.breath();
-
-
-
-
 
 
     }

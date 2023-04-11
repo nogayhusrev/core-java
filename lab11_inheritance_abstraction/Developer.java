@@ -1,6 +1,6 @@
 package lab11_inheritance_abstraction;
 
-public class Developer extends Employee implements ScrumMember, WFH{
+public class Developer extends Employee implements ScrumMember, WFH {
 
     public Developer(String name, int age, char gender, String id, String jobTitle, double salary) {
         super(name, age, gender, id, jobTitle, salary);
@@ -8,11 +8,11 @@ public class Developer extends Employee implements ScrumMember, WFH{
 
     @Override
     public void work() {
-        System.out.println(getName() +" is coding");
+        System.out.println(getName() + " is coding");
     }
 
-    public void fixBug(){
-        System.out.println(getName() +" is fixing the bug");
+    public void fixBug() {
+        System.out.println(getName() + " is fixing the bug");
     }
 
 

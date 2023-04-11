@@ -14,7 +14,7 @@ public class StringMethods2 {
 
         String word = "java";
 
-       // word = word.replace('a' , 'e');  //"jeve"
+        // word = word.replace('a' , 'e');  //"jeve"
 
         word.replace("a", "e");
 
@@ -53,7 +53,7 @@ public class StringMethods2 {
         String sentence5 = "Today is Sunday, Tomorrow is Monday";
         //                  0123456789
 
-        String today = sentence5.substring(9, 14+1);
+        String today = sentence5.substring(9, 14 + 1);
 
         System.out.println(today);
 
@@ -64,7 +64,7 @@ public class StringMethods2 {
         int beginning = email.indexOf("@") + 1;
         int ending = email.lastIndexOf('.');
 
-        String domain =  email.substring(beginning, ending);
+        String domain = email.substring(beginning, ending);
 
         System.out.println(domain);
 
@@ -72,7 +72,7 @@ public class StringMethods2 {
 
         String sentence6 = "I love Java programming";
 
-       // String r1 = sentence6.substring(7, sentence6.length());
+        // String r1 = sentence6.substring(7, sentence6.length());
 
         String r1 = sentence6.substring(7);
 
@@ -83,7 +83,7 @@ public class StringMethods2 {
 
         String sentence7 = "Today is Sunday, Tomorrow is Monday";
 
-        String tomorrow =  sentence7.substring( sentence7.lastIndexOf(" ") + 1 );
+        String tomorrow = sentence7.substring(sentence7.lastIndexOf(" ") + 1);
         // create the substring "Monday" from sentence7. DO NOT count any index numbers
 
         System.out.println(tomorrow);
@@ -92,12 +92,9 @@ public class StringMethods2 {
 
         String str = "Python";
 
-        String result = (str +"\n").repeat(10);
+        String result = (str + "\n").repeat(10);
 
         System.out.println(result);
-
-
-
 
 
     }

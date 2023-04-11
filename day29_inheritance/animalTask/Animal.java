@@ -16,12 +16,12 @@ public class Animal {
     }
 
     public void setInfo(String name, String breed, char gender, int age, String size, String color) {
-       setName(name);
-       setBreed(breed);
-       setGender(gender);
-       setAge(age);
-       setSize(size);
-       setColor(color);
+        setName(name);
+        setBreed(breed);
+        setGender(gender);
+        setAge(age);
+        setSize(size);
+        setColor(color);
     }
 
     public void eat() {
@@ -32,8 +32,8 @@ public class Animal {
         System.out.println(name + " is drinking water");
     }
 
-    public void sleep(){
-        System.out.println(name+" is sleeping");
+    public void sleep() {
+        System.out.println(name + " is sleeping");
     }
 
 
@@ -86,7 +86,7 @@ public class Animal {
     }
 
     public String toString() {
-        return getClass().getSimpleName()+"{" +
+        return getClass().getSimpleName() + "{" +
                 "name='" + name + '\'' +
                 ", breed='" + breed + '\'' +
                 ", gender=" + gender +
@@ -95,9 +95,6 @@ public class Animal {
                 ", color='" + color + '\'' +
                 '}';
     }
-
-
-
 
 
 }

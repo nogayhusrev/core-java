@@ -1,6 +1,6 @@
 package day34_abstraction.deviceTask;
 
-public class Iphone extends Phone implements AppleApps{
+public class Iphone extends Phone implements AppleApps {
     public Iphone(String brand, String model, String size, String color, double price, boolean hasBattery, boolean hasPowerButton) {
         super(brand, model, size, color, price, hasBattery, hasPowerButton);
     }
@@ -22,11 +22,11 @@ public class Iphone extends Phone implements AppleApps{
     }
 
 
-    public void faceTime(long phoneNum){
+    public void faceTime(long phoneNum) {
         System.out.println(getClass().getSimpleName() + " is face timing with " + phoneNum);
     }
 
-    public void faceTime(String email){
+    public void faceTime(String email) {
         System.out.println(getClass().getSimpleName() + " is face timing with " + email);
     }
 }

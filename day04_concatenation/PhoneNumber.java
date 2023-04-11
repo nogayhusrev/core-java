@@ -4,10 +4,10 @@ public class PhoneNumber {
 
     public static void main(String[] args) {
 
-        short countryCode=90;
-        short areaCode =544;
-        int localNumber=2444545;
-        System.out.println("+"+countryCode+ areaCode+localNumber);
+        short countryCode = 90;
+        short areaCode = 544;
+        int localNumber = 2444545;
+        System.out.println("+" + countryCode + areaCode + localNumber);
 
 
     }

@@ -1,6 +1,6 @@
 package day34_abstraction.deviceTask;
 
-public interface AppleApps extends Downloadable{
+public interface AppleApps extends Downloadable {
     String appStoreName = "App Store";
     String OS = "IOS";
 }

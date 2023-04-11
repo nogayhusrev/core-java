@@ -3,9 +3,9 @@ package day16_nestedLoop;
 public class Letters {
     public static void main(String[] args) {
 
-        for(char i='A';i<70;i++){
-            for (char j='a';j<=122;j++){
-                System.out.print( i );
+        for (char i = 'A'; i < 70; i++) {
+            for (char j = 'a'; j <= 122; j++) {
+                System.out.print(i);
                 System.out.print(j + " ");
             }
             System.out.println();

@@ -1,6 +1,6 @@
 package day31_inheritance.vehicleTask;
 
-public class Vehicle  {
+public class Vehicle {
 
     private String brand, model, color;
     private int year;

@@ -11,9 +11,9 @@ public class Car {
     public double price;
 
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
-        Car tfs=new Car();
+        Car tfs = new Car();
 
 /*      tfs.make="TOFAŞ";
         tfs.model="ŞAHİN";
@@ -29,33 +29,33 @@ public class Car {
     }
 
 
-    public void setInfo(){
+    public void setInfo() {
 
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("------------------------");
         System.out.print("Type the make of the car:");
-        make=scanner.next();
+        make = scanner.next();
 
 
         System.out.println("------------------------");
         System.out.print("Type the model of the car:");
-        model=scanner.next();
+        model = scanner.next();
 
 
         System.out.println("------------------------");
         System.out.print("Type the year of the car:");
-        year=scanner.nextInt();
+        year = scanner.nextInt();
 
 
         System.out.println("------------------------");
         System.out.print("Type the color of the car:");
-        color=scanner.next();
+        color = scanner.next();
 
 
         System.out.println("------------------------");
         System.out.print("Type the price of the car:");
-        price=scanner.nextDouble();
+        price = scanner.nextDouble();
         System.out.println();
 
 
@@ -63,29 +63,26 @@ public class Car {
 
     }
 
-    public String toString(){
+    public String toString() {
 
-        String carInfo="";
+        String carInfo = "";
 
-        carInfo= "------------------------\n" +
+        carInfo = "------------------------\n" +
                 "Make\t: " + make + "\n" +
-                        "Model\t: " + model + "\n" +
-                        "Year\t: " + year + "\n" +
-                        "Color\t: " + color + "\n" +
-                        "Price\t: " + price + "\n" ;
-
-
+                "Model\t: " + model + "\n" +
+                "Year\t: " + year + "\n" +
+                "Color\t: " + color + "\n" +
+                "Price\t: " + price + "\n";
 
 
         return carInfo;
     }
 
-    public void start(){
+    public void start() {
         System.out.println("------------------------");
         System.out.println("Engine is starting...");
         System.out.println("------------------------");
     }
-
 
 
 }

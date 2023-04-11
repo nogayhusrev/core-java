@@ -8,14 +8,13 @@ public class FrequencyOfWord2 {
 
         int countJava = 0;
 
-            //sentence.indexOf("Java") >= 0
-        while(sentence.contains("Java")){ // while the sentence has Java
+        //sentence.indexOf("Java") >= 0
+        while (sentence.contains("Java")) { // while the sentence has Java
             sentence = sentence.replaceFirst("Java", ""); // remove one "Java" at a time
             countJava++; // increase the number of java by 1
         }
 
         System.out.println(countJava);
-
 
 
     }

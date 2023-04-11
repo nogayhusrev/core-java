@@ -24,18 +24,17 @@ public class FirstUniqueElement {
 
             int frequency = 0;
             for (Integer each : list) {
-                if(each == element){
+                if (each == element) {
                     frequency++;
                 }
             }
 
-            if(frequency == 1){
+            if (frequency == 1) {
                 System.out.println(element);
                 break; // exiting the loop, in order to return the first unique element only
             }
 
         }
-
 
 
     }

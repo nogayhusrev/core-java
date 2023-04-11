@@ -5,21 +5,21 @@ import java.util.Scanner;
 public class GradeCalculator {
     public static void main(String[] args) {
 
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         int score;
 
         String cont;
 
-        while (true){
+        while (true) {
 
             //1. Ask the user "Enter your score"
             //         If user enters invalid score, terminate the program after
             //          displaying the error message "Invalid Entry"
 
             System.out.println("Enter your score:");
-            score=scanner.nextInt();
+            score = scanner.nextInt();
 
-            if(score<=0 || score>100 ){
+            if (score <= 0 || score > 100) {
                 System.err.println("Invalid entry!!!!");
                 System.exit(1);
             }
@@ -32,47 +32,42 @@ public class GradeCalculator {
             //        60 ~ 69 ==> D
             //        0 ~ 59 ==> F
 
-            if (score>=90){
+            if (score >= 90) {
                 System.out.println("Your grade is 'A' ");
-            } else if (score>=80 && score <90) {
+            } else if (score >= 80 && score < 90) {
                 System.out.println("Your grade is 'B' ");
-            }else if (score>=70 && score <80) {
+            } else if (score >= 70 && score < 80) {
                 System.out.println("Your grade is 'C' ");
-            }else if (score>=60 && score <70) {
+            } else if (score >= 60 && score < 70) {
                 System.out.println("Your grade is 'D' ");
-            }else if (score>=0 && score <60) {
+            } else if (score >= 0 && score < 60) {
                 System.out.println("Your grade is 'F' ");
             }
 
-            do{
+            do {
                 //  3. Ask the user "Would you like to calculate another Square?"
                 //         If "yes" --> repeat the previous steps
                 //         If "No" --> Print "Thank you for using Cydeo Square Calculator APP"
                 //         If user enters an invalid entry, ask the user to re-enter until user provides a valid entry
 
                 System.out.println("Would you like to calculate another score?");
-                cont= scanner.next();
-                if(cont.equalsIgnoreCase("yes")){
+                cont = scanner.next();
+                if (cont.equalsIgnoreCase("yes")) {
                     break;
-                }else if (cont.equalsIgnoreCase("no")){
+                } else if (cont.equalsIgnoreCase("no")) {
                     System.out.println("Thank you for using Cydeo Grade Calculator APP");
                     System.exit(1);
-                }else{
+                } else {
                     System.err.println("Invalid entry!!!");
                     System.out.println("------------");
                     continue;
                 }
 
 
-            }while (true);
-
-
-
+            } while (true);
 
 
         }
-
-
 
 
     }

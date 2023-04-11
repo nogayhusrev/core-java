@@ -16,54 +16,54 @@ public class TaskReplace {
         1.2 Create the same functions for double arrays, char arrays, and String arrays
      */
 
-    public static int[] replace(int [] arr, int index,int newElement ){
+    public static int[] replace(int[] arr, int index, int newElement) {
 
-        if (index < 0 || index > arr.length-1){
+        if (index < 0 || index > arr.length - 1) {
             System.out.println("Given index is invalid");
             System.exit(0);
-            
+
         }
 
-        arr[index]=newElement;
+        arr[index] = newElement;
         return arr;
 
     }
 
-    public static double[] replace(double [] arr, int index,double newElement ){
+    public static double[] replace(double[] arr, int index, double newElement) {
 
-        if (index < 0 || index > arr.length-1){
+        if (index < 0 || index > arr.length - 1) {
             System.out.println("Given index is invalid");
             System.exit(0);
 
         }
 
-        arr[index]=newElement;
+        arr[index] = newElement;
         return arr;
 
     }
 
-    public static char[] replace(char [] arr, int index,char newElement ){
+    public static char[] replace(char[] arr, int index, char newElement) {
 
-        if (index < 0 || index > arr.length-1){
+        if (index < 0 || index > arr.length - 1) {
             System.out.println("Given index is invalid");
             System.exit(0);
 
         }
 
-        arr[index]=newElement;
+        arr[index] = newElement;
         return arr;
 
     }
 
-    public static String[] replace(String [] arr, int index,String newElement ){
+    public static String[] replace(String[] arr, int index, String newElement) {
 
-        if (index < 0 || index > arr.length-1){
+        if (index < 0 || index > arr.length - 1) {
             System.out.println("Given index is invalid");
             System.exit(0);
 
         }
 
-        arr[index]=newElement;
+        arr[index] = newElement;
         return arr;
 
     }

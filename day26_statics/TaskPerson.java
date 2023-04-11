@@ -7,25 +7,23 @@ public class TaskPerson {
     public char gender;
 
 
-
-
-    public TaskPerson(String name,int age,char gender){
-        this.name=name;
-        this.age=age;
-        this.gender=gender;
+    public TaskPerson(String name, int age, char gender) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
 
 
     }
 
-    public void eat(String food){
-        System.out.println(name + " is eating " + food );
+    public void eat(String food) {
+        System.out.println(name + " is eating " + food);
     }
 
-    public void drink(String drink){
+    public void drink(String drink) {
         System.out.println(name + " is drinking " + drink);
     }
 
-    public void sleep(){
+    public void sleep() {
         System.out.println(name + " is  sleeping");
     }
 

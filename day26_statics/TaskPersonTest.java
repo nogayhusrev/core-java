@@ -4,7 +4,7 @@ public class TaskPersonTest {
 
     public static void main(String[] args) {
 
-        TaskPerson tp=new TaskPerson("Adam", 24, 'M');
+        TaskPerson tp = new TaskPerson("Adam", 24, 'M');
         tp.eat("Meat");
         tp.drink("Coke");
         tp.sleep();

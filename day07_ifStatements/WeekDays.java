@@ -1,10 +1,11 @@
 package day07_ifStatements;
+
 public class WeekDays {
     public static void main(String[] args) {
 
-        int num=4;
+        int num = 4;
 
-        if (num==1){
+        if (num == 1) {
             System.out.println("Monday");
         } else if (num == 2) {
             System.out.println("Tuesday");
@@ -18,7 +19,7 @@ public class WeekDays {
             System.out.println("Saturday");
         } else if (num == 7) {
             System.out.println("Sunday");
-        }else
+        } else
             System.out.println("Invalid argument");
     }
 }

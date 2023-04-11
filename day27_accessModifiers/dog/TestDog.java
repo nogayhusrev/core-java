@@ -4,7 +4,7 @@ public class TestDog {
 
     public static void main(String[] args) {
 
-        Dog d=new Dog("Duman","Kangal Kırma","Small",'M',1,"Brown");
+        Dog d = new Dog("Duman", "Kangal Kırma", "Small", 'M', 1, "Brown");
 
         d.eat();
         d.drink();

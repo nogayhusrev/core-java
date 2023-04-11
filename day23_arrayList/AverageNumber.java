@@ -18,15 +18,14 @@ public class AverageNumber {
 
         int sum = 0;
 
-        for(Integer each : list ){
+        for (Integer each : list) {
             sum += each;
         }
 
 
-        double average = sum / (double)list.size();
+        double average = sum / (double) list.size();
 
         System.out.println("average = " + average);
-
 
 
     }

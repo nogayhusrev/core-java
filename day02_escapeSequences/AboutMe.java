@@ -8,7 +8,6 @@ public class AboutMe {
         System.out.println("I have no favorite Tv show");
 
 
-
     }
 
 }

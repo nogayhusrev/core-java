@@ -18,11 +18,11 @@ public class Server {
         this.hire_date = LocalDate.now();
     }
 
-    public void takeOrder(){
+    public void takeOrder() {
         System.out.println(name + " is taking order.");
     }
 
-    public void cleanTable(){
+    public void cleanTable() {
         System.out.println(name + " is cleaning table");
     }
 
@@ -32,7 +32,7 @@ public class Server {
                 "name='" + name + '\'' +
                 ", employeeID=" + employeeID +
                 ", hourlyRate=" + hourlyRate +
-                ", fullTime=" + (fullTime? "full-time":"part-time") +
+                ", fullTime=" + (fullTime ? "full-time" : "part-time") +
                 ", hire_date=" + hire_date +
                 '}';
     }

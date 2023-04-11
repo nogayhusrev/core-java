@@ -68,13 +68,13 @@ public class ReferenceTypeCastings {
         Electric electric = new Tesla("Tesla", "Model Y", "Blue", 2020, 55000);
 
         electric.charge();
-        ((Tesla)electric).selfDrive();
-        ( (AutoPilot)electric ).selfDrive();
+        ((Tesla) electric).selfDrive();
+        ((AutoPilot) electric).selfDrive();
 
 
         System.out.println("-------------------------------------------------------------");
 
-        Employee employee1 = new Teacher("James", 45,  'M', "B1", "Math Teacher", 75000);
+        Employee employee1 = new Teacher("James", 45, 'M', "B1", "Math Teacher", 75000);
 
         Employee employee2 = new Developer("Lucy", 30, 'F', "C1", "Java Developer", 95000, "Java");
 

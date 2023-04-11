@@ -3,22 +3,21 @@ package day04_concatenation;
 public class SalaryCalculator {
     public static void main(String[] args) {
 
-        int hourlyRate=50,
-                weeklyHours=45;
-        double stateTaxRate=6, //given as percentage
-                federalTaxRate=26;//given as percentage
-        int salaryBeforeTax=52*weeklyHours*hourlyRate;
-        double stateTax= (double) (salaryBeforeTax*stateTaxRate/100);
-        double federalTax= (double) (salaryBeforeTax*federalTaxRate/100);
-        double totalTax=federalTax+stateTax;
-        double salaryAfterTax=(double) salaryBeforeTax-stateTax-federalTax;
+        int hourlyRate = 50,
+                weeklyHours = 45;
+        double stateTaxRate = 6, //given as percentage
+                federalTaxRate = 26;//given as percentage
+        int salaryBeforeTax = 52 * weeklyHours * hourlyRate;
+        double stateTax = (double) (salaryBeforeTax * stateTaxRate / 100);
+        double federalTax = (double) (salaryBeforeTax * federalTaxRate / 100);
+        double totalTax = federalTax + stateTax;
+        double salaryAfterTax = (double) salaryBeforeTax - stateTax - federalTax;
 
         System.out.println("salaryBeforeTax = " + salaryBeforeTax);
         System.out.println("federalTax = " + federalTax);
         System.out.println("stateTax = " + stateTax);
         System.out.println("totalTax = " + totalTax);
         System.out.println("salaryAfterTax = " + salaryAfterTax);
-
 
 
     }

@@ -20,11 +20,11 @@ public class DateTimeFormatterIntro {
         System.out.println(date1.format(df));  // July-01-22
 
 
-        DateTimeFormatter tf  = DateTimeFormatter.ofPattern("hh:mm a");
+        DateTimeFormatter tf = DateTimeFormatter.ofPattern("hh:mm a");
 
         LocalTime time1 = LocalTime.of(17, 30);
 
-        System.out.println( time1.format(tf) ); //07:05
+        System.out.println(time1.format(tf)); //07:05
 
 
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("EEEE, MMM/dd/y  hh:mm a");
@@ -32,7 +32,6 @@ public class DateTimeFormatterIntro {
         LocalDateTime starts = LocalDateTime.now();
 
         System.out.println(starts.format(dtf));
-
 
 
     }

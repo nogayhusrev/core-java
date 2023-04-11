@@ -2,6 +2,7 @@ package day34_abstraction.ownCarTask;
 
 public interface AutoPark {
     boolean hasAutoPark = true;
+
     void autoPark();
 }
 /*

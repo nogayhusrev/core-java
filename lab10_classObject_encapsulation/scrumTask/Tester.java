@@ -11,14 +11,14 @@ public class Tester {
 
     // public static boolean isHuman = true;
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
-    public void setName(String name){
+    public void setName(String name) {
 
-        if(name == null || name.isEmpty() || name.isBlank()){
-            System.err.println("Invalid name: "+name);
+        if (name == null || name.isEmpty() || name.isBlank()) {
+            System.err.println("Invalid name: " + name);
             System.exit(1);
         }
 
@@ -31,8 +31,8 @@ public class Tester {
 
     public void setAge(int age) {
 
-        if( age < 18){
-            System.err.println("Invalid age for the tester: "+age);
+        if (age < 18) {
+            System.err.println("Invalid age for the tester: " + age);
             System.exit(1);
         }
 
@@ -43,11 +43,11 @@ public class Tester {
         return gender;
     }
 
-                            //'Q'
+    //'Q'
     public void setGender(char gender) {
 
-        if( !(gender == 'M' || gender == 'F') ){ // invalid
-            System.err.println("Invalid gender for tester: "+gender);
+        if (!(gender == 'M' || gender == 'F')) { // invalid
+            System.err.println("Invalid gender for tester: " + gender);
             System.exit(1);
         }
 
@@ -68,8 +68,8 @@ public class Tester {
 
     public void setJobTitle(String jobTitle) {
 
-        if(jobTitle == null || jobTitle.trim().isEmpty() ){
-            System.err.println("Invalid job title: "+jobTitle);
+        if (jobTitle == null || jobTitle.trim().isEmpty()) {
+            System.err.println("Invalid job title: " + jobTitle);
             System.exit(1);
         }
 
@@ -82,7 +82,7 @@ public class Tester {
 
     public void setHourlyRate(double hourlyRate) {
 
-        if(hourlyRate < 0){
+        if (hourlyRate < 0) {
             System.err.println("Hourly rate of the tester can not be negative");
             System.exit(1);
         }
@@ -100,7 +100,7 @@ public class Tester {
         setHourlyRate(hourlyRate);
     }
 
-    public double getSalary(){
+    public double getSalary() {
         return hourlyRate * 40 * 52;
     }
 
@@ -116,10 +116,9 @@ public class Tester {
     }
 
 
-    public void testing(){
-        System.out.println(name+" is testing the application");
+    public void testing() {
+        System.out.println(name + " is testing the application");
     }
-
 
 
 }

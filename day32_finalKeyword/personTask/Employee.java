@@ -29,8 +29,8 @@ public class Employee extends Person {
         this.salary = salary;
     }
 
-    public void work(){
-        System.out.println(getName() +" is working");
+    public void work() {
+        System.out.println(getName() + " is working");
     }
 
 
@@ -40,12 +40,11 @@ public class Employee extends Person {
                 "name='" + getName() + '\'' +
                 ", gender=" + getGender() +
                 ", age=" + getAge() +
-                ", dateOfBirth=" +getDateOfBirth() +
+                ", dateOfBirth=" + getDateOfBirth() +
                 "jobTitle='" + jobTitle + '\'' +
                 ", salary=" + salary +
                 '}';
     }
-
 
 
 }

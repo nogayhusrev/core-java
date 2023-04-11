@@ -24,11 +24,11 @@ public class StringUtility {
 
 
     // return the frequency of the given word from the given sentence
-    public static int frequency(String sentence, String word){
+    public static int frequency(String sentence, String word) {
 
         int count = 0;
 
-        while(sentence.contains(word)){
+        while (sentence.contains(word)) {
             sentence = sentence.replaceFirst(word, "");
             count++;
         }
@@ -38,11 +38,11 @@ public class StringUtility {
 
 
     //                          "aabacde",    'a'
-    public static int frequency(String str, char ch){
-        int count =0;
+    public static int frequency(String str, char ch) {
+        int count = 0;
 
         for (int i = 0; i < str.length(); i++) {
-            if(str.charAt(i) == ch){
+            if (str.charAt(i) == ch) {
                 count++;
             }
         }
@@ -52,11 +52,11 @@ public class StringUtility {
     }
 
 
-    public static String reverse(String word){
+    public static String reverse(String word) {
 
         String result = "";
 
-        for (int i = word.length()-1; i >= 0; i--){ //i: index number of the string (word) starting from last index to 0
+        for (int i = word.length() - 1; i >= 0; i--) { //i: index number of the string (word) starting from last index to 0
             char each = word.charAt(i); // character: starting from last character to first character
             result += each;
         }
@@ -65,14 +65,13 @@ public class StringUtility {
     }
 
 
-
-    public static String removeDup(String str){
+    public static String removeDup(String str) {
         String result = "";
 
         for (int i = 0; i < str.length(); i++) {
             char each = str.charAt(i);
 
-            if(!result.contains(""+each)) {
+            if (!result.contains("" + each)) {
                 result += each;
             }
 
@@ -80,10 +79,6 @@ public class StringUtility {
 
         return result;
     }
-
-
-
-
 
 
 }

@@ -9,8 +9,8 @@ public class Person {
     public Person(String name, int age, char gender) {
         setName(name);
         setAge(age);
-        if(!(gender =='M' || gender =='F')){ //if the gender is invalid
-            throw new RuntimeException("Invalid gender: "+gender); // throws the runtime exception and crash the program
+        if (!(gender == 'M' || gender == 'F')) { //if the gender is invalid
+            throw new RuntimeException("Invalid gender: " + gender); // throws the runtime exception and crash the program
         }
         this.gender = gender;
     }
@@ -24,15 +24,15 @@ public class Person {
     }
 
     public int getAge() {
-        if(age == 0){
+        if (age == 0) {
             throw new RuntimeException("Age has not been set");
         }
         return age;
     }
 
     public void setAge(int age) {
-        if(age < 0 || age > 150){  // if the given age is invalid
-            throw new RuntimeException("Invalid age: "+age); // throw runtime exception, and crash program
+        if (age < 0 || age > 150) {  // if the given age is invalid
+            throw new RuntimeException("Invalid age: " + age); // throw runtime exception, and crash program
         }
         this.age = age;
     }

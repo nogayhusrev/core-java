@@ -39,13 +39,10 @@ public class ArrayListMethods {
 
         String firstStudent = studentsList.get(0);
 
-        String lastStudent =  studentsList.get( studentsList.size() -1  );
+        String lastStudent = studentsList.get(studentsList.size() - 1);
 
         System.out.println(firstStudent);
         System.out.println(lastStudent);
-
-
-
 
 
     }

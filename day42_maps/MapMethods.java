@@ -25,8 +25,6 @@ public class MapMethods {
         System.out.println(map.equals(employees)); // true
 
 
-
-
     }
 
 }

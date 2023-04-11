@@ -2,14 +2,13 @@ package day06_ifStatements;
 
 public class ChooseLanguage {
     public static void main(String[] args) {
-        int num=2;
+        int num = 2;
 
-        String text1[]={" ","Hello, thank for your call",
+        String text1[] = {" ", "Hello, thank for your call",
                 "Hola, gracias para llamar",
                 "Merhaba, aradiginiz icin tesekkurler",
                 "Privet, spasibo za vash zvonok",
                 "Merci ,pour votre appel"};
-
 
 
         System.out.println(text1[num]);

@@ -6,25 +6,25 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class TaskMovie {
-    public String country,title,genre,director;
+    public String country, title, genre, director;
     public LocalDate releaseDate;
-    public ArrayList<String> casts=new ArrayList<>();
+    public ArrayList<String> casts = new ArrayList<>();
 
-    public TaskMovie(String country,String title,String genre,LocalDate releaseDate,String director){
+    public TaskMovie(String country, String title, String genre, LocalDate releaseDate, String director) {
 
-        this.country=country;
-        this.title=title;
-        this.genre=genre;
-        this.releaseDate=releaseDate;
-        this.director=director;
+        this.country = country;
+        this.title = title;
+        this.genre = genre;
+        this.releaseDate = releaseDate;
+        this.director = director;
 
     }
 
-    public void addCasts(String name){
+    public void addCasts(String name) {
         casts.add(name);
     }
 
-    public void addCasts(String [] names){
+    public void addCasts(String[] names) {
         casts.addAll(Arrays.asList(names));
     }
 

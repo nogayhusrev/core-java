@@ -17,27 +17,27 @@ public class Item {
         // name can not contain any special characters other than space
         // name must start with letters
 
-        if(name.isEmpty() || name.isBlank() || name == null){
-            System.err.println("Invalid Name: "+name);
+        if (name.isEmpty() || name.isBlank() || name == null) {
+            System.err.println("Invalid Name: " + name);
             System.exit(1);
         }
 
-        int special=0;
+        int special = 0;
 
-        for (char c: name.toCharArray()) {
-            if (!Character.isLetterOrDigit(c) && c!=' '){
+        for (char c : name.toCharArray()) {
+            if (!Character.isLetterOrDigit(c) && c != ' ') {
                 special++;
                 break;
             }
         }
 
-        if (special>0){
-            System.err.println("Invalid Name: "+name);
+        if (special > 0) {
+            System.err.println("Invalid Name: " + name);
             System.exit(1);
         }
 
-        if (!Character.isLetter(name.charAt(0))){
-            System.err.println("Invalid Name: "+name);
+        if (!Character.isLetter(name.charAt(0))) {
+            System.err.println("Invalid Name: " + name);
             System.exit(1);
         }
 
@@ -48,11 +48,10 @@ public class Item {
         /* quantity can not be negative
            if the Item name is toilet paper (case insensitive) then the quantity can not be more than 1
          */
-        if (quantity < 0 || (name.equals("toilet paper") && quantity != 1)){
-            System.err.println("Invalid Quantity: "+quantity);
+        if (quantity < 0 || (name.equals("toilet paper") && quantity != 1)) {
+            System.err.println("Invalid Quantity: " + quantity);
             System.exit(1);
         }
-
 
 
         this.quantity = quantity;
@@ -61,8 +60,8 @@ public class Item {
     public void setUnitPrice(double unitPrice) {
         // unit price can not be negative
 
-        if (unitPrice < 0){
-            System.err.println("Invalid Unit Price: "+unitPrice);
+        if (unitPrice < 0) {
+            System.err.println("Invalid Unit Price: " + unitPrice);
             System.exit(1);
         }
         this.unitPrice = unitPrice;
@@ -85,12 +84,12 @@ public class Item {
                 "name='" + name + '\'' +
                 ", unitPrice=" + unitPrice +
                 ", quantity= $" + quantity +
-                ", total price= $" + quantity*unitPrice +
+                ", total price= $" + quantity * unitPrice +
                 '}';
     }
 
     public double calcCost() {
-        return unitPrice*quantity;
+        return unitPrice * quantity;
     }
 
 }

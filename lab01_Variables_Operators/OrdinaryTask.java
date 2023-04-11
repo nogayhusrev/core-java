@@ -17,9 +17,7 @@ public class OrdinaryTask {
         double result3 = 1 / time + 3 * mass;  // (1/time) + (3*mass)
         double result4 = 1 / (time + 2 * mass);
 
-        System.out.println((2+3)*2/3%2);
-        
-
+        System.out.println((2 + 3) * 2 / 3 % 2);
 
 
     }

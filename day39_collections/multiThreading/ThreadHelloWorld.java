@@ -1,6 +1,6 @@
 package day39_collections.multiThreading;
 
-public class ThreadHelloWorld extends Thread{
+public class ThreadHelloWorld extends Thread {
 
     int threadNumber;
 
@@ -11,7 +11,7 @@ public class ThreadHelloWorld extends Thread{
     @Override
     public void run() {
         for (int i = 1; i < 6; i++) {
-            System.out.println(" Hello world " +i + " from Thread "+threadNumber);
+            System.out.println(" Hello world " + i + " from Thread " + threadNumber);
             try {
                 Thread.sleep(500);
             } catch (InterruptedException e) {

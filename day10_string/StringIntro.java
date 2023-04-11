@@ -31,7 +31,7 @@ public class StringIntro {
         String str1 = new String("Java"); // Creates two objects: 1. String pool, 2. in heap (outside string)
         String str2 = new String("Java");
 
-        System.out.println( str1 == str2);
+        System.out.println(str1 == str2);
 
 
         System.out.println("----------------------------");
@@ -47,8 +47,6 @@ public class StringIntro {
 
         System.out.println(t1 == t2);
         System.out.println(t3 == t2);
-
-
 
 
     }

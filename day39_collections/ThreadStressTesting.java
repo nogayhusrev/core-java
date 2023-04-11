@@ -14,20 +14,19 @@ public class ThreadStressTesting {
         }
 
 
-
     }
 }
 
 
-class ThreadStress extends Thread{
-
+class ThreadStress extends Thread {
 
 
     public int threadNumber = 0;
 
-    public ThreadStress(int i){
+    public ThreadStress(int i) {
         threadNumber = i;
     }
+
     @Override
     public synchronized void run() {
 
@@ -39,7 +38,7 @@ class ThreadStress extends Thread{
 }
 
 
-class Stress{
+class Stress {
 
 
     public String name = "Adam";
@@ -50,7 +49,7 @@ class Stress{
     public Stress(int threadNumber) {
         this.threadNumber = threadNumber;
         number++;
-        System.out.println( number + " is created by thread" + threadNumber);
+        System.out.println(number + " is created by thread" + threadNumber);
 
     }
 }

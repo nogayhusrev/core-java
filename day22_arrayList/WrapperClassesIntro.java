@@ -1,7 +1,6 @@
 package day22_arrayList;
 
 
-
 public class WrapperClassesIntro {
 
     public static void main(String[] args) {
@@ -21,7 +20,7 @@ public class WrapperClassesIntro {
 
         Integer b2 = b1; //auto boxing
         //  Long b3 = (long)b1;
-       //   Double b4 = b1;
+        //   Double b4 = b1;
 
         char ch = 'A';
 
@@ -36,22 +35,15 @@ public class WrapperClassesIntro {
         Integer n1 = 20;
 
         int n2 = n1;  // unboxing
-    //    long n3 = n1;
-    //    double n4 =n1;
+        //    long n3 = n1;
+        //    double n4 =n1;
 
         Character e1 = 'Z';
 
-        char e2 =e1; // unboxing
+        char e2 = e1; // unboxing
 
-       // int e3 = e1;
-       // long e4 = e1;
-
-
-
-
-
-
-
+        // int e3 = e1;
+        // long e4 = e1;
 
 
     }

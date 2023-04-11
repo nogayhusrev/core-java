@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class InsuranceQuote {
     public static void main(String[] args) {
 
-        double price=0;
+        double price = 0;
 
         String
                 name,
@@ -20,7 +20,7 @@ public class InsuranceQuote {
                 age,
                 milesPerDay;
 
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
 
         System.out.println("Welcome to our insurance services:");
@@ -55,43 +55,43 @@ public class InsuranceQuote {
 
         //1. Ask the user to enter your name
         System.out.println("Please enter your name:");
-        name=scanner.nextLine();
-        while(name.isBlank()||name.isEmpty()){
+        name = scanner.nextLine();
+        while (name.isBlank() || name.isEmpty()) {
             System.err.println("Don leave your name area blank!!!");
             System.out.println("Please enter your name:");
-            name=scanner.nextLine();
+            name = scanner.nextLine();
         }
 
         //2. Ask the user to enter your gender
         //(if user enters invalid entry, ask the user to re-enter until user provides a valid entry)
         System.out.println("Please enter your gender(male/female):");
-        gender= scanner.next();
-        while(!(gender.equalsIgnoreCase("male")||gender.equalsIgnoreCase("female"))){
+        gender = scanner.next();
+        while (!(gender.equalsIgnoreCase("male") || gender.equalsIgnoreCase("female"))) {
             System.err.println("Please enter a valid entry:");
             System.out.println("Please enter your gender(male/female):");
-            gender= scanner.next();
+            gender = scanner.next();
 
         }
 
         //3. Ask the user if he/she is married(Yes/No)
         //(if user enters invalid entry, ask the user to re-enter until user provides a valid entry)
         System.out.println("Are you married(yes/no)");
-        isMarried= scanner.next();
-        while(!(isMarried.equalsIgnoreCase("yes")||isMarried.equalsIgnoreCase("no"))){
+        isMarried = scanner.next();
+        while (!(isMarried.equalsIgnoreCase("yes") || isMarried.equalsIgnoreCase("no"))) {
             System.err.println("Please enter a valid entry:");
             System.out.println("Are you married(yes/no)");
-            isMarried= scanner.next();
+            isMarried = scanner.next();
         }
 
         //4. Ask user to enter your age
         //(age can not be negative or greater than 120)
         //(if user enters invalid entry, ask the user to re-enter until user provides a valid entry)
         System.out.println("Please enter your age:");
-        age=scanner.nextInt();
-        while(!(age>0 && age<120)){
+        age = scanner.nextInt();
+        while (!(age > 0 && age < 120)) {
             System.err.println("Your age cannot be less than 0 and greater than 120!");
             System.out.println("Please enter your age:");
-            age=scanner.nextInt();
+            age = scanner.nextInt();
 
         }
 
@@ -99,44 +99,44 @@ public class InsuranceQuote {
         //(mileage can not be negative or less than 5)
         //(if user enters invalid entry, ask the user to re-enter until user provides a valid entry)
         System.out.println("How many miles do you drive in a drive:");
-        milesPerDay= scanner.nextInt();
-        while (!(milesPerDay>5)){
+        milesPerDay = scanner.nextInt();
+        while (!(milesPerDay > 5)) {
             System.err.println("Miles in a day can not be under zero and not less than 5!");
             System.out.println("How many miles do you drive in a drive:");
-            milesPerDay= scanner.nextInt();
+            milesPerDay = scanner.nextInt();
         }
 
         //6. Ask the user if he/she wants full coverage or liability insurance?
         System.out.println("Which service do you want(Full Coverage/Liability Insurance) ");
         scanner.nextLine();
-        fullCoverageOrLiabilityInsurance=scanner.nextLine();
-        while (!(fullCoverageOrLiabilityInsurance.equalsIgnoreCase("Full Coverage")||
-                fullCoverageOrLiabilityInsurance.equalsIgnoreCase("FullCoverage")||
-                fullCoverageOrLiabilityInsurance.equalsIgnoreCase("Liability Insurance")||
-                fullCoverageOrLiabilityInsurance.equalsIgnoreCase("LiabilityInsurance"))){
+        fullCoverageOrLiabilityInsurance = scanner.nextLine();
+        while (!(fullCoverageOrLiabilityInsurance.equalsIgnoreCase("Full Coverage") ||
+                fullCoverageOrLiabilityInsurance.equalsIgnoreCase("FullCoverage") ||
+                fullCoverageOrLiabilityInsurance.equalsIgnoreCase("Liability Insurance") ||
+                fullCoverageOrLiabilityInsurance.equalsIgnoreCase("LiabilityInsurance"))) {
             System.err.println("Please enter a valid entry:");
             System.out.println("Which service do you want(Full Coverage/Liability Insurance) ");
-            fullCoverageOrLiabilityInsurance=scanner.nextLine();
+            fullCoverageOrLiabilityInsurance = scanner.nextLine();
         }
 
         //7. Ask if he/she had any accidents or claims in past 5 years (Yes/No)
         //(if user enters invalid entry, ask the user to re-enter until user provides a valid entry)
         System.out.println("Do you have any accident in past five years?(yes/no)");
-        anyAccident= scanner.next();
-        while (!(anyAccident.equalsIgnoreCase("yes")||anyAccident.equals("no"))){
+        anyAccident = scanner.next();
+        while (!(anyAccident.equalsIgnoreCase("yes") || anyAccident.equals("no"))) {
             System.err.println("Your answer cannot be other than yes/no !!!");
             System.out.println("Do you have any accident in past five years?(yes/no)");
-            anyAccident= scanner.next();
+            anyAccident = scanner.next();
         }
 
         //8. Ask the user if his/her car has an anti-theft device (Yes/No)
         //(if user enters invalid entry, ask the user to re-enter until user provides a valid entry)
         System.out.println("Do you have an anti-theft device(yes/no)?");
-        hasAnAntiTheftDevice= scanner.next();
-        while(!(hasAnAntiTheftDevice.equalsIgnoreCase("yes") || hasAnAntiTheftDevice.equalsIgnoreCase("no"))){
+        hasAnAntiTheftDevice = scanner.next();
+        while (!(hasAnAntiTheftDevice.equalsIgnoreCase("yes") || hasAnAntiTheftDevice.equalsIgnoreCase("no"))) {
             System.err.println("Your answer cannot be other than yes/no !!!");
             System.out.println("Do you have an anti-theft device(yes/no)?");
-            hasAnAntiTheftDevice= scanner.next();
+            hasAnAntiTheftDevice = scanner.next();
 
         }
 
@@ -145,27 +145,32 @@ public class InsuranceQuote {
         System.out.println("--------------------------------------------------------");
 
 
-
-        if(fullCoverageOrLiabilityInsurance.equalsIgnoreCase("FullCoverage")||
-                fullCoverageOrLiabilityInsurance.equalsIgnoreCase("Full Coverage")){
+        if (fullCoverageOrLiabilityInsurance.equalsIgnoreCase("FullCoverage") ||
+                fullCoverageOrLiabilityInsurance.equalsIgnoreCase("Full Coverage")) {
             // age addition
-            if( age < 25 ){price=160;}
-            else{price=120;}
+            if (age < 25) {
+                price = 160;
+            } else {
+                price = 120;
+            }
 
             // miles per day addition
-            if (milesPerDay <= 10) price+=20;
-            else if (milesPerDay>10 && milesPerDay<=50) price+=40;
-            else price+=70;
+            if (milesPerDay <= 10) price += 20;
+            else if (milesPerDay > 10 && milesPerDay <= 50) price += 40;
+            else price += 70;
 
-        }else{
+        } else {
             // age addition
-            if( age < 25 ){price=90;}
-            else{price=50;}
+            if (age < 25) {
+                price = 90;
+            } else {
+                price = 50;
+            }
 
             // miles per day addition
-            if (milesPerDay <= 10) price+=10;
-            else if (milesPerDay>10 && milesPerDay<=50) price+=30;
-            else price+=50;
+            if (milesPerDay <= 10) price += 10;
+            else if (milesPerDay > 10 && milesPerDay <= 50) price += 30;
+            else price += 50;
         }
 
         System.out.println("--------------------------------------------------------");
@@ -178,36 +183,35 @@ public class InsuranceQuote {
         //If the car has anti-theft device ==> 5% discount
         if (hasAnAntiTheftDevice.equalsIgnoreCase("yes")) {
             System.out.println("--------------------------------------------------------");
-            System.out.println("You have an anti-theft device, so you have 5% discount and your discount is $" + price*0.05);
+            System.out.println("You have an anti-theft device, so you have 5% discount and your discount is $" + price * 0.05);
             price += -(price * 0.05);
 
         }
 
         //If he/she had any accidents or claims in past 5 years ===> 15% extra charge
         //If he/she never had any accidents or claims in past 5 years ==> 10% discount
-        if(anyAccident.equalsIgnoreCase("yes")){
+        if (anyAccident.equalsIgnoreCase("yes")) {
             System.out.println("--------------------------------------------------------");
-            System.out.println("You have an accident in past 5 years, so you have 15% extra charge and your extra charge is $" + (price*0.15));
-            price+=(price*0.15);
-        }
-        else{
+            System.out.println("You have an accident in past 5 years, so you have 15% extra charge and your extra charge is $" + (price * 0.15));
+            price += (price * 0.15);
+        } else {
             System.out.println("--------------------------------------------------------");
-            System.out.println("You have no an accident in past 5 years, so you have 10% discount and your discount is $" + (price*0.1));
-            price-=(price*0.1);
+            System.out.println("You have no an accident in past 5 years, so you have 10% discount and your discount is $" + (price * 0.1));
+            price -= (price * 0.1);
 
         }
 
         //If he/she is married ==> 5% discount
-        if(isMarried.equalsIgnoreCase("yes")){
+        if (isMarried.equalsIgnoreCase("yes")) {
             System.out.println("--------------------------------------------------------");
-            System.out.println("You are married, so you have 5% discount and your  discount is $" + (price*0.05));
-            price-=(price*0.05);
+            System.out.println("You are married, so you have 5% discount and your  discount is $" + (price * 0.05));
+            price -= (price * 0.05);
 
         }
 
         System.out.println("--------------------------------------------------------");
         System.out.println("Your total price:");
-        System.out.println("$"+price);
+        System.out.println("$" + price);
         System.out.println("--------------------------------------------------------");
 
 

@@ -27,7 +27,7 @@ public class Circle {
     }
 
 
-    public  static void printPiValue() {
+    public static void printPiValue() {
         System.out.println("PI' value is: " + pi);
     }
 

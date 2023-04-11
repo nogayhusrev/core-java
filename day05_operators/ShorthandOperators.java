@@ -25,7 +25,7 @@ public class ShorthandOperators {
         balance += 1000; // balance = 100 + 1000
 
         System.out.println("balance = " + balance);
-        
+
         balance += 500; // balance= 1100 + 500
 
         System.out.println("balance = " + balance);
@@ -47,7 +47,7 @@ public class ShorthandOperators {
 
         double salary = 45000;
 
-       salary *= 2;  // salary = 45000 * 2
+        salary *= 2;  // salary = 45000 * 2
 
         System.out.println(salary);
 
@@ -57,7 +57,7 @@ public class ShorthandOperators {
 
         System.out.println("--------------------------------------");
 
-        double eth = 4 ;
+        double eth = 4;
 
         eth *= 250;
 
@@ -82,8 +82,6 @@ public class ShorthandOperators {
         b %= 7;  // b = 39 % 7
 
         System.out.println(b);
-
-
 
 
     }

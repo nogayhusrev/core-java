@@ -29,9 +29,9 @@ public class SingleDimensionalArray_vs_TwoDimensionalArray {
         arr2D[3] = arr4;
         arr2D[4] = arr5;
 
-       // arr2D[5] = arr6;
+        // arr2D[5] = arr6;
 
-        System.out.println(Arrays.deepToString( arr2D));
+        System.out.println(Arrays.deepToString(arr2D));
 
 
     }

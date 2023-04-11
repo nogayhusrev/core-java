@@ -4,15 +4,14 @@ public class CarInfo {
 
     public static void main(String[] args) {
 
-        int year=2020;
-        String make="Audi";
-        String model="A6";
-        int miles=123_000;
-        String color="Blue";
-        float price= 34000.500F;
+        int year = 2020;
+        String make = "Audi";
+        String model = "A6";
+        int miles = 123_000;
+        String color = "Blue";
+        float price = 34000.500F;
 
-        System.out.print(year+" "+make+" "+model+" "+miles+" "+color+" $"+price);
-
+        System.out.print(year + " " + make + " " + model + " " + miles + " " + color + " $" + price);
 
 
     }

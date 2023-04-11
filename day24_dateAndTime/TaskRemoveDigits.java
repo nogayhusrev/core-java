@@ -9,7 +9,7 @@ public class TaskRemoveDigits {
         ArrayList<Character> list = new ArrayList<>();
         list.addAll(Arrays.asList('$', 'A', 'B', '1', '2', 'C', 'D', '@', '!', '3', '4'));
 
-        list.removeIf(p-> Character.isDigit(p));
+        list.removeIf(p -> Character.isDigit(p));
 
         System.out.println(list);
 

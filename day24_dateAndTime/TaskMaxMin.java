@@ -6,7 +6,7 @@ import java.util.Collections;
 
 public class TaskMaxMin {
     public static void main(String[] args) {
-        ArrayList<Integer> list=new ArrayList<>(Arrays.asList(1, 1, -2, -2, -2, 3, 4, 5, 6, 7, 8, 8, 8, 8));
+        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(1, 1, -2, -2, -2, 3, 4, 5, 6, 7, 8, 8, 8, 8));
 
         System.out.println("Max = " + Collections.max(list));
         System.out.println("Min = " + Collections.min(list));

@@ -3,26 +3,26 @@ package day26_statics;
 public class ConstructorCalls {
 
 
-    public ConstructorCalls(){
-       // this(9);
+    public ConstructorCalls() {
+        // this(9);
         System.out.println("Default constructor");
     }
 
-    public ConstructorCalls(int a){
+    public ConstructorCalls(int a) {
         this();
         System.out.println("Constructor with int argument");
-      //  this(); // constructor call has to be at the first step
+        //  this(); // constructor call has to be at the first step
     }
 
 
-    public ConstructorCalls(double b){
+    public ConstructorCalls(double b) {
         System.out.println("Constructor with double argument");
     }
 
 
-    public ConstructorCalls(String c){
+    public ConstructorCalls(String c) {
         this(2.5);
-       // this();
+        // this();
         System.out.println("Constructor with String argument");
     }
 
@@ -38,18 +38,17 @@ public class ConstructorCalls {
     }
 
 
-    public static void method1(){
+    public static void method1() {
         // ConstructorCalls();
-       // this();
+        // this();
         System.out.println("Method 1");
     }
 
-    public static void method2(){
+    public static void method2() {
         System.out.println("Method 2");
         method1();
-       // method2();
+        // method2();
     }
-
 
 
 }

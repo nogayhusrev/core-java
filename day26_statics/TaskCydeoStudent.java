@@ -13,7 +13,6 @@ public class TaskCydeoStudent {
     public static String magicWord = "Wooden Spoon";
 
 
-
     public TaskCydeoStudent(String name, int age, char gender, int id, int batchNumber, int groupNumber, char grade) {
         this.name = name;
         this.age = age;
@@ -25,22 +24,22 @@ public class TaskCydeoStudent {
 
     }
 
-    public void study(){
+    public void study() {
         System.out.println(name + " is studying");
     }
 
-    public void attend(){
+    public void attend() {
 
         System.out.println(name + " is attending the class");
     }
 
 
-    public static void printSchoolName(){
+    public static void printSchoolName() {
         System.out.println("School: " + schoolName);
 
     }
 
-    public static void printProgLanguage(){
+    public static void printProgLanguage() {
         System.out.println("Programing language is: " + magicWord);
     }
 

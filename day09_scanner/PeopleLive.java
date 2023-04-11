@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class PeopleLive {
     public static void main(String[] args) {
-        Scanner scan=new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         System.out.print("Please give your number of family members:");
-        int num= scan.nextInt();
-        if(num<3){
+        int num = scan.nextInt();
+        if (num < 3) {
             System.out.println("Live with less than 3 people");
         } else if (num >= 3 && num <= 6) {
             System.out.println("Live with 3 - 6 people");

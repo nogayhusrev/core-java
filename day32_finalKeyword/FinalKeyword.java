@@ -2,9 +2,9 @@ package day32_finalKeyword;
 
 import java.time.LocalDate;
 
-class Student{
+class Student {
 
-    public final void language(){
+    public final void language() {
         System.out.println("Java Programming");
     }
 
@@ -20,7 +20,7 @@ public final class FinalKeyword extends Student {
     }
 */
 
-    public FinalKeyword(){
+    public FinalKeyword() {
 
     }
 
@@ -30,7 +30,7 @@ public final class FinalKeyword extends Student {
 
         System.out.println(gender); // M
 
-      //  gender = 'F';
+        //  gender = 'F';
         System.out.println(gender); // F
 
         System.out.println("-----------------------------------");
@@ -39,7 +39,7 @@ public final class FinalKeyword extends Student {
 
         System.out.println(dateOfBirth);
 
-      //  dateOfBirth = dateOfBirth.plusYears(1);
+        //  dateOfBirth = dateOfBirth.plusYears(1);
         System.out.println(dateOfBirth);
 
         System.out.println("-----------------------------------");
@@ -50,11 +50,10 @@ public final class FinalKeyword extends Student {
         System.out.println("-----------------------------------");
 
         final String name = "James";
-       // name = null;
-       // name = "Daniel";
+        // name = null;
+        // name = "Daniel";
 
         System.out.println(name);
-
 
 
     }

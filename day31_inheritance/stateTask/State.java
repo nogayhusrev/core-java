@@ -3,8 +3,7 @@ package day31_inheritance.stateTask;
 public class State {
 
     private String name, abbreviation, politicalParty, governor, senator;
-    private double population,stateTax;
-
+    private double population, stateTax;
 
 
     public State(String name, String abbreviation, String politicalParty, String governor, String senator, double population, double stateTax) {
@@ -21,50 +20,50 @@ public class State {
     public void setName(String name) {
 
         //1. name, abbreviation, politicalParty, Governor, and senator can not be null/empty/blank
-        if (name.isEmpty() || name==null ){
+        if (name.isEmpty() || name == null) {
             System.err.println("Name cannot be empty, blank, or null");
             System.exit(1);
-        }else {
-            this.name=name;
+        } else {
+            this.name = name;
         }
     }
 
     public void setAbbreviation(String abbreviation) {
         //1. name, abbreviation, politicalParty, Governor, and senator can not be null/empty/blank
-        if (abbreviation.isEmpty() || abbreviation==null ){
+        if (abbreviation.isEmpty() || abbreviation == null) {
             System.err.println("Abbreviation cannot be empty, blank, or null");
             System.exit(1);
-        }else {
-            this.abbreviation=abbreviation;
+        } else {
+            this.abbreviation = abbreviation;
         }
     }
 
     public void setPoliticalParty(String politicalParty) {
         //1. name, abbreviation, politicalParty, Governor, and senator can not be null/empty/blank
-        if (politicalParty.isEmpty() || politicalParty==null ){
+        if (politicalParty.isEmpty() || politicalParty == null) {
             System.err.println("Political party cannot be empty, blank, or null");
             System.exit(1);
-        }else {
-            this.politicalParty=politicalParty;
+        } else {
+            this.politicalParty = politicalParty;
         }
     }
 
     public void setGovernor(String governor) {
         //1. name, abbreviation, politicalParty, Governor, and senator can not be null/empty/blank
-        if (governor.isEmpty() || governor==null ){
+        if (governor.isEmpty() || governor == null) {
             System.err.println("Governor cannot be empty, blank, or null");
             System.exit(1);
-        }else {
-            this.governor=governor;
+        } else {
+            this.governor = governor;
         }
     }
 
     public void setSenator(String senator) {
         //1. name, abbreviation, politicalParty, Governor, and senator can not be null/empty/blank
-        if (senator.isEmpty() || senator==null ){
+        if (senator.isEmpty() || senator == null) {
             System.err.println("Senator cannot be empty, blank, or null");
             System.exit(1);
-        }else {
+        } else {
             this.senator = senator;
         }
 
@@ -73,20 +72,20 @@ public class State {
     public void setPopulation(double population) {
         // 4. Population can not be zero or negative
 
-        if (population < 1){
+        if (population < 1) {
             System.err.println("Population cannot be zero or negative");
             System.exit(1);
-        }else {
+        } else {
             this.population = population;
         }
     }
 
     public void setStateTax(double stateTax) {
         // 3. taxRate can not be negative
-        if (stateTax < 1){
+        if (stateTax < 1) {
             System.err.println("State tax cannot be zero or negative");
             System.exit(1);
-        }else {
+        } else {
             this.stateTax = stateTax;
         }
     }
@@ -121,7 +120,7 @@ public class State {
 
     @Override
     public String toString() {
-        return  getClass().getSimpleName() + "{" +
+        return getClass().getSimpleName() + "{" +
                 "name='" + name + '\'' +
                 ", abbreviation='" + abbreviation + '\'' +
                 ", politicalParty='" + politicalParty + '\'' +

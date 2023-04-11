@@ -32,18 +32,18 @@ public class PolymorphismIntro {
         Duck duck = null;
 
 
-       Animal[] animals = {dog, cat, tiger, lion, eagle, parrot, dolphin, shark, duck};
+        Animal[] animals = {dog, cat, tiger, lion, eagle, parrot, dolphin, shark, duck};
 
-      /// Animal animal = new Tesla("Model Y", "Blue", 2022, 60000);
-                // there is not "IS A" relationship between Animal and Tesla
+        /// Animal animal = new Tesla("Model Y", "Blue", 2022, 60000);
+        // there is not "IS A" relationship between Animal and Tesla
 
         Animal animal = new Dog("Max", "Husky", 'M', 4, "Small", "White");
         animal.eat();
         animal.drink();
         animal.sleep();
 
-      //  animal.play();
-      //  animal.bark();
+        //  animal.play();
+        //  animal.bark();
 
 
         System.out.println("---------------------------------------------------");
@@ -64,7 +64,7 @@ public class PolymorphismIntro {
 
         Tesla tesla = new Tesla("Model Y", "Blue", 2022, 60000);
 
-        Teacher teacher = new Teacher("James", 45,  'M', "B1", "Math Teacher", 75000);
+        Teacher teacher = new Teacher("James", 45, 'M', "B1", "Math Teacher", 75000);
 
         Developer developer = new Developer("Lucy", 30, 'F', "C1", "Java Developer", 95000, "Java");
 
@@ -85,16 +85,6 @@ public class PolymorphismIntro {
 
 
         System.out.println("------------------------------------------------------------");
-
-
-
-
-
-
-
-
-
-
 
 
     }

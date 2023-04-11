@@ -15,32 +15,32 @@ public class Restaurant {
         this.owner = owner;
         this.location = location;
         this.numberOfStars = numberOfStars;
-        this.servers =new ArrayList<>();
+        this.servers = new ArrayList<>();
         this.chefs = new ArrayList<>();
     }
 
-    public void hireServer(Server server){
+    public void hireServer(Server server) {
         servers.add(server);
     }
 
-    public void hireServer(Server [] servers){
+    public void hireServer(Server[] servers) {
         this.servers.addAll(Arrays.asList(servers));
     }
 
-    public void hireChef(Chef chef){
+    public void hireChef(Chef chef) {
         chefs.add(chef);
     }
 
-    public void hireChef(Chef [] chefs){
+    public void hireChef(Chef[] chefs) {
         this.chefs.addAll(Arrays.asList(chefs));
     }
 
-    public void terminateServer(int id){
-        servers.removeIf(p->p.employeeID==id);
+    public void terminateServer(int id) {
+        servers.removeIf(p -> p.employeeID == id);
     }
 
-    public void terminateChef(int id){
-        chefs.removeIf(p->p.employeeID==id);
+    public void terminateChef(int id) {
+        chefs.removeIf(p -> p.employeeID == id);
     }
 
 

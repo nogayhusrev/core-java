@@ -7,27 +7,27 @@ public class TaskSalaryCalculator {
     public double federalTaxRate;
 
 
-    public TaskSalaryCalculator(double hourlyRate,int weeklyHours,double stateTaxRate, double federalTaxRate){
-        this.hourlyRate=hourlyRate;
-        this.weeklyHours=weeklyHours;
-        this.stateTaxRate=stateTaxRate;
-        this.federalTaxRate=federalTaxRate;
+    public TaskSalaryCalculator(double hourlyRate, int weeklyHours, double stateTaxRate, double federalTaxRate) {
+        this.hourlyRate = hourlyRate;
+        this.weeklyHours = weeklyHours;
+        this.stateTaxRate = stateTaxRate;
+        this.federalTaxRate = federalTaxRate;
     }
 
 
-    public double salary(){
-        return hourlyRate*weeklyHours*52;
+    public double salary() {
+        return hourlyRate * weeklyHours * 52;
     }
 
-    public double stateTax(){
-        return salary()*stateTaxRate;
+    public double stateTax() {
+        return salary() * stateTaxRate;
     }
 
-    public double federalTax(){
-        return salary()*federalTaxRate;
+    public double federalTax() {
+        return salary() * federalTaxRate;
     }
 
-    public double salaryAfterTax(){
+    public double salaryAfterTax() {
         return salary() - stateTax() - federalTax();
     }
 

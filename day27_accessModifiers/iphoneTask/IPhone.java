@@ -11,7 +11,7 @@ public class IPhone {
     public static String madeIn;
     public String designedIn;
 
-    static{
+    static {
         brand = "Apple";
         OS = "iOS";
         madeIn = "China";
@@ -25,23 +25,23 @@ public class IPhone {
         this.designedIn = designedIn;
     }
 
-    public void printOperatingSystem(){
+    public void printOperatingSystem() {
         System.out.println("Operating system is " + OS);
     }
 
-    public void call(long number){
+    public void call(long number) {
         System.out.println(number + " is being called");
     }
 
-    public void text(long number){
+    public void text(long number) {
         System.out.println(number + " is being texted");
     }
 
-    public void faceTime(long number){
+    public void faceTime(long number) {
         System.out.println(number + " is being called via facetime");
     }
 
-    public void faceTime(String email){
+    public void faceTime(String email) {
         System.out.println(email + " is being called via facetime");
     }
 

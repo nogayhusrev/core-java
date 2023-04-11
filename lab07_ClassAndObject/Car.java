@@ -8,7 +8,7 @@ public class Car {
     public double price;
 
 
-    public void setInfo(String brand, String model, int year, String color, double price){
+    public void setInfo(String brand, String model, int year, String color, double price) {
         this.brand = brand;
         this.model = model;
         this.year = year;
@@ -22,8 +22,8 @@ public class Car {
     }
 
 
-    public void drive(){
-        System.out.println("Driving "+ brand +" "+ model);
+    public void drive() {
+        System.out.println("Driving " + brand + " " + model);
     }
 
 

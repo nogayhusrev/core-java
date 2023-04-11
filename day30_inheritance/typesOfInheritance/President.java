@@ -3,7 +3,7 @@ package day30_inheritance.typesOfInheritance;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
-public class President extends Person{
+public class President extends Person {
 
     private LocalDate electedDate;
 
@@ -20,8 +20,8 @@ public class President extends Person{
         this.electedDate = electedDate;
     }
 
-    public void lie(){
-        System.out.println(getName()+" is lying");
+    public void lie() {
+        System.out.println(getName() + " is lying");
     }
 
 

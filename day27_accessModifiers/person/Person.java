@@ -24,15 +24,15 @@ public class Person {
         planet = "Earth";
     }
 
-    public void printPlanetName(){
+    public void printPlanetName() {
         System.out.println("planet = " + planet);
     }
 
-    public void eat(String food){
+    public void eat(String food) {
         System.out.println(name + " is eating " + food);
     }
 
-    public void drink(String drink){
+    public void drink(String drink) {
         System.out.println(name + " is drinking " + drink);
     }
 

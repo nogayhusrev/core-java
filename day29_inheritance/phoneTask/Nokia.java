@@ -1,8 +1,8 @@
 package day29_inheritance.phoneTask;
 
-public class Nokia extends Phone{
+public class Nokia extends Phone {
 
-    public void selfDefense(){
+    public void selfDefense() {
         System.out.println(getBrand() + " " + getModel() + " is used for self defensing");
     }
 }

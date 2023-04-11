@@ -1,11 +1,12 @@
 package day08_ternarySwitch;
+
 public class SwitchStatementIntro2 {
 
     public static void main(String[] args) {
 
         int n = 25;
 
-        switch(n){
+        switch (n) {
 
             case 1:
                 System.out.println("Monday");
@@ -39,7 +40,6 @@ public class SwitchStatementIntro2 {
                 System.out.println("Invalid");
 
         }
-
 
 
     }

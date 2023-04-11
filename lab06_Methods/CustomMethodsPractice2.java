@@ -15,15 +15,15 @@ public class CustomMethodsPractice2 {
 
         System.out.println("---------------------------------------------------");
 
-        System.out.println( right2("Java") );
+        System.out.println(right2("Java"));
 
         System.out.println("---------------------------------------------------");
 
-        System.out.println( frontAgain("edited")  );
+        System.out.println(frontAgain("edited"));
 
         System.out.println("---------------------------------------------------");
 
-        System.out.println( countHi("Hi Hi Hi Hi") );
+        System.out.println(countHi("Hi Hi Hi Hi"));
 
         System.out.println("---------------------------------------------------");
 
@@ -31,24 +31,23 @@ public class CustomMethodsPractice2 {
     }
 
 
+    public static String comboString(String a, String b) {
 
-    public static String  comboString(String a, String b){
-
-        if(a.length() > b.length()){
+        if (a.length() > b.length()) {
             return b + a + b;
-        }else if(b.length() > a.length()){
+        } else if (b.length() > a.length()) {
             return a + b + a;
-        }else{
+        } else {
             return a + b;
         }
 
     }
 
 
-                                //"Hello"
-    public static String left2(String str){
+    //"Hello"
+    public static String left2(String str) {
 
-        if(str.length() < 3){
+        if (str.length() < 3) {
             return str;
         }
 
@@ -59,50 +58,47 @@ public class CustomMethodsPractice2 {
     }
 
 
-                                //"Hello"
-    public static String right2(String str){
-        if(str.length() < 3){
+    //"Hello"
+    public static String right2(String str) {
+        if (str.length() < 3) {
             return str;
         }
 
-        String s1 = str.substring(str.length()-2 ); //"lo"
-        String s2 = str.substring(0,str.length()-2 ); //"Hel"
+        String s1 = str.substring(str.length() - 2); //"lo"
+        String s2 = str.substring(0, str.length() - 2); //"Hel"
 
         return s1 + s2; // "loHel"
     }
 
 
+    public static boolean frontAgain(String str) {
 
-    public static boolean frontAgain(String str){
-
-        if(str.length() < 2){
+        if (str.length() < 2) {
             return false;
         }
 
         String firstTwoChars = str.substring(0, 2);
-        String lastTwoChars = str.substring(str.length()-2);
+        String lastTwoChars = str.substring(str.length() - 2);
 
-       // return str.endsWith(firstTwoChars);
-        return  firstTwoChars.equals(lastTwoChars);
+        // return str.endsWith(firstTwoChars);
+        return firstTwoChars.equals(lastTwoChars);
     }
 
 
-    public static int countHi(String str){
+    public static int countHi(String str) {
 
         return StringUtility.frequency(str, "Hi");
 
     }
 
 
-    public static boolean catDog(String str){
+    public static boolean catDog(String str) {
         str = str.toLowerCase();
-       int countCat = StringUtility.frequency(str, "cat");
-       int countDog = StringUtility.frequency(str, "dog");
+        int countCat = StringUtility.frequency(str, "cat");
+        int countDog = StringUtility.frequency(str, "dog");
 
-       return countCat == countDog;
+        return countCat == countDog;
     }
-
-
 
 
 }

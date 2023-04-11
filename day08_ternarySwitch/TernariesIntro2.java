@@ -1,4 +1,5 @@
 package day08_ternarySwitch;
+
 public class TernariesIntro2 {
 
     public static void main(String[] args) {
@@ -16,7 +17,7 @@ public class TernariesIntro2 {
         }
         */
 
-        String result =  (number > 0)? "Positive" :(number < 0)? "Negative" : "Zero" ;
+        String result = (number > 0) ? "Positive" : (number < 0) ? "Negative" : "Zero";
 
 
         System.out.println("-----------------------------------------------");
@@ -42,8 +43,8 @@ public class TernariesIntro2 {
         }
     */
 
-        String day = (n ==1)?"Monday" :(n==2)?"Tuesday" :(n==3)? "Wednesday" :(n==4)? "Thursday" :(n==5)? "Friday"
-                :(n==6)? "Saturday" : "Sunday";
+        String day = (n == 1) ? "Monday" : (n == 2) ? "Tuesday" : (n == 3) ? "Wednesday" : (n == 4) ? "Thursday" : (n == 5) ? "Friday"
+                : (n == 6) ? "Saturday" : "Sunday";
 
         System.out.println(day);
 
@@ -52,11 +53,6 @@ public class TernariesIntro2 {
         int num = 10; // 1~12
 
         String month;
-
-
-
-
-
 
 
     }

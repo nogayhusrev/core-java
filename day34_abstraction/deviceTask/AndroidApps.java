@@ -1,6 +1,6 @@
 package day34_abstraction.deviceTask;
 
-public interface AndroidApps extends Downloadable{
+public interface AndroidApps extends Downloadable {
     String appStoreName = "Google Play";
     String OS = "Android";
 }

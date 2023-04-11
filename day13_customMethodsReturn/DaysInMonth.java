@@ -9,19 +9,22 @@ public class DaysInMonth {
 
         int month = new Scanner(System.in).nextInt();
 
-        if(month < 1 || month > 12){ // if the month is invalid
+        if (month < 1 || month > 12) { // if the month is invalid
             System.err.println("Invalid number");
             return; // terminates the main method
         }
 
 
-        switch (month){ // 1 ~ 12
+        switch (month) { // 1 ~ 12
 
             case 2:
                 System.out.println("28 days");
                 break;
 
-            case 4: case 6: case 9: case 11:
+            case 4:
+            case 6:
+            case 9:
+            case 11:
                 System.out.println("30 days");
                 break;
 
@@ -29,7 +32,6 @@ public class DaysInMonth {
                 System.out.println("31 days");
 
         }
-
 
 
     }

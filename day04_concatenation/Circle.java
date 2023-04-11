@@ -4,12 +4,12 @@ public class Circle {
 
     public static void main(String[] args) {
 
-        int radius=4;
-        double area=Math.PI*radius*radius;
-        double perimeter=2*Math.PI*radius;
+        int radius = 4;
+        double area = Math.PI * radius * radius;
+        double perimeter = 2 * Math.PI * radius;
 
-        System.out.println("Area of the circle "+area);
-        System.out.println("Peirmeter of the circle "+perimeter);
+        System.out.println("Area of the circle " + area);
+        System.out.println("Peirmeter of the circle " + perimeter);
 
     }
 }

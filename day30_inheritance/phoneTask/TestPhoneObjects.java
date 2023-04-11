@@ -22,16 +22,16 @@ public class TestPhoneObjects {
         System.out.println("-------------------------------");
 
         iphone.faceTime(123456789);
-       // samsung.faceTime(123456789);
-       // nokia.faceTime(123456789);
+        // samsung.faceTime(123456789);
+        // nokia.faceTime(123456789);
 
         samsung.freeze();
-       // iphone.freeze();
-      //  nokia.freeze();
+        // iphone.freeze();
+        //  nokia.freeze();
 
         nokia.selfDefense();
-     //   iphone.selfDefense();
-     //   samsung.selfDefense();
+        //   iphone.selfDefense();
+        //   samsung.selfDefense();
 
         System.out.println("-------------------------------");
 

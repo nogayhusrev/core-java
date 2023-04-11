@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class CalculationOfSquare {
     public static void main(String[] args) {
 
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         int side;
 
@@ -14,7 +14,6 @@ public class CalculationOfSquare {
                 perimeter;
 
         String cont;
-
 
 
         while (true) {
@@ -35,43 +34,38 @@ public class CalculationOfSquare {
                 //      1. Area of square
                 //      2. Perimeter of square
 
-                area = Math.pow(side,2);
-                perimeter = 4*side;
+                area = Math.pow(side, 2);
+                perimeter = 4 * side;
 
                 System.out.println("area = " + area);
                 System.out.println("perimeter = " + perimeter);
 
             }
 
-            do{
+            do {
                 //  3. Ask the user "Would you like to calculate another Square?"
                 //         If "yes" --> repeat the previous steps
                 //         If "No" --> Print "Thank you for using Cydeo Square Calculator APP"
                 //         If user enters an invalid entry, ask the user to re-enter until user provides a valid entry
 
                 System.out.println("Would you like to calculate another square?");
-                cont= scanner.next();
-                if(cont.equalsIgnoreCase("yes")){
+                cont = scanner.next();
+                if (cont.equalsIgnoreCase("yes")) {
                     break;
-                }else if (cont.equalsIgnoreCase("no")){
+                } else if (cont.equalsIgnoreCase("no")) {
                     System.out.println("Thank you for using Cydeo Square Calculator APP");
                     System.exit(1);
-                }else{
+                } else {
                     System.err.println("Invalid entry!!!");
                     System.out.println("------------");
                     continue;
                 }
 
 
-            }while (true);
-
-
-
+            } while (true);
 
 
         }
-
-
 
 
     }

@@ -11,10 +11,10 @@ public class Person {
     private LocalDate DOB;
 
     public Person(String name, char gender, LocalDate DOB) {
-       setName(name);
-       setGender(gender);
-       setDOB(DOB);
-       setAge( LocalDate.now().getYear() - DOB.getYear());
+        setName(name);
+        setGender(gender);
+        setDOB(DOB);
+        setAge(LocalDate.now().getYear() - DOB.getYear());
     }
 
     public String getName() {
@@ -31,7 +31,7 @@ public class Person {
 
     public void setAge(int age) {
 
-        if(age<= 0){
+        if (age <= 0) {
             System.err.println("Age can not be negative or zero");
             System.exit(1);
         }
@@ -55,25 +55,23 @@ public class Person {
         this.DOB = DOB;
     }
 
-    public void eat(String food){
-        System.out.println(name +" is eating "+ food);
+    public void eat(String food) {
+        System.out.println(name + " is eating " + food);
     }
 
-    public void drink(String drink){
-        System.out.println(name+" si drinking "+drink);
+    public void drink(String drink) {
+        System.out.println(name + " si drinking " + drink);
     }
 
 
     public String toString() {
-        return getClass().getSimpleName()+"{" +
+        return getClass().getSimpleName() + "{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", gender=" + gender +
                 ", DOB=" + DOB +
                 '}';
     }
-
-
 
 
 }

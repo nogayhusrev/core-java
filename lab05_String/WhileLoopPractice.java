@@ -12,12 +12,10 @@ public class WhileLoopPractice {
         System.out.println("Would you like to continue? yes/no");
         String a = input.nextLine().toLowerCase();
 
-        while( !(a.equals("yes") || a.equals("no") ) ){
+        while (!(a.equals("yes") || a.equals("no"))) {
             System.err.println("Invalid entry! Would you like to continue? yes/no");
             a = input.nextLine().toLowerCase();
         }
-
-
 
 
     }

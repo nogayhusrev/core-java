@@ -8,15 +8,15 @@ public class TaskArraysIntoArrayList {
 
     public static void main(String[] args) {
 
-        String [] arr1 = {"A", "B", "C"};
-        String [] arr2 = {"D", "E", "F", "G"};
+        String[] arr1 = {"A", "B", "C"};
+        String[] arr2 = {"D", "E", "F", "G"};
 
 
         System.out.println("---------------------------");
         System.out.println(Arrays.toString(arr1));
         System.out.println("---------------------------");
         System.out.println(Arrays.toString(arr2));
-        ArrayList<String> list=new ArrayList<>();
+        ArrayList<String> list = new ArrayList<>();
 
         for (String s : arr1) {
             list.add(s);

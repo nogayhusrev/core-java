@@ -18,9 +18,9 @@ public class Phone {
     public void setBrand(String brand) {
         //1. brand can not be null/empty/blank
 
-        if (!brand.isEmpty() && brand!=null) {
+        if (!brand.isEmpty() && brand != null) {
             this.brand = brand;
-        }else{
+        } else {
             System.err.println("Brand of the phone can not be null or empty");
             System.exit(1);
         }
@@ -28,9 +28,9 @@ public class Phone {
 
     public void setModel(String model) {
         //	2. model can not be null/empty/blank
-        if (!model.isEmpty() && model!=null) {
+        if (!model.isEmpty() && model != null) {
             this.model = model;
-        }else{
+        } else {
             System.err.println("Model of the phone can not be null or empty");
             System.exit(1);
         }
@@ -43,9 +43,9 @@ public class Phone {
 
     public void setColor(String color) {
         //3. Color can not be null/empty/blank
-        if (!color.isEmpty() && color!=null) {
+        if (!color.isEmpty() && color != null) {
             this.color = color;
-        }else{
+        } else {
             System.err.println("Color of the phone can not be null or empty");
             System.exit(1);
         }
@@ -54,9 +54,9 @@ public class Phone {
 
     public void setPrice(double price) {
         //4. price can not be zero or negative
-        if (price >0){
+        if (price > 0) {
             this.price = price;
-        }else{
+        } else {
             System.err.println("Price of the phone can not be zero or negative");
             System.exit(1);
         }
@@ -82,11 +82,11 @@ public class Phone {
         return price;
     }
 
-    public void call(long phoneNumber){
+    public void call(long phoneNumber) {
         System.out.println(model + " is calling " + phoneNumber);
     }
 
-    public void text(long phoneNumber){
+    public void text(long phoneNumber) {
         System.out.println(model + " is texting to " + phoneNumber);
     }
 

@@ -16,7 +16,7 @@ public class LocalDateIntro {
 
         System.out.println("-------------------------------------------");
 
-        System.out.println( today.getYear() );
+        System.out.println(today.getYear());
 
         System.out.println(today.getMonth());
 
@@ -33,7 +33,7 @@ public class LocalDateIntro {
 
         System.out.println("-------------------------------------------------");
 
-        today =  today.plusYears(1); // 2023-6-16
+        today = today.plusYears(1); // 2023-6-16
 
         System.out.println(today);
 
@@ -79,22 +79,12 @@ public class LocalDateIntro {
 
         LocalDate grad_date = LocalDate.of(2023, 1, 1);
 
-        System.out.println(  grad_date.isBefore(  LocalDate.of(2022, 12, 31) ));
-        System.out.println(  grad_date.isAfter(  LocalDate.of(2022, 12, 31) ));
+        System.out.println(grad_date.isBefore(LocalDate.of(2022, 12, 31)));
+        System.out.println(grad_date.isAfter(LocalDate.of(2022, 12, 31)));
 
         System.out.println("----------------------------------------------");
 
-        System.out.println(  LocalDate.of(2022, 6, 16).isLeapYear()  );
-
-
-
-
-
-
-
-
-
-
+        System.out.println(LocalDate.of(2022, 6, 16).isLeapYear());
 
 
     }

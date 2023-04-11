@@ -1,7 +1,6 @@
 package day38_exceptions;
 
 
-
 public class ThrowsKeyword {
 
     public static void main(String[] args) throws InterruptedException {
@@ -57,10 +56,7 @@ public class ThrowsKeyword {
         System.out.println("Program3 ended");
 
 
-
-
     }
-
 
 
 }

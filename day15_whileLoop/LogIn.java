@@ -9,31 +9,28 @@ public class LogIn {
                 username,
                 password;
 
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        boolean login=false;
+        boolean login = false;
 
-        for (int i=0;i<3;i++){
+        for (int i = 0; i < 3; i++) {
             System.out.println("Enter your username:");
-            username= scanner.next();
+            username = scanner.next();
             System.out.println("Enter your password:");
-            password=scanner.next();
-            if (username.equals("Cydeo") &&  password.equals("Cydeo123") && i<3){
-                login=true;
+            password = scanner.next();
+            if (username.equals("Cydeo") && password.equals("Cydeo123") && i < 3) {
+                login = true;
                 break;
 
-            }
-            else
-                login=false;
+            } else
+                login = false;
 
         }
 
-       if (login)
-           System.out.println("Logged in.");
-       else
-           System.out.println("Your account is lucked.");
-
-
+        if (login)
+            System.out.println("Logged in.");
+        else
+            System.out.println("Your account is lucked.");
 
 
     }

@@ -45,8 +45,6 @@ public abstract class Employee extends Person { // meant to be inherited
     }
 
 
-
-
 }
 
 /*

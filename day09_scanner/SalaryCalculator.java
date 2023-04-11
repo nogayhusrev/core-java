@@ -9,25 +9,24 @@ public class SalaryCalculator {
         int hourlyRate, weeklyHours;
         double stateTaxRate, //given as percentage
                 federalTaxRate;//given as percentage
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
 
         System.out.println("Enter the hourly rate:");
-        hourlyRate= scanner.nextInt();
+        hourlyRate = scanner.nextInt();
         System.out.println("Enter weekly hour:");
-        weeklyHours= scanner.nextInt();
+        weeklyHours = scanner.nextInt();
         System.out.println("Enter State Tax:");
-        stateTaxRate= scanner.nextDouble();
+        stateTaxRate = scanner.nextDouble();
         System.out.println("Enter federal tax rate:");
-        federalTaxRate=scanner.nextDouble();
+        federalTaxRate = scanner.nextDouble();
 
 
-
-        int salaryBeforeTax=52*weeklyHours*hourlyRate;
-        double stateTax= (double) (salaryBeforeTax*stateTaxRate/100);
-        double federalTax= (double) (salaryBeforeTax*federalTaxRate/100);
-        double totalTax=federalTax+stateTax;
-        double salaryAfterTax=(double) salaryBeforeTax-stateTax-federalTax;
+        int salaryBeforeTax = 52 * weeklyHours * hourlyRate;
+        double stateTax = (double) (salaryBeforeTax * stateTaxRate / 100);
+        double federalTax = (double) (salaryBeforeTax * federalTaxRate / 100);
+        double totalTax = federalTax + stateTax;
+        double salaryAfterTax = (double) salaryBeforeTax - stateTax - federalTax;
 
 
         System.out.println("federalTax = " + federalTax);

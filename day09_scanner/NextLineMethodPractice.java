@@ -27,8 +27,6 @@ public class NextLineMethodPractice {
         String street = input.nextLine();
 
 
-
-
     }
 
 }

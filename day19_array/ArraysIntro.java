@@ -22,14 +22,14 @@ public class ArraysIntro {
         scores[3] = 88;
         scores[4] = 95;
 
-       // scores[5] = 100;
-      //  scores[-1] = 65;
-     //   scores = new int[10]; //index: 0 ~ 9
-      //  scores = new int[50]; //index: 0 ~ 49
+        // scores[5] = 100;
+        //  scores[-1] = 65;
+        //   scores = new int[10]; //index: 0 ~ 9
+        //  scores = new int[50]; //index: 0 ~ 49
 
-        System.out.println(  Arrays.toString(scores)  );
+        System.out.println(Arrays.toString(scores));
 
-        System.out.println( scores[2] );
+        System.out.println(scores[2]);
 
         System.out.println("--------------------------------------------");
 
@@ -39,10 +39,7 @@ public class ArraysIntro {
 
         System.out.println("--------------------------------------------");
 
-        System.out.println( scores[scores.length-1] );
-
-
-
+        System.out.println(scores[scores.length - 1]);
 
 
     }

@@ -6,12 +6,12 @@ public class Calculator {
 
     public static void main(String[] args) {
 
-        char op='+';
+        char op = '+';
         int
-                n1=56,
-                n2=45;
+                n1 = 56,
+                n2 = 45;
 
-        String output=
+        String output =
                 ((op == '+') ? valueOf(n1 + n2) :
                         ((op == '*') ? valueOf(n1 * n2) :
                                 ((op == '/') ? valueOf(n1 / n2) :
@@ -20,17 +20,24 @@ public class Calculator {
         System.out.println(output);
         System.out.println("-------------");
 
-        int out=0;
+        int out = 0;
 
-        switch (op){
-            case '+':out=n1+n2;break;
-            case '*':out=n1*n2;break;
-            case '/':out=n1/n2;break;
-            case '-':out=n1-n2;break;
+        switch (op) {
+            case '+':
+                out = n1 + n2;
+                break;
+            case '*':
+                out = n1 * n2;
+                break;
+            case '/':
+                out = n1 / n2;
+                break;
+            case '-':
+                out = n1 - n2;
+                break;
         }
 
         System.out.println(out);
-
 
 
     }

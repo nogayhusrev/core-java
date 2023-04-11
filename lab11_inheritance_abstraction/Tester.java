@@ -8,11 +8,11 @@ public final class Tester extends Employee implements ScrumMember, WFH {
 
     @Override
     public void work() {
-        System.out.println(getName() +" is testing the application");
+        System.out.println(getName() + " is testing the application");
     }
 
-    public void createTicket(){
-        System.out.println(getName() +" is creating ticket");
+    public void createTicket() {
+        System.out.println(getName() + " is creating ticket");
     }
 
     @Override

@@ -17,7 +17,7 @@ public class CandyFactory {
 
 
         for (Candy candy : candies) {
-            System.out.println(candy.getBrand()+ " : "+candy.getPrice());
+            System.out.println(candy.getBrand() + " : " + candy.getPrice());
         }
         System.out.println("--------------------");
 

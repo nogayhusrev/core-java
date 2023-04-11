@@ -7,25 +7,24 @@ public class Polindrome {
     public static void main(String[] args) {
 
         String input;
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        boolean isPolindrome=true;
+        boolean isPolindrome = true;
 
         System.out.println("Enter the polindrome:");
-        input= scanner.next();
-        System.out.println("input:\n\t"+input);
+        input = scanner.next();
+        System.out.println("input:\n\t" + input);
 
-        for (int i=0,j=input.length()-1;i<=j;i++,j--){
+        for (int i = 0, j = input.length() - 1; i <= j; i++, j--) {
 
-            if(input.charAt(i) != input.charAt(j)){
-                isPolindrome=false;
+            if (input.charAt(i) != input.charAt(j)) {
+                isPolindrome = false;
                 break;
             }
 
         }
 
-        System.out.println("output:\n\t"+isPolindrome);
-
+        System.out.println("output:\n\t" + isPolindrome);
 
 
     }

@@ -18,25 +18,12 @@ public class TaskReplaceAll {
 
      */
 
-    public static int[] replaceAll(int [] arr, int oldElement,int newElement ){
+    public static int[] replaceAll(int[] arr, int oldElement, int newElement) {
 
-        for (int i=0;i<arr.length;i++) {
+        for (int i = 0; i < arr.length; i++) {
 
-            if(arr[i]==oldElement)
-                arr[i]=newElement;
-
-        }
-
-        return arr;
-
-    }
-
-    public static double[] replaceAll(double[] arr, double oldElement,double newElement ){
-
-        for (int i=0;i<arr.length;i++) {
-
-            if(arr[i]==oldElement)
-                arr[i]=newElement;
+            if (arr[i] == oldElement)
+                arr[i] = newElement;
 
         }
 
@@ -44,12 +31,12 @@ public class TaskReplaceAll {
 
     }
 
-    public static char[] replaceAll(char [] arr, char oldElement, char newElement ){
+    public static double[] replaceAll(double[] arr, double oldElement, double newElement) {
 
-        for (int i=0;i<arr.length;i++) {
+        for (int i = 0; i < arr.length; i++) {
 
-            if(arr[i]==oldElement)
-                arr[i]=newElement;
+            if (arr[i] == oldElement)
+                arr[i] = newElement;
 
         }
 
@@ -57,12 +44,25 @@ public class TaskReplaceAll {
 
     }
 
-    public static String[] replaceAll(String [] arr, String oldElement, String newElement ){
+    public static char[] replaceAll(char[] arr, char oldElement, char newElement) {
 
-        for (int i=0;i<arr.length;i++) {
+        for (int i = 0; i < arr.length; i++) {
 
-            if(arr[i]==oldElement)
-                arr[i]=newElement;
+            if (arr[i] == oldElement)
+                arr[i] = newElement;
+
+        }
+
+        return arr;
+
+    }
+
+    public static String[] replaceAll(String[] arr, String oldElement, String newElement) {
+
+        for (int i = 0; i < arr.length; i++) {
+
+            if (arr[i] == oldElement)
+                arr[i] = newElement;
 
         }
 

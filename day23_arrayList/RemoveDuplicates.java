@@ -22,7 +22,7 @@ public class RemoveDuplicates {
 
         for (String each : names) {
 
-            if(nonDup.contains(each)){
+            if (nonDup.contains(each)) {
                 continue;
             }
 
@@ -36,7 +36,6 @@ public class RemoveDuplicates {
 
         System.out.println(names);
         System.out.println(nonDup);
-
 
 
     }

@@ -11,16 +11,14 @@ public class StringToStringArray {
         String reverseWord = "";
 
 
-        for (int i = arr[1].length() - 1; i >= 0;i-- ){
+        for (int i = arr[1].length() - 1; i >= 0; i--) {
             reverseWord += arr[1].charAt(i);
 
         }
 
-        sentence=arr[0] + " " + reverseWord + " " + arr[2];
+        sentence = arr[0] + " " + reverseWord + " " + arr[2];
 
         System.out.println("Output : " + sentence);
-
-
 
 
     }

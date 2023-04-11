@@ -2,11 +2,11 @@ package day31_inheritance.browserTask;
 
 public class Browser {
 
-    public void openBrowser(){
+    public void openBrowser() {
         System.out.println("Opening browser.");
     }
 
-    public void closeBrowser(){
+    public void closeBrowser() {
         System.out.println("Closing browser.");
     }
 

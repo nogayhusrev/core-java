@@ -14,13 +14,12 @@ public class ForLoopPractice2 {
         for (int i = 0; i < 5; i++) {
 
             System.out.println("Enter a number");
-             sum += input.nextInt();
+            sum += input.nextInt();
 
         }
 
 
         System.out.println("sum = " + sum);
-
 
 
         // write a program that can ask the user enter to enter a number for five times,  print the maximum number
@@ -29,13 +28,7 @@ public class ForLoopPractice2 {
         // write a program that can ask the user enter to enter a number for five times,  print the minimum number
 
 
-       
-        
-        
-        
-        
-        
     }
-    
-    
+
+
 }

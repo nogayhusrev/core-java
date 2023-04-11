@@ -17,12 +17,11 @@ public class Grade2 {
             result = "Good";
         } else if (grade == 'D') {
             result = "Passed";
-        } else{
+        } else {
             result = "Failed";
         }
 
         System.out.println(result);
-
 
 
     }

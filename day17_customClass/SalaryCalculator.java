@@ -9,35 +9,35 @@ public class SalaryCalculator {
 
     public static void main(String[] args) {
 
-        SalaryCalculator slcr=new SalaryCalculator();
-        slcr.setInfo(12.23,34,12,45);
+        SalaryCalculator slcr = new SalaryCalculator();
+        slcr.setInfo(12.23, 34, 12, 45);
         System.out.println(slcr);
 
     }
 
 
-    public void setInfo(double hourlyRate,double stateTaxRate,double federalTaxRate,int weeklyHour){
-        this.hourlyRate=hourlyRate;
-        this.stateTaxRate=stateTaxRate/100;
-        this.federalTaxRate=federalTaxRate/100;
-        this.weeklyHour=weeklyHour;
+    public void setInfo(double hourlyRate, double stateTaxRate, double federalTaxRate, int weeklyHour) {
+        this.hourlyRate = hourlyRate;
+        this.stateTaxRate = stateTaxRate / 100;
+        this.federalTaxRate = federalTaxRate / 100;
+        this.weeklyHour = weeklyHour;
 
     }
 
-    public double salary(){
+    public double salary() {
 
-        return ( hourlyRate * weeklyHour * 52);
+        return (hourlyRate * weeklyHour * 52);
     }
 
-    public double stateTax(){
-        return salary()*stateTaxRate;
+    public double stateTax() {
+        return salary() * stateTaxRate;
     }
 
-    public double federalTax(){
-        return salary()*federalTaxRate;
+    public double federalTax() {
+        return salary() * federalTaxRate;
     }
 
-    public double salaryAfterTax(){
+    public double salaryAfterTax() {
         return salary() - stateTax() - federalTax();
     }
 

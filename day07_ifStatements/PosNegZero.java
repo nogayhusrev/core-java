@@ -3,12 +3,11 @@ package day07_ifStatements;
 public class PosNegZero {
 
     public static void main(String[] args) {
-        int num=34;
+        int num = 34;
 
-        if(num>0){
+        if (num > 0) {
             System.out.println("Positive");
-        }
-        else System.out.println("Negative");
+        } else System.out.println("Negative");
     }
 }
 /*

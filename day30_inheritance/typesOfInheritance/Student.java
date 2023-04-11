@@ -3,7 +3,7 @@ package day30_inheritance.typesOfInheritance;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
-public class Student extends Person{
+public class Student extends Person {
 
     private char grade;
     private String studentId;
@@ -30,8 +30,8 @@ public class Student extends Person{
         this.studentId = studentId;
     }
 
-    public void study(){
-        System.out.println(getName()+" is studying");
+    public void study() {
+        System.out.println(getName() + " is studying");
     }
 
 }

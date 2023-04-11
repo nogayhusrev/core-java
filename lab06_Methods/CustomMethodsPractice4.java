@@ -21,7 +21,7 @@ public class CustomMethodsPractice4 {
             }
             */
 
-            if( StringUtility.frequency(str, str.charAt(i) ) ==1  ){
+            if (StringUtility.frequency(str, str.charAt(i)) == 1) {
                 unique += str.charAt(i);
             }
 
@@ -36,7 +36,7 @@ public class CustomMethodsPractice4 {
 
         String s = "aaabbc";   //"a3b2c1"
 
-        String nonDup =  StringUtility.removeDup(s); // abc
+        String nonDup = StringUtility.removeDup(s); // abc
 
         String result = "";
 
@@ -48,15 +48,11 @@ public class CustomMethodsPractice4 {
             result +=  ""+ch + f;
             */
 
-            result += ""+nonDup.charAt(i) + StringUtility.frequency(s, nonDup.charAt(i)) ;
+            result += "" + nonDup.charAt(i) + StringUtility.frequency(s, nonDup.charAt(i));
 
         }
 
         System.out.println(result);
-
-
-
-
 
 
     }

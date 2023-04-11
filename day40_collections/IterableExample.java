@@ -48,11 +48,11 @@ public class IterableExample {
         List<Integer> list3 = new ArrayList<>();
         list3.addAll(Arrays.asList(1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7));
 
-        for (Iterator<Integer> i = list3.iterator(); i.hasNext();  ) {
+        for (Iterator<Integer> i = list3.iterator(); i.hasNext(); ) {
 
             Integer each = i.next();
 
-            if(each < 5){
+            if (each < 5) {
                 i.remove();
             }
 
@@ -62,13 +62,12 @@ public class IterableExample {
         System.out.println(list3);
 
 
-
         System.out.println("-----------------------------------------------------");
 
         List<Integer> list4 = new ArrayList<>();
         list4.addAll(Arrays.asList(1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7));
 
-        list4.removeIf( each -> each < 5);
+        list4.removeIf(each -> each < 5);
 
         System.out.println(list4);
 
@@ -78,7 +77,7 @@ public class IterableExample {
         List<Integer> list5 = new LinkedList<>();
         list5.addAll(Arrays.asList(1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7));
 
-        list5.removeIf( p -> p < 5);
+        list5.removeIf(p -> p < 5);
 
         System.out.println(list5);
 

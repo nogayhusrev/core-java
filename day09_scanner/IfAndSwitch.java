@@ -6,9 +6,9 @@ public class IfAndSwitch {
 
         int number = 75;
 
-        if(number == 50 || number ==75 || number ==100){
+        if (number == 50 || number == 75 || number == 100) {
 
-            switch (number){
+            switch (number) {
                 case 50:
                     System.out.println("20 crew, 30 passengers");
                     break;
@@ -21,7 +21,7 @@ public class IfAndSwitch {
                     System.out.println("30 crew, 70 passengers ");
             }
 
-        }else{
+        } else {
             System.out.println("Invalid Number");
         }
 

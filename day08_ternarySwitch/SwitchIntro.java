@@ -1,4 +1,5 @@
 package day08_ternarySwitch;
+
 public class SwitchIntro {
 
     public static void main(String[] args) {
@@ -32,7 +33,7 @@ public class SwitchIntro {
 
         System.out.println("----------------------------------");
 */
-        switch (grade){
+        switch (grade) {
 
             case 'B':
                 System.out.println("Great Job");
@@ -58,7 +59,6 @@ public class SwitchIntro {
                 System.out.println("Invalid");
 
         }
-
 
 
     }

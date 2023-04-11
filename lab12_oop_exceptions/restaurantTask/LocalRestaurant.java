@@ -22,11 +22,11 @@ public class LocalRestaurant {
 
         System.out.println("----------------------------------------------------");
 
-       // Restaurant restaurant = new Chef("Daniel", 42, 'M', "B01", "Head Chef", 85000);
+        // Restaurant restaurant = new Chef("Daniel", 42, 'M', "B01", "Head Chef", 85000);
 
         try {
             ((Server) employee2).takeOrder();
-        }catch (RuntimeException e){
+        } catch (RuntimeException e) {
             e.printStackTrace();
         }
 
@@ -42,9 +42,9 @@ public class LocalRestaurant {
         System.out.println(restaurant);
 
         restaurant.hireServer((Server) employee1);
-        restaurant.hireChef( (Chef) employee2 );
+        restaurant.hireChef((Chef) employee2);
 
-    //    restaurant.hireChef( ((Server) employee1).promoteToChef() );
+        //    restaurant.hireChef( ((Server) employee1).promoteToChef() );
 
         restaurant.hireServer(server);
         restaurant.hireChef(chef);
@@ -72,11 +72,10 @@ public class LocalRestaurant {
         System.out.println("---------------------------------------------");
         Server s = null;
         Chef c = null;
-       // restaurant.hireServer(s);
-     //   restaurant.hireChef(c);
+        // restaurant.hireServer(s);
+        //   restaurant.hireChef(c);
 
         System.out.println(restaurant);
-
 
 
     }
